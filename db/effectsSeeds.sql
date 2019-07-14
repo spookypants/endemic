@@ -39,4 +39,14 @@ VALUES
 ("Vitals Holding!", "We don't know why the patient status isn't changed, but at least it's not getting worse.", 0),
 ("Vitals Stabilizing!", "We won't have all the answers until lab results come back, but the patient is looking and feeling better for now. Nice work.", 0),
 
-("")
+("Acute Fatigue!", "The patient is suddenly feeling fatigued. That could be a problem.", 1),
+("Fatigue Relief!", "The patient is feeling a little energy returning.", 0),
+
+("Acute Soreness! Aches! Pains!", "The patient is starting to feel muscle aches, soreness, joint pain... All bad signs.", 1),
+("Pain Relief!", "The patient is feeling some relief in their muscles, joints, and nodes. They're resting easier and so should you.", 0),
+
+("Acute Coughing!", "The patient can't stop coughing. Dry, productive, it makes no difference -- deal with it!", 1),
+("Cough Suppressed!", "A little relief for the patient. Good thing you were wearing a mask for that... right?", 0),
+
+("Anaphylaxis!", "Patient's airways are closing -- a reaction to the treatment or progression of the disease? Act fast!", 1),
+("Airways Clear!", "The patient is breathing easy again -- crisis averted. This time.", 0);
