@@ -34,34 +34,34 @@ CREATE TABLE effects(
 );
 
 CREATE TABLE players(
-id INT(10) AUTO_INCREMENT NOT NULL,
-userName VARCHAR(255) NOT NULL,
-password TEXT,
-gender VARCHAR(50),
-age INTEGER(10),
-medicinalPreference VARCHAR(50),
-lastAvatarId INTEGER(10), -- link this as a foreign key later
-lastGameLog TEXT,
-PRIMARY KEY ( id )
+	id INT(10) AUTO_INCREMENT NOT NULL,
+	userName VARCHAR(255) NOT NULL,
+	password TEXT,
+	gender VARCHAR(50),
+	age INTEGER(10),
+	medicinalPreference VARCHAR(50),
+	lastAvatarId INTEGER(10), -- link this as a foreign key later
+	lastGameLog TEXT,
+	PRIMARY KEY ( id )
 );
 
 CREATE TABLE avatars(
-id INT(10) AUTO_INCREMENT NOT NULL,
-avatarName VARCHAR(255),
-gender VARCHAR(50) NOT NULL,
-specialistType VARCHAR (50) NOT NULL, -- link this as a foreign key later (maybe)
-baseImage VARCHAR (255),
-sadImage VARCHAR(255),
-happyImage VARCHAR(255),
-sadVoiceEmote VARCHAR(255),
-happyVoiceEmote VARCHAR (255),
-PRIMARY KEY ( id )
+	id INT(10) AUTO_INCREMENT NOT NULL,
+	avatarName VARCHAR(255),
+	gender VARCHAR(50) NOT NULL,
+	specialistType VARCHAR (50) NOT NULL, -- link this as a foreign key later (maybe)
+	baseImage VARCHAR (255),
+	sadImage VARCHAR(255),
+	happyImage VARCHAR(255),
+	sadVoiceEmote VARCHAR(255),
+	happyVoiceEmote VARCHAR (255),
+	PRIMARY KEY ( id )
 );
 
 CREATE TABLE patientConditionGraphic(
-id INT(10) AUTO_INCREMENT NOT NULL,
-minHealth INTEGER (10) NOT NULL,
-maxHealth INTEGER(10) NOT NULL,
-displayImage VARCHAR(255),
-PRIMARY KEY ( id )
+	id INT(10) AUTO_INCREMENT NOT NULL,
+	minHealth INTEGER (10) NOT NULL,
+	maxHealth INTEGER(10) NOT NULL,
+	displayImage VARCHAR(255),
+	PRIMARY KEY ( id )
 );
