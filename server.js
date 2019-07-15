@@ -34,23 +34,23 @@ if (process.env.NODE_ENV === "test") {
 }
 
 //set up for passport authentication
-app.get("/", function(req, res){
+app.get("/", function (req, res) {
   res.send("Welcome to Passport with Sequelize");
 });
 
 // Starting the server, syncing our models ------------------------------------/
-db.sequelize.sync(syncOptions).then(function() {
-  app.listen(PORT, function(err) {
-    if(!err){
-    console.log(
-      "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
-      PORT,
-      PORT
-    );
-    else console.log(err)
-  };
+db.sequelize.sync(syncOptions).then(function () {
+  app.listen(PORT, function (err) {
+    if (!err) {
+      console.log(
+        "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+        PORT,
+        PORT
+      );
+    }
+    else{console.log(err);}
+  });
 });
-
 
 
 module.exports = app;
