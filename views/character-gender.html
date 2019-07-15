@@ -12,6 +12,15 @@
     <style>
         body {
             background-color: #364958;
+            margin: 2rem;
+        }
+        
+        .row {
+            align-content: center;
+        }
+
+        a {
+            color: white;
         }
 
         #nav-bar.row {
@@ -25,8 +34,20 @@
             align-content: center;
         }
 
+        #char-container {
+            height: 600px;
+            padding: 90px;
+        }
+
         #submit {
             align-content: center;
+        }
+
+        #footer {
+            height: 80px;
+            align-content: center;
+            background-color: #D1603D;
+            padding: 10px;
         }
         
     </style>
@@ -48,7 +69,7 @@
   </ul>
 </div>
 
-<div class="row">
+<div class="row" id="char-container">
     <div class="col-md-3"></div>
     <div class="col-md-3">
         <img src="../public/images/CharacterSelect_Male.svg" class="card-img-top" alt="male character" height="300px" width="300px">
@@ -59,7 +80,7 @@
         <img src="../public/images/CharacterSelect_Fem.svg" class="card-img-top" alt="female character" height="300px" width="300px">
         <button type="button" class="btn btn-secondary btn-lg btn-block" id="submit">FEMALE</button>
     </div>
-    
+    <div class="col-md-3"></div>
 </div>
 
 <!-- <div class="card" style="width: 18rem;">
@@ -69,7 +90,10 @@
     </div>
 </div> -->
 
+<footer class="row" id="footer">
+    <p>Copyright 2019</p>
 
+</footer>
 
 </body>
 </html>
