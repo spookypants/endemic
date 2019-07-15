@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#6B9080;}
+	.st1{fill:#A4C3B2;}
+	.st2{display:none;fill:#A4C3B2;}
+	.st3{display:none;fill:#6B9080;}
+</style>
+<path class="st0" d="M207,299.88V177.12c0-18.29-14.83-33.12-33.12-33.12h-68.76C86.83,144,72,158.83,72,177.12v122.76
+	c0,0.04,0,0.08,0,0.12H207C207,299.96,207,299.92,207,299.88z"/>
+<path class="st1" d="M207,299.88V177.12c0-18.29-14.83-33.12-33.12-33.12H162v156h45C207,299.96,207,299.92,207,299.88z"/>
+<path class="st1" d="M144,144h-38.88C86.83,144,72,158.83,72,177.12v122.76c0,0.04,0,0.08,0,0.12h72V144z"/>
+<path id="HairFront" class="st2" d="M184.7,126h-9.4c-2.37,0-4.3-1.92-4.3-4.3V67.3c0-2.37,1.92-4.3,4.3-4.3h9.4
+	c2.37,0,4.3,1.92,4.3,4.3v54.4C189,124.08,187.08,126,184.7,126z"/>
+<path id="Head" class="st0" d="M170.84,63h-53.68c-5.06,0-9.16,4.1-9.16,9.16v62.68c0,5.06,4.1,9.16,9.16,9.16h53.68
+	c5.06,0,9.16-4.1,9.16-9.16V72.16C180,67.1,175.9,63,170.84,63z"/>
+<circle id="Left_Eye" class="st1" cx="139.5" cy="103.5" r="4.5"/>
+<circle id="Right_Eye" class="st1" cx="166.5" cy="103.5" r="4.5"/>
+<circle class="st3" cx="175.5" cy="189" r="13.5"/>
+<rect id="StethRight" x="171" y="144" class="st3" width="9" height="45"/>
+<rect id="StethLeft" x="117" y="144" class="st3" width="9" height="45"/>
+<rect id="StethLeftCross" x="108" y="180" class="st3" width="27" height="9"/>
+<rect id="StethLeftEar1" x="108" y="180" class="st3" width="9" height="45"/>
+<rect id="StethLeftEar2" x="126" y="180" class="st0" width="9" height="45"/>
+<path id="HairTop" class="st2" d="M181.34,81h-65.69c-4.23,0-7.66-3.43-7.66-7.66V61.66c0-4.23,3.43-7.66,7.66-7.66h65.69
+	c4.23,0,7.66,3.43,7.66,7.66v11.69C189,77.57,185.57,81,181.34,81z"/>
+<path id="HairBack" class="st2" d="M119.95,126h-14.9c-3.34,0-6.05-2.71-6.05-6.05v-50.9c0-3.34,2.71-6.05,6.05-6.05h14.9
+	c3.34,0,6.05,2.71,6.05,6.05v50.9C126,123.29,123.29,126,119.95,126z"/>
+</svg>
