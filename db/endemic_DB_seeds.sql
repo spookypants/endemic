@@ -8,43 +8,35 @@ PRIMARY KEY ( id )
 );
 
 -- Diseases Seeds
-CREATE TABLE diseases(
- id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
- diseases VARCHAR(255) NOT NULL,
- symptom1 VARCHAR(255) NOT NULL,
- symptom2 VARCHAR(255) NOT NULL,
- symptom3 VARCHAR(255) NOT NULL,
- agressiveness INTEGER  NOT NULL
-);
 
-INSERT INTO diseases(diseases, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Hepatitis B","Jaundice","Dark urine","Clay-colored bowel movements",5);
 
-INSERT INTO diseases(diseases, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Malaria","Fever","Chills","Sweats", 5);
 
-INSERT INTO diseases(diseases, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Bubonic Plague","Sudden fever","Headache","Swollen, tender and painful lymph nodes",7);
 
-INSERT INTO diseases(diseases, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Dengue Fever","Nausea/vomiting","Bleeding from the nose or gums","Aches and pains (eye pain, typically behind the eyes, muscle, joint, or bone pain)",4);
 
-INSERT INTO diseases(diseases, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Rickettsiosis","Lack of appetite","Stomach pain","Muscle pain",6);
 
-INSERT INTO diseases(diseases, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Pertusis","Coughing that can last weeks","Runny Nose","Sneezing",3);
 
-INSERT INTO diseases(diseases, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Measles","Conjunctivitis","Koplik spots","A rash made up of large, flat blotches",4);
 
-INSERT INTO diseases(diseases, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Lyme Disease","Erythema migrans (EM) rash","Neck stiffness","Heart palpitations",8);
 
-INSERT INTO diseases(diseases, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Zika","Conjunctivitis (pink eye)","Joint pain","Headache",2);
 
-INSERT INTO diseases(diseases, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Varicella","Itchy rash of blisters","Headache","Fatigue",2);
 
 
