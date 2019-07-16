@@ -1,15 +1,32 @@
 var db = require("../models");
+var authController = require("../controllers/authcontroller");
 
 module.exports = function(app) {
-  // Load index page
+  // // Load index page
+  // app.get("/", function(req, res) {
+  //   db.Example.findAll({}).then(function(dbExamples) {
+  //     res.render("index", {
+  //       msg: "Welcome! You are now using Passport with Sequelize! Go team!",
+  //       examples: dbExamples
+  //     });
+  //   });
+  // });
+
+  //Load our landing page
   app.get("/", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.render("index", {
-        msg: "Welcome! You are now using Passport with Sequelize! Go team!",
-        examples: dbExamples
-      });
-    });
+    res.render("landing");
   });
+
+  //Load our sign-up page
+  app.get("/signup", function(req, res){
+    res.render("newAccount");
+  });
+
+  // "/signin"
+
+  // "welcome-back"
+
+  // "viewaccount"
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
