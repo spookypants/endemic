@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.6/lottie.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+    <div class="container" id="anim_container">
+
+    </div>
+
+ <script src="../Doctor_Male_Standard.js">
+   var container = document.getElementById('anim_container');
+    // Set up our animation 
+    var animData = {
+        container: container,
+        renderer: 'svg',
+        autoplay: true,
+        loop: true,
+        animationData : data
+    };
+    var anim = bodymovin.loadAnimation(animData);
+</script>
+
+
+</body>
+</html>
