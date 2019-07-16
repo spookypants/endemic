@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Endemic Character Creation</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 </head>
 
 <body>
@@ -28,9 +31,11 @@
             align-content: center;
         }
 
-        h1 {
+        h2 {
             text-align: center;
             color:white;
+            font-family: 'Share Tech Mono', monospace;
+
         }
         
     </style>
@@ -51,10 +56,67 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Select Your Character</h1>
+            <h2>SELECT YOUR CHARACTER</h2>
         </div>
     </div>
-    <div class="row">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+        <a href="#">
+            <img class="icons" src="../public/images/Male_icon.svg" height="200px" width="200px">
+            <!-- <div class="centered">Male</div> -->
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a href="#">
+            <img class="icons" src="../public/images/Female_icon.svg" height="200px" width="200px">
+            <!-- <div class="centered">Female</div> -->
+        </a>
+    </div>
+  </div>
+
+  <div class="container male">
+      <div class="row">
+          <div class="col-md-4">
+                <lottie-player 
+                    src="https://assets5.lottiefiles.com/packages/lf20_gGmZKN.json" id="doc_male" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+                </lottie-player>
+          </div>
+          <div class="col-md-4">
+                <lottie-player 
+                    src="https://assets5.lottiefiles.com/packages/lf20_3ikJct.json" id="bio_male" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+                </lottie-player>
+          </div>
+          <div class="col-md-4">
+                <lottie-player 
+                    src="https://assets4.lottiefiles.com/packages/lf20_qs1nyM.json" id="sha_male" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+                </lottie-player>
+          </div>
+      </div>
+  </div>
+
+  <div class="container female">
+        <div class="row">
+            <div class="col-md-4">
+                  <lottie-player 
+                      src="https://assets1.lottiefiles.com/packages/lf20_FQaALa.json" id="doc_fem" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+                  </lottie-player>
+            </div>
+            <div class="col-md-4">
+                  <lottie-player 
+                      src="https://assets1.lottiefiles.com/packages/lf20_9wt70U.json" id="bio_fem" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+                  </lottie-player>
+            </div>
+            <div class="col-md-4">
+                  <lottie-player 
+                      src="https://assets1.lottiefiles.com/packages/lf20_VofP3Z.json" id="sha_fem" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+                  </lottie-player>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-4">
             <img src="../public/images/CharacterSelect_Male.svg" class="card-img-top" alt="male character" height="300px" width="300px">
@@ -65,7 +127,7 @@
             <img src="../public/images/CharacterSelect_Fem.svg" class="card-img-top" alt="female character" height="300px" width="300px">
             <button type="button" class="btn btn-secondary btn-lg btn-block" id="submit charFem">FEMALE</button>
         </div>
-    </div>
+    </div> -->
 </div>
 </body>
 </html>
