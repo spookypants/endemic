@@ -1,7 +1,7 @@
 $("#add-player").on("click", function (event) {
   event.preventDefault();
   console.log("Add player button clicked.");
-  console.log($("#inputFirst").val());
+  console.log($("#inputUserName").val());
   var newPlayer = {
     id: $("#id").val(),
     userName: $("#userName").val(),
