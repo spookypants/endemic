@@ -1,3 +1,82 @@
-.list-group-item {
-  line-height: 2.5;
+body {
+  background-color: #364958 !important;
+  margin: 2rem;
 }
+
+.row {
+  align-content: center;
+}
+
+a {
+  color: white;
+}
+
+#nav-bar.row {
+  align-content: center;
+  background-color: #D1603D;
+  padding: 10px;
+}
+
+.nav-links {
+  color: white;
+}
+
+.card-img-top {
+ 
+}
+
+#char-container {
+  height: 600px;
+  padding: 90px;
+}
+
+#submit {
+  align-content: center;
+}
+
+footer {
+  height: 80px;
+  text-align: center;
+  align-content: center;
+  background-color: #D1603D;
+  /* padding: 10px; */
+  padding-top: 26px;
+}
+
+h1 {
+  text-align: center;
+  color:white;
+}
+
+#avatar {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+#avatar:nth-child(even) {
+  margin-right: 40px;
+}
+
+#avatar img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+#avatar h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: grey;
+  border-bottom: 0;
+}
+

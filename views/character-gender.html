@@ -5,58 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Endemic Character Creation</title>
+    <link rel="stylesheet" href="../public/styles/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <style>
-        body {
-            background-color: #364958;
-            margin: 2rem;
-        }
-        
-        .row {
-            align-content: center;
-        }
 
-        a {
-            color: white;
-        }
-
-        #nav-bar.row {
-            align-content: center;
-            background-color: #D1603D;
-            padding: 10px;
-        }
-
-        .nav-links {
-            color: white;
-        }
-
-        .card-img-top {
-           
-        }
-
-        #char-container {
-            height: 600px;
-            padding: 90px;
-        }
-
-        #submit {
-            align-content: center;
-        }
-
-        #footer {
-            height: 80px;
-            align-content: center;
-            background-color: #D1603D;
-            padding: 10px;
-        h1 {
-            text-align: center;
-            color:white;
-        }
-        
-    </style>
+    <!-- NAV BAR -->
 
 <div class="row" id="nav-bar">
   <ul class="nav" id="nav-links">
@@ -72,44 +27,51 @@
   </ul>
 </div>
 
-<!-- <div class="row" id="char-container">
-    <div class="col-md-3"></div>
-    <div class="col-md-3">
-        <img src="../public/images/CharacterSelect_Male.svg" class="card-img-top" alt="male character" height="300px" width="300px">
-        <button type="button" class="btn btn-secondary btn-lg btn-block" id="submit">MALE</button> -->
+    <!-- PAGE TITLE -->
+
 <div class="container">
+
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" align="center">
             <h1>Select Your Character</h1>
         </div>
     </div>
+
+    <!-- GENDER SELECT -->
+
     <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-4">
-            <img src="../public/images/CharacterSelect_Male.svg" class="card-img-top" alt="male character" height="300px" width="300px">
-            <button type="button" class="btn btn-secondary btn-lg btn-block" id="submit charMale">MALE</button>
+        <div class="col-md-4" id="avatar">
+            <img src="../public/images/CharacterSelect_Male.svg" class="card-img-top" alt="male character" height="300px" width="300px" href="">
+            <h3>MALE</h3>
         </div>
         
-        <div class="col-md-4">
+        <div class="col-md-4" id="avatar">
             <img src="../public/images/CharacterSelect_Fem.svg" class="card-img-top" alt="female character" height="300px" width="300px">
-            <button type="button" class="btn btn-secondary btn-lg btn-block" id="submit charFem">FEMALE</button>
+            <h3>FEMALE</h3>
         </div>
+        <div class="col-md-2"></div>
     </div>
-    <!-- <div class="col-md-3"></div> -->
+    
+    <br>
+
+    <div class="row">
+        <div class="col-md-1.5"></div>
+        <div class="col-md-3">
+            <card height="300px" width="300px"></card>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-1.5"></div>
+    </div>
+    
 </div>
 
-<!-- <div class="card" style="width: 18rem;">
-    <img src="https://cdn.onebauer.media/one/empire-images/features/560ec14650e6c513721c3993/lara-croft-tomb-raider.jpg?quality=50&width=1800&ratio=16-9&resizeStyle=aspectfill&format=jpg" class="card-img-top" alt="female character" height="200px" width="200px">
-    <div class="card-body">
-        <button type="button" class="btn btn-primary">FEMALE</button>
-    </div>
-</div> -->
+    <!-- FOOTER -->
 
-<footer class="row" id="footer">
-    <p>Copyright 2019</p>
-
+<footer>
+    Copyright 2019 &copy;
 </footer>
 
-</div>
 </body>
 </html>
