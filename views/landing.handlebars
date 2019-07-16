@@ -1,0 +1,35 @@
+<main>
+  <div class="container center-align">
+    <span id="character-id" data-id="{{user.id}}"></span>
+    <div class="row">
+      <br />
+      <h1 id="landing-title" class="col s12 page-title">ENDEMIC</h1>
+    </div>
+
+    <div class="rounded-content-box z-depth-5">
+
+      <div class="row">
+        <h5 id="landing-subheader" class="col s12">Do you have what it takes to cure a patient with a contagious disease?</h5>
+        <div class="col s12">
+          <p>
+            Several contagious and aggressive diseases have broken out simultaneously all over the world! As a player, you are a disease-fighting specialists whose mission is to treat patients with virulent diseases by administering treatments before the disease gets out of hand.
+          </p>
+          <p>Plan your treatment strategy to mesh with your specialists' strengths in order to conquer the disease. If the disease spreads beyond recovery, the player will lose. If you cure the disease, you win!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        {{#if isloggedin}}
+        <a href="/welcome-back"><button id="post-item" class="landing-btn col s12 m4 btn btn-large">Welcome Back {{userInfo.userName}}</button></a>
+        <a href="/viewAccount"><button class="landing-btn col s12 m4  btn btn-large">View Account</button></a>
+        <a href="/logout"><button type="btn" class="landing-btn col s12 m4 btn btn-large">Save + Logout</button></a>
+        {{else}}
+        <button class="col s12 m6 btn btn-large modal-trigger" href="#account-info">SIGN-IN</button>
+        <button id="sign-up" class="col s12 m6 btn btn-large">SIGN-UP</button>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="/js/landing.js"></script>

@@ -24,14 +24,17 @@
         }
 
         #nav-bar.row {
-            height: 80px;
             align-content: center;
             background-color: #D1603D;
             padding: 10px;
         }
 
-        #nav-links {
-            align-content: center;
+        .nav-links {
+            color: white;
+        }
+
+        .card-img-top {
+           
         }
 
         #char-container {
@@ -48,6 +51,9 @@
             align-content: center;
             background-color: #D1603D;
             padding: 10px;
+        h1 {
+            text-align: center;
+            color:white;
         }
         
     </style>
@@ -55,32 +61,41 @@
 <div class="row" id="nav-bar">
   <ul class="nav" id="nav-links">
     <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
+        <a href="#" class="nav-link">ENDEMIC</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Login</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
     </li>
-    <!-- <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-    </li> -->
-    <!-- <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </li> -->
   </ul>
 </div>
 
-<div class="row" id="char-container">
+<!-- <div class="row" id="char-container">
     <div class="col-md-3"></div>
     <div class="col-md-3">
         <img src="../public/images/CharacterSelect_Male.svg" class="card-img-top" alt="male character" height="300px" width="300px">
-        <button type="button" class="btn btn-secondary btn-lg btn-block" id="submit">MALE</button>
+        <button type="button" class="btn btn-secondary btn-lg btn-block" id="submit">MALE</button> -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Select Your Character</h1>
+        </div>
     </div>
-    
-    <div class="col-md-3">
-        <img src="../public/images/CharacterSelect_Fem.svg" class="card-img-top" alt="female character" height="300px" width="300px">
-        <button type="button" class="btn btn-secondary btn-lg btn-block" id="submit">FEMALE</button>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <img src="../public/images/CharacterSelect_Male.svg" class="card-img-top" alt="male character" height="300px" width="300px">
+            <button type="button" class="btn btn-secondary btn-lg btn-block" id="submit charMale">MALE</button>
+        </div>
+        
+        <div class="col-md-4">
+            <img src="../public/images/CharacterSelect_Fem.svg" class="card-img-top" alt="female character" height="300px" width="300px">
+            <button type="button" class="btn btn-secondary btn-lg btn-block" id="submit charFem">FEMALE</button>
+        </div>
     </div>
-    <div class="col-md-3"></div>
+    <!-- <div class="col-md-3"></div> -->
 </div>
 
 <!-- <div class="card" style="width: 18rem;">
@@ -95,5 +110,6 @@
 
 </footer>
 
+</div>
 </body>
 </html>
