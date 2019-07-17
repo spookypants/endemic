@@ -1,6 +1,6 @@
 //global variables
 var genderSelected;
-
+var specialistSelected;
 
 
 //disable the specialist selection divs until the gender is selected
@@ -59,22 +59,20 @@ $("#femaleIcon").click(function(){
 
 function enableMaleChars(){
   $("#male-chars").css("opacity", "0.5");
-
-  $("#male-doctor").on("click", function(){
-    console.log("male-doctor clicked");
-  });
-  $(".male-char").on("hover", function(){
-    $(this).css("opacity", "1");
+  $(".male-char").on("click", function(){
+    specialistSelected = $(this).data("specialist");
+    console.log(specialistSelected);
   });
 }
 
 function enableFemaleChars(){
   $("#female-chars").css("opacity", "0.5");
-
-  $("#male-doctor").on("click", function(){
-    console.log("female-doctor clicked");
-  });
-  $(".female-char").on("hover", function(){
-    $(this).css("opacity", "1");
+  $(".female-char").on("click", function(){
+    specialistSelected = $(this).data("specialist");
+    console.log(specialistSelected);
   });
 }
+
+$("#startGameButt").click(function(){
+  console.log("I've been clicked");
+});
