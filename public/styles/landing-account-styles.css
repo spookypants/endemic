@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
     font-family: font(regular);
-    background: url("Fotolia_1024x682.jpg") no-repeat;
+    background: url("public/images/background-art.png") no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
