@@ -39,19 +39,18 @@ CREATE TABLE effects(
 	PRIMARY KEY ( id )
 );
 
-CREATE TABLE players(
-	id INT(10) AUTO_INCREMENT NOT NULL,
-	userName VARCHAR(255) NOT NULL,
-	password TEXT,
-	gender VARCHAR(50),
-	age INTEGER(10),
-	medicinalPreference VARCHAR(50),
-	lastAvatarId INTEGER(10), -- link this as a foreign key later
-	lastGameLog TEXT,
-  createdAt DATETIME,
-  updatedAt DATETIME,
-	PRIMARY KEY ( id )
-);
+--this is now being created by our - players.js file in models
+-- CREATE TABLE players(
+-- id INT(10) AUTO_INCREMENT NOT NULL,
+-- userName VARCHAR(255) NOT NULL,
+-- password TEXT,
+-- gender VARCHAR(50),
+-- age INTEGER(10),
+-- medicinalPreference VARCHAR(50),
+-- lastAvatarId INTEGER(10), -- link this as a foreign key later
+-- lastGameLog TEXT,
+-- PRIMARY KEY ( id )
+-- );
 
 --this is now being created by our model - players.js
 -- CREATE TABLE players(
