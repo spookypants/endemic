@@ -2,43 +2,56 @@
 var bcrypt = require("bcryptjs");
 
 //creating our player model
-module.exports = function (sequelize, Sequelize) {
-  var Player = sequelize.define("Players", {
+module.exports = function (sequelize, DataTypes) {
+  var Players = sequelize.define("Players", {
     id: {
       autoIncrement: true,
       primaryKey: true,
-      type: Sequelize.INTEGER
+      type: DataTypes.INTEGER,
+      allowNull: false
     },
     userName: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     password: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     gender: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: true
     },
     age: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: true
     },
     medicinalPreference: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     lastAvatarId: {
-      type: Sequelize.INTEGER
+      type: DataTypes.INTEGER
     },
     lastLogin: {
-      type: Sequelize.DATE
+      type: DataTypes.DATE
     },
     //would we want last login?
     lastGameLog: {
-      type: Sequelize.TEXT
+      type: DataTypes.TEXT
     }
   });
-  return Player;
+
+  //do we want to associate the Player with the avatar table here??
+  // Players.associate = function(models){
+ 
+
+  Players.prototype.validPassword = function(password){
+    return bcrypt.compareSync(password, this.password);
+  };
+
+  Players.addHook("beforeCreate", function(user){
+    user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
+  });
+  return Players;
 };
