@@ -40,6 +40,7 @@ module.exports = function (sequelize, DataTypes) {
     lastGameLog: {
       type: DataTypes.TEXT
     }
+
   });
 
   //do we want to associate the Player with the avatar table here??

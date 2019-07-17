@@ -52,19 +52,6 @@ CREATE TABLE effects(
 -- PRIMARY KEY ( id )
 -- );
 
---this is now being created by our model - players.js
--- CREATE TABLE players(
--- id INT(10) AUTO_INCREMENT NOT NULL,
--- userName VARCHAR(255) NOT NULL,
--- password TEXT,
--- gender VARCHAR(50),
--- age INTEGER(10),
--- medicinalPreference VARCHAR(50),
--- lastAvatarId INTEGER(10), -- link this as a foreign key later
--- lastGameLog TEXT,
--- PRIMARY KEY ( id )
--- );
-
 CREATE TABLE avatars(
 	id INT(10) AUTO_INCREMENT NOT NULL,
 	avatarName VARCHAR(255),
