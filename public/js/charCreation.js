@@ -24,7 +24,7 @@ disableFemaleChars();
 $("#maleIcon").hover(function(){
   $(this).css("opacity", "1");
 },function(){
-  if(genderSelected != "male"){
+  if(genderSelected !== "male"){
     $(this).css("opacity", "0.5");
   }
 });
@@ -42,7 +42,7 @@ $("#maleIcon").click(function(){
 $("#femaleIcon").hover(function(){
   $(this).css("opacity", "1");
 },function(){
-  if(genderSelected != "female"){
+  if(genderSelected !== "female"){
     $(this).css("opacity", "0.5");
   }
 });
