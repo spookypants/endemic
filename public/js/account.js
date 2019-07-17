@@ -4,11 +4,11 @@ $("#add-player").on("click", function (event) {
   console.log($("#inputUserName").val());
   var newPlayer = {
     id: $("#id").val(),
-    userName: $("#userName").val(),
-    password: $("#password").val(),
-    // gender: $("#inputEmail").val(),
-    // age: $("#age").val(),
-    medicinalPreference: $("#medicinalPreference").val(),
+    userName: $("#inputUserName").val(),
+    password: $("#inputPassword").val(),
+    gender: $("#inputGender").val(),
+    age: $("#inputAge").val(),
+    medicinalPreference: $("#inputMedicinalPreference").val(),
     lastAvatarId: $("#lastAvatarId").val(),
     lastGameLog: $("#lastGameLog").val(),
   };

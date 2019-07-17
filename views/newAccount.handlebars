@@ -1,5 +1,4 @@
 <br /><br />
-<main>
   <div class="center-align container rounded-content-box z-depth-5">
     <header>
       <h1 class="page-title">New Account</h1>
@@ -11,27 +10,27 @@
     <form id="create-form">
       <div class="row">
         <div class="input-field col s12 m6">
-          <label for="userName">User Name</label>
+          <label for="userName">User Name*</label>
           <input type="text" id="userName">
         </div>
 
         <div class="input-field col s12 m6">
-          <label for="inputPassword">Password</label>
+          <label for="inputPassword">Password*</label>
           <input type="password" id="inputPassword">
         </div>
       </div>
 
       <div class="row">
-        {{!-- <div class="input-field col s12 m4">
-          <label for="gender">Gender</label>
+        <div class="input-field col s12 m4">
+          <label for="gender">Gender (optional)</label>
           <input type="radio" name="optradio" id="gender">
         </div>
         <div class="input-field col s12 m4">
-          <label for="age">Age</label>
+          <label for="age">Age (optional)</label>
           <input type="number" id="age">
-        </div> --}}
+        </div>
         <div class="input-field col s12 m4">
-          <label for="medicinalPreference">Medicinal Preference</label>
+          <label for="medicinalPreference">Medicinal Preference*</label>
           <input type="radio" name="optradio" id="medicinalPreference">
         </div>      
       </div>
@@ -44,6 +43,5 @@
       </div>
     </form>
   </div>
-</main>
 
 <script src="../public/js/account.js"></script>
