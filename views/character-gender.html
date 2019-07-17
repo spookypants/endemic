@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+    <!-- jquery reference -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -37,84 +38,121 @@
             font-family: 'Share Tech Mono', monospace;
 
         }
-        
+
+        #femaleIcon, #maleIcon {
+            opacity: 0.5;
+        }
+
+        .gender-name {
+            position: relative;
+            bottom: 90px;
+            left: 50px;
+            color: #364958;
+            font-weight: 900;
+            background: transparent;
+        }
+
+        hr {
+            background-color: #D1603D;
+            height: 3px;
+        }
     </style>
 
 <div class="row" id="nav-bar">
   <ul class="nav" id="nav-links">
     <li class="nav-item">
-        <a href="#" class="nav-link">ENDEMIC</a>
+         <div  class="nav-link">ENDEMIC</div>
     </li>
     <li class="nav-item">
-        <a class="nav-link active" href="#">Login</a>
+         <div class="nav-link active" >Login</div>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+         <div class="nav-link" >Link</div>
     </li>
   </ul>
 </div>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>SELECT YOUR CHARACTER</h2>
+            <h2>CREATE YOUR SPECIALIST</h2>
         </div>
     </div>
-  <div class="row">
+  <div id="gender-row" class="row">
     <div class="col-md-3"></div>
     <div class="col-md-3">
-        <a href="#">
-            <img class="icons" src="../public/images/Male_icon.svg" height="200px" width="200px">
-            <!-- <div class="centered">Male</div> -->
-        </a>
+         <div id="maleIcon"  data-gender="male">
+            <img class="icons hoverEff" src="../public/images/Male_icon.svg" height="150px" width="150px">
+            <div class="gender-name">Male</div>
+        </div>
     </div>
     <div class="col-md-3">
-        <a href="#">
-            <img class="icons" src="../public/images/Female_icon.svg" height="200px" width="200px">
-            <!-- <div class="centered">Female</div> -->
-        </a>
+         <div id="femaleIcon"  data-gender="female">
+            <img class="icons hoverEff" src="../public/images/Female_icon.svg" height="150px" width="150px">
+            <div class="gender-name">Female</div>
+        </div>
     </div>
   </div>
-
+<hr>
+  <div class="container">
+      <div class="row" style="color:white; font-weight: 900; position: relative; text-align:center; right: 40px">
+        <div class="col-md-4"><span>DOCTOR</span></div>
+        <div class="col-md-4"><span>BIOCHEMIST</span></div>
+        <div class="col-md-4"><span>SHAMAN</span></div>
+      </div>
+  </div>
+  <hr>
   <div class="container male">
-      <div class="row">
+      <div id="male-chars" class="row">
           <div class="col-md-4">
+              <div id="male-doctor" class="male-char">
                 <lottie-player 
-                    src="https://assets5.lottiefiles.com/packages/lf20_gGmZKN.json" id="doc_male" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+                    src="https://assets5.lottiefiles.com/packages/lf20_gGmZKN.json" id="doc_male" background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop autoplay >
                 </lottie-player>
+              </div>
           </div>
           <div class="col-md-4">
+              <div id="male-bioChemist" class="male-char">
                 <lottie-player 
-                    src="https://assets5.lottiefiles.com/packages/lf20_3ikJct.json" id="bio_male" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+                    src="https://assets5.lottiefiles.com/packages/lf20_3ikJct.json" id="bio_male" background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop autoplay >
                 </lottie-player>
+              </div>
           </div>
           <div class="col-md-4">
+              <div id="male-shaman" class="male-char">
                 <lottie-player 
-                    src="https://assets4.lottiefiles.com/packages/lf20_qs1nyM.json" id="sha_male" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+                    src="https://assets4.lottiefiles.com/packages/lf20_qs1nyM.json" id="sha_male" background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop autoplay >
                 </lottie-player>
+              </div>
           </div>
       </div>
   </div>
-
+<hr>
   <div class="container female">
-        <div class="row">
+        <div id="female-chars" class="row">
             <div class="col-md-4">
+                <div id="female-doctor" class="female-char">
                   <lottie-player 
-                      src="https://assets1.lottiefiles.com/packages/lf20_FQaALa.json" id="doc_fem" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+                      src="https://assets1.lottiefiles.com/packages/lf20_FQaALa.json" id="doc_fem" background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop autoplay >
                   </lottie-player>
+                </div>
             </div>
             <div class="col-md-4">
+                <div id="female-bioChemist" class="female-char">
                   <lottie-player 
-                      src="https://assets1.lottiefiles.com/packages/lf20_9wt70U.json" id="bio_fem" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+                      src="https://assets1.lottiefiles.com/packages/lf20_9wt70U.json" id="bio_fem" background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop autoplay >
                   </lottie-player>
+                </div>
             </div>
             <div class="col-md-4">
+                <div id="male-shaman" class="female-char">
                   <lottie-player 
-                      src="https://assets1.lottiefiles.com/packages/lf20_VofP3Z.json" id="sha_fem" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+                      src="https://assets1.lottiefiles.com/packages/lf20_VofP3Z.json" id="sha_fem" background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop autoplay >
                   </lottie-player>
+                </div>
             </div>
         </div>
     </div>
-
+<hr>
 
     <!-- <div class="row">
         <div class="col-md-2"></div>
@@ -129,5 +167,7 @@
         </div>
     </div> -->
 </div>
+<!-- link to charCreation.js -->
+<script src="../public/js/charCreation.js"></script>
 </body>
 </html>
