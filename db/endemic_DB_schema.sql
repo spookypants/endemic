@@ -8,11 +8,11 @@ CREATE TABLE diseases(
 	id Int( 10 ) AUTO_INCREMENT NOT NULL,
 	diseaseName VARCHAR(255) NOT NULL,
 	symptom1 VARCHAR(255) NOT NULL,
-    symptom2 VARCHAR(255) NOT NULL,
-    symptom3 VARCHAR(255) NOT NULL,
-    agressiveness INTEGER (10) NOT NULL,
-    createdAt DATETIME,
-    updatedAt DATETIME,
+  symptom2 VARCHAR(255) NOT NULL,
+  symptom3 VARCHAR(255) NOT NULL,
+  agressiveness INTEGER (10) NOT NULL,
+  createdAt DATETIME,
+  updatedAt DATETIME,
 	PRIMARY KEY ( id )
 );
 
@@ -20,12 +20,12 @@ CREATE TABLE diseases(
 CREATE TABLE treatments(
 	id INT( 10 ) AUTO_INCREMENT NOT NULL,
 	treatmentName VARCHAR(255) NOT NULL,
-    treatmentCategory VARCHAR(255) NOT NULL,
+  treatmentCategory VARCHAR(255) NOT NULL,
 	doctorEffect INTEGER (10) NOT NULL,
-    shamanEffect INTEGER (10) NOT NULL,
-    biochemistEffect INTEGER (10) NOT NULL,
+  shamanEffect INTEGER (10) NOT NULL,
+  biochemistEffect INTEGER (10) NOT NULL,
 	createdAt DATETIME,
-    updatedAt DATETIME,
+  updatedAt DATETIME,
 	PRIMARY KEY ( id )
 );
 
@@ -33,9 +33,9 @@ CREATE TABLE effects(
 	id Int( 10 ) AUTO_INCREMENT NOT NULL,
 	effectName VARCHAR(255) NOT NULL,
 	effectDescription TEXT,
-    positiveEffect BOOLEAN NOT NULL,
+  positiveEffect BOOLEAN NOT NULL,
 	createdAt DATETIME,
-    updatedAt DATETIME,
+  updatedAt DATETIME,
 	PRIMARY KEY ( id )
 );
 
@@ -48,10 +48,23 @@ CREATE TABLE players(
 	medicinalPreference VARCHAR(50),
 	lastAvatarId INTEGER(10), -- link this as a foreign key later
 	lastGameLog TEXT,
-    createdAt DATETIME,
-    updatedAt DATETIME,
+  createdAt DATETIME,
+  updatedAt DATETIME,
 	PRIMARY KEY ( id )
 );
+
+--this is now being created by our model - players.js
+-- CREATE TABLE players(
+-- id INT(10) AUTO_INCREMENT NOT NULL,
+-- userName VARCHAR(255) NOT NULL,
+-- password TEXT,
+-- gender VARCHAR(50),
+-- age INTEGER(10),
+-- medicinalPreference VARCHAR(50),
+-- lastAvatarId INTEGER(10), -- link this as a foreign key later
+-- lastGameLog TEXT,
+-- PRIMARY KEY ( id )
+-- );
 
 CREATE TABLE avatars(
 	id INT(10) AUTO_INCREMENT NOT NULL,
@@ -63,8 +76,8 @@ CREATE TABLE avatars(
 	happyImage VARCHAR(255),
 	sadVoiceEmote VARCHAR(255),
 	happyVoiceEmote VARCHAR (255),
-    createdAt DATETIME,
-    updatedAt DATETIME,
+  reatedAt DATETIME,
+  updatedAt DATETIME,
 	PRIMARY KEY ( id )
 );
 
@@ -75,6 +88,6 @@ CREATE TABLE patientConditionGraphic(
 	maxHealth INTEGER(10) NOT NULL,
 	displayImage VARCHAR(255),
 	createdAt DATETIME,
-    updatedAt DATETIME,
+  updatedAt DATETIME,
 	PRIMARY KEY ( id )
 );
