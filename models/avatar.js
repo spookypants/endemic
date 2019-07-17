@@ -1,6 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
   var Avatar = sequelize.define("Avatar", {
-    id: DataTypes.INTEGER,
+    id: {
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
     avatarName: DataTypes.STRING,
     gender: DataTypes.STRING,
     speciatistType: DataTypes.STRING,
