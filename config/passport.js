@@ -1,6 +1,5 @@
 var passport = require("passport");
 var LocalStrategy = require("passport-local").Strategy;
-
 var db = require("../models");
 
 passport.use(new LocalStrategy(
@@ -21,7 +20,7 @@ passport.use(new LocalStrategy(
       //if the password is incorrect for the user
       else if (!dbPlayers.validPassword(password)) {
         return done(null, false, {
-          message: "Incorrect password"
+          message: "Incorrect password."
         });
       }
       //if none of the above, return the user

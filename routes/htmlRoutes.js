@@ -22,24 +22,32 @@ module.exports = function(app) {
     res.render("newAccount");
   });
 
-  // "/signin"
+  // "viewaccount" signin
   app.get("/viewAccount", isAuthenticated, function(req, res){
     res.render("viewAccount");
   });
+  // app.get("/viewAccount", isAuthenticated, function(req, res){
+  //   res.send("viewAccount");
+  // });
  
-
   // "welcome-back"
   //if a user is not logged in and tries to access this page they will be redirected to the signin page
   app.get("/welcome-back", function(req, res){
     res.redirect("/");
   });
+
   app.get("/welcome-back", isAuthenticated, function(req, res){
     db.Players.findOne({ where: { userName: res.body.userName}});
     res.render("/welcomeBack");
   });
 
-  // "viewaccount"
-
+  //logout
+   
+  app.get("/logout", function(req, res){
+    req.logout();
+    res.redirect("/");
+  });
+  
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
