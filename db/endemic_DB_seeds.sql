@@ -1,6 +1,17 @@
 
--- Diseases Seeds
+USE endemic_db;
 
+-- Avatars seeds
+INSERT INTO avatars (avatarName, gender, specialistType)
+VALUES 
+("Jack", "male", "doctor"),
+("Thunderbolt", "male", "shaman"),
+("Hermann", "male", "bioChemist"),
+("Susan", "female", "doctor"),
+("Eagle Talon", "female", "shaman"),
+("Ashanti", "female", "bioChemist");
+
+-- Diseases Seeds
 INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Hepatitis B","Jaundice","Dark urine","Clay-colored bowel movements",5);
 
