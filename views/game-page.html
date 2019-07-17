@@ -90,35 +90,47 @@
   </ul>
 </div>
 
-
-    <div align="center">
-    <h1>ENDEMIC | GAME PAGE</h1>
-    </div>
-    
-    <hr>
-
 <!-- THREE PANELS -->
 <div class="container">
     <div class="row">
 
     <!-- LEFT PANEL = REMEDIES -->
     <div class="col-md-4">
-        <h2>TREATMENT OPTIONS</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, at voluptas perferendis reprehenderit dicta hic culpa sequi, earum modi voluptatem voluptates ex cupiditate totam commodi quas repudiandae? Ratione, illum. Impedit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quasi quidem laboriosam recusandae animi ad ipsa ullam, omnis saepe tempore sed, pariatur a facere rerum earum, sunt architecto atque eligendi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis animi architecto amet officia pariatur est earum adipisci ad alias, accusantium unde quae libero, numquam quos corporis distinctio voluptatibus. Vero.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi asperiores voluptates repellat fugit suscipit enim? Repellat laboriosam itaque eveniet. Voluptate placeat maxime aliquam dolorum fugit recusandae iste quibusdam dolor nesciunt!</p>
+        <!-- LEFT PANEL PLAYER AVATAR -->
+        <div id="playerAvatar" class="female-char character">
+            <lottie-player 
+                src="https://assets1.lottiefiles.com/packages/lf20_FQaALa.json" id="doc_fem" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop autoplay >
+            </lottie-player>
+        </div>
+        <hr>
+        <div id="patientSymptoms">
+            <h2>PATIENT SYMPTOMS</h2>
+            <p>Difficulty Breathing</p>
+            <p>Heart Palpitations</p>
+            <p>Brain Swelling</p>
+        </div>
+        <hr>
+        <div id="treatmentOptions">
+            <h2>TREATMENT OPTIONS</h2>
+            <p>Give Tylenol</p>
+            <p>Administer Fluids</p>
+            <p>Punch Patient In Face</p>
+        </div>
+        <hr>
+
     </div>
 
     <!-- CENTER PANEL = PATIENT -->
     <div class="col-md-4" id="patient-panel" style="border-right: solid 3px #D1603D; border-left: solid 3px #D1603D;">
         <h2>PATIENT</h2>
         <lottie-player
-        src="https://assets4.lottiefiles.com/packages/lf20_6LvRSb.json"  background="transparent"  speed="1"  style="width: 100%; height: 400px;"  loop autoplay >
+        src="https://assets4.lottiefiles.com/packages/lf20_6LvRSb.json"  background="transparent"  speed="1"  style="width: 100%; height: 65%;"  loop autoplay >
         </lottie-player>
         <hr>
-        <h2>Life Force</h2>
-        <h1>50</h1>
+        <div id="patientHealth">
+            <h2>Life Force</h2>
+            <h1>50</h1>
+        </div>
     </div>
   
     <!-- RIGHT PANEL = PLAYER'S LOG -->
