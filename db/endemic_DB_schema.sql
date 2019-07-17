@@ -39,7 +39,6 @@ CREATE TABLE effects(
 	PRIMARY KEY ( id )
 );
 
-<<<<<<< HEAD
 --this is now being created by our - players.js file in models
 -- CREATE TABLE players(
 -- id INT(10) AUTO_INCREMENT NOT NULL,
@@ -52,21 +51,6 @@ CREATE TABLE effects(
 -- lastGameLog TEXT,
 -- PRIMARY KEY ( id )
 -- );
-=======
-CREATE TABLE players(
-	id INT(10) AUTO_INCREMENT NOT NULL,
-	userName VARCHAR(255) NOT NULL,
-	password TEXT,
-	gender VARCHAR(50),
-	age INTEGER(10),
-	medicinalPreference VARCHAR(50),
-	lastAvatarId INTEGER(10), -- link this as a foreign key later
-	lastGameLog TEXT,
-  createdAt DATETIME,
-  updatedAt DATETIME,
-	PRIMARY KEY ( id )
-);
->>>>>>> e49dd9bea042ebc87a766f5ec24a744d64099df6
 
 --this is now being created by our model - players.js
 -- CREATE TABLE players(
@@ -97,14 +81,6 @@ CREATE TABLE avatars(
 );
 
 CREATE TABLE patientConditionGraphic(
-<<<<<<< HEAD
-id INT(10) AUTO_INCREMENT NOT NULL,
-conditionName VARCHAR (50),
-minHealth INTEGER (10) NOT NULL,
-maxHealth INTEGER(10) NOT NULL,
-displayImage VARCHAR(255),
-PRIMARY KEY ( id )
-=======
 	id INT(10) AUTO_INCREMENT NOT NULL,
 	conditionName VARCHAR (50),
 	minHealth INTEGER (10) NOT NULL,
@@ -113,5 +89,4 @@ PRIMARY KEY ( id )
 	createdAt DATETIME,
   updatedAt DATETIME,
 	PRIMARY KEY ( id )
->>>>>>> e49dd9bea042ebc87a766f5ec24a744d64099df6
 );
