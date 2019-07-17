@@ -1,3 +1,47 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+/* Style sheet for character creation page */
+body {
+  background-color: #364958;
+}
+
+#nav-bar.row {
+  align-content: center;
+  background-color: #D1603D;
+  padding: 10px;
+}
+
+.nav-links {
+  color: white;
+}
+
+#submit {
+  align-content: center;
+}
+
+h2 {
+  text-align: center;
+  color:white;
+  font-family: 'Share Tech Mono', monospace;
+
+}
+
+#femaleIcon, #maleIcon {
+  opacity: 0.5;
+}
+
+.gender-name {
+  position: relative;
+  bottom: 90px;
+  left: 50px;
+  color: #364958;
+  font-weight: 900;
+  background: transparent;
+}
+
+hr {
+  background-color: #D1603D;
+  height: 3px;
+}
