@@ -1,6 +1,8 @@
 var db = require("../models");
 var authController = require("../controllers/authcontroller");
 
+var isAuthenticated = require("../config/middleware/isAuthenticated");
+
 module.exports = function(app) {
   // // Load index page
   // app.get("/", function(req, res) {
@@ -23,8 +25,16 @@ module.exports = function(app) {
   });
 
   // "/signin"
+  app.get("/viewAccount", function(req, res){
+    res.render("viewAccount");
+  });
+ 
 
   // "welcome-back"
+  //if a user is not logged in and trieds to access this page they will be redirected to the signin page
+  app.get("/welcome-back", isAuthenticated, function(req, res){
+    res.redirect("/viewAccount");
+  });
 
   // "viewaccount"
 
