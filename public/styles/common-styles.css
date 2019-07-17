@@ -1,0 +1,14 @@
+
+/* COMMON CSS STYLES */
+a {
+  color: white;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: #A4C3B2;
+}
+
+a:visited {
+  color: #587291;
+}
