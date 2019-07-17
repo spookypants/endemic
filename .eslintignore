@@ -2,3 +2,4 @@ models/index.js
 node_modules
 public/images
 public/images/animated
+lottie.js
