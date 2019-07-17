@@ -1,0 +1,57 @@
+body {
+    background-color: #364958;
+}
+
+#nav-bar.row {
+    align-content: center;
+    background-color: #D1603D;
+    padding: 10px;
+}
+
+.nav-links {
+    color: white;
+}
+
+#submit {
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    padding-top: 18px;
+}
+
+h2 {
+    text-align: center;
+    color:white;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+p {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    background-color: #A4C3B2;
+}
+
+#stats {
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+#sym {
+    color: white;
+    background-color: #364958;
+    font-family: 'Lato', sans-serif;
+}
+
+#log {
+    overflow: scroll;
+    height: 100vh;
+}
+
+hr {
+    background-color: #D1603D;
+    height: 3px;
+}

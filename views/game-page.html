@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endemic | Game Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- jquery reference -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #364958;
+        }
+
+        #nav-bar.row {
+            align-content: center;
+            background-color: #D1603D;
+            padding: 10px;
+        }
+
+        .nav-links {
+            color: white;
+        }
+
+        #submit {
+            align-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-family: 'Share Tech Mono', monospace;
+            padding-top: 18px;
+        }
+
+        h2 {
+            text-align: center;
+            color:white;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        p {
+            color: black;
+            font-family: 'Lato', sans-serif;
+            background-color: #A4C3B2;
+        }
+
+        #stats {
+            color: white;
+            font-family: 'Lato', sans-serif;
+        }
+
+        #sym {
+            color: white;
+            background-color: #364958;
+            font-family: 'Lato', sans-serif;
+        }
+
+        #log {
+            overflow: scroll;
+            height: 100vh;
+        }
+
+        hr {
+            background-color: #D1603D;
+            height: 3px;
+        }
+    </style>
+
+<!-- NAV BAR -->
+
+<div class="row" id="nav-bar">
+  <ul class="nav" id="nav-links">
+    <li class="nav-item">
+         <div  class="nav-link">ENDEMIC</div>
+    </li>
+    <li class="nav-item">
+         <div class="nav-link active" >Login</div>
+    </li>
+    <li class="nav-item">
+         <div class="nav-link" >Link</div>
+    </li>
+  </ul>
+</div>
+
+
+    <div align="center">
+    <h1>ENDEMIC | GAME PAGE</h1>
+    </div>
+    
+    <hr>
+
+<!-- THREE PANELS -->
+<div class="container">
+    <div class="row">
+
+    <!-- LEFT PANEL = REMEDIES -->
+    <div class="col-md-4">
+        <h2>TREATMENT OPTIONS</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, at voluptas perferendis reprehenderit dicta hic culpa sequi, earum modi voluptatem voluptates ex cupiditate totam commodi quas repudiandae? Ratione, illum. Impedit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quasi quidem laboriosam recusandae animi ad ipsa ullam, omnis saepe tempore sed, pariatur a facere rerum earum, sunt architecto atque eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis animi architecto amet officia pariatur est earum adipisci ad alias, accusantium unde quae libero, numquam quos corporis distinctio voluptatibus. Vero.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi asperiores voluptates repellat fugit suscipit enim? Repellat laboriosam itaque eveniet. Voluptate placeat maxime aliquam dolorum fugit recusandae iste quibusdam dolor nesciunt!</p>
+    </div>
+
+    <!-- CENTER PANEL = PATIENT -->
+    <div class="col-md-4" id="patient-panel" style="border-right: solid 3px #D1603D; border-left: solid 3px #D1603D;">
+        <h2>PATIENT</h2>
+        <lottie-player
+        src="https://assets4.lottiefiles.com/packages/lf20_6LvRSb.json"  background="transparent"  speed="1"  style="width: 100%; height: 400px;"  loop autoplay >
+        </lottie-player>
+        <hr>
+        <h2>Life Force</h2>
+        <h1>50</h1>
+    </div>
+  
+    <!-- RIGHT PANEL = PLAYER'S LOG -->
+    <div class="col-md-4" id="log">
+        <h2>LOG BOOK</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus eveniet facere iusto unde necessitatibus ipsam deleniti sint, itaque animi quisquam at molestiae, quis, asperiores repellat dignissimos excepturi ut magnam ab!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at delectus est in perspiciatis iste soluta facilis, id consequuntur qui praesentium sint quaerat cupiditate dolorum harum consectetur expedita, illum aut!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, aliquam saepe. Maiores alias mollitia corrupti enim vero modi, suscipit non, reiciendis, laborum maxime exercitationem. Assumenda commodi quos aliquid! Dolor, mollitia.</p>
+    </div>
+
+</div>
+</div>
+<!-- link to charCreation.js -->
+<script src="../public/js/charCreation.js"></script>
+</body>
+</html>
