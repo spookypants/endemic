@@ -3,9 +3,9 @@ A repository for starting project 2
 - [X] Copy this template
 
 ### Once you have copied this template do the following
-- [ ] Invite all collaborators
-- [ ] Create a slack channel and invite all the team members and the instructional staff
-- [ ] Protect the master branch
+- [X] Invite all collaborators
+- [X] Create a slack channel and invite all the team members and the instructional staff
+- [X] Protect the master branch
 - [ ] Set up a pipeline with heroku with a staging environment and a production environment
 - [ ] Setup the staging app to deploy the master branch automatically
 - [ ] Modify this README to include 
@@ -15,15 +15,15 @@ A repository for starting project 2
   
 #### Requirements for the project
   
-- [ ] Must use a Node and Express Web Server
+- [X] Must use a Node and Express Web Server
 
-- [ ] Must be backed by a MySQL Database with a Sequelize ORM  
+- [X] Must be backed by a MySQL Database with a Sequelize ORM  
 
-- [ ] Must have both GET and POST routes for retrieving and adding new data
+- [X] Must have both GET and POST routes for retrieving and adding new data
 
 - [ ] Must be deployed using Heroku (with Data)
 
-- [ ] Must utilize at least one new library, package, or technology that we haven’t discussed
+- [X] Must utilize at least one new library, package, or technology that we haven’t discussed
 
 - [ ] Must have a polished frontend / UI 
 

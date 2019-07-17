@@ -28,6 +28,7 @@ app.use(passport.session()); // persistent login sessions
 
 
 // Handlebars
+app.set("views", "./views");
 app.engine(
   "handlebars",
   exphbs({
@@ -39,6 +40,7 @@ app.set("view engine", "handlebars");
 // Routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+// require("./routes/auth")(app);
 
 var syncOptions = { force: false };
 
@@ -55,10 +57,11 @@ db.sequelize.sync(syncOptions).then(function () {
       console.log(
         "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
         PORT,
-        PORT
+        PORT,
+        "Nice! Passport db work looks fine."
       );
     }
-    else{console.log(err);}
+    else{console.log(err, "Something went wrong with the possport db update");}
   });
 });
 
