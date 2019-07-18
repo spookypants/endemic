@@ -6,11 +6,32 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    diseaseName: DataTypes.STRING,
-    symptom1: DataTypes.STRING,
-    symptom2: DataTypes.STRING,
-    symptom3: DataTypes.STRING,
-    agressiveness: DataTypes.INTEGER
+
+    diseaseName: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    
+    symptom1: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+
+    symptom2: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+
+    symptom3: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+
+    agressiveness: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    }
+    
   });
   return Disease;
 };
