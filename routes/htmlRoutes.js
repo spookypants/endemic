@@ -48,7 +48,7 @@ module.exports = function(app) {
 
   // game page
   app.get("/game-page", function(req, res){
-    res.render("game-page");
+    res.render("gamePage");
   });
   // ------------- testing ------------------------------
   //logout
