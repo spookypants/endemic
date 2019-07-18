@@ -8,8 +8,9 @@ $("#add-account").on("click", function (event) {
   event.preventDefault();
   console.log("Add player button clicked.");
   console.log($(".medicinalPreference").val());
+  //validate the form here?
   // if(!newPlayer.userName.length > 0 && !newPlayer.password.length > 0){
-  //   return;} 
+  //   return;}
   addPlayer ({
     id: $("#id").val(),
     userName: $("#userName").val(),
