@@ -1,46 +1,56 @@
-  <div align="center">
-    <h1>ENDEMIC | GAME PAGE</h1>
-    </div>
-    
-    <hr>
-
 <!-- THREE PANELS -->
-<div class="container">
+<div class="gamepad">
     <div class="row">
 
-    <!-- LEFT PANEL = REMEDIES -->
+    <!-- LEFT PANEL -->
     <div class="col-md-4">
-        <h2>TREATMENT OPTIONS</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, at voluptas perferendis reprehenderit dicta hic culpa sequi, earum modi voluptatem voluptates ex cupiditate totam commodi quas repudiandae? Ratione, illum. Impedit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quasi quidem laboriosam recusandae animi ad ipsa ullam, omnis saepe tempore sed, pariatur a facere rerum earum, sunt architecto atque eligendi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis animi architecto amet officia pariatur est earum adipisci ad alias, accusantium unde quae libero, numquam quos corporis distinctio voluptatibus. Vero.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi asperiores voluptates repellat fugit suscipit enim? Repellat laboriosam itaque eveniet. Voluptate placeat maxime aliquam dolorum fugit recusandae iste quibusdam dolor nesciunt!</p>
+        <!-- LEFT PANEL PLAYER AVATAR -->
+        <div id="playerAvatar" class="female-char character">
+            <lottie-player 
+                src="https://assets1.lottiefiles.com/packages/lf20_FQaALa.json" id="doc_fem" background="transparent"  speed="1"  style="width: 50%; height: 50%; margin: auto;"  loop autoplay >
+            </lottie-player>
+        </div>
+        <hr>
+        <!-- LEFT PANEL PATIENT INFO & TREATMENTS -->
+        <div id="patientSymptoms">
+            <h2>PATIENT SYMPTOMS</h2>
+            <button type="button" class="btn btn-info btn-block">{{diseases.symptom1}}</button>
+            <button type="button" class="btn btn-info btn-block">{{diseases.symptom2}}</button>
+            <button type="button" class="btn btn-info btn-block">{{diseases.symptom3}}</button>
+        </div>
+        <hr>
+        <div id="treatmentOptions">
+            <h2>TREATMENT OPTIONS</h2>
+            <button type="button" class="btn btn-info btn-block">{{treatments.treatmentName}}</button>
+            <button type="button" class="btn btn-info btn-block">{{treatments.treatmentName}}</button>
+            <button type="button" class="btn btn-info btn-block">{{treatments.treatmentName}}</button>
+        </div>
+        <hr>
+
     </div>
 
     <!-- CENTER PANEL = PATIENT -->
     <div class="col-md-4" id="patient-panel" style="border-right: solid 3px #D1603D; border-left: solid 3px #D1603D;">
         <h2>PATIENT</h2>
         <lottie-player
-        src="https://assets4.lottiefiles.com/packages/lf20_6LvRSb.json"  background="transparent"  speed="1"  style="width: 100%; height: 400px;"  loop autoplay >
+        src="https://assets3.lottiefiles.com/packages/lf20_4rH0mn.json"  id="patientAvatar" background="transparent"  speed="1"  style="width: 60%; height: 75%; margin: auto;"  loop autoplay >
         </lottie-player>
         <hr>
-        <h2>Life Force</h2>
-        <h1>50</h1>
+        <div id="patientHealth">
+            <h2>Life Force</h2>
+            <h1>50</h1>
+        </div>
     </div>
   
     <!-- RIGHT PANEL = PLAYER'S LOG -->
     <div class="col-md-4" id="log">
         <h2>LOG BOOK</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus eveniet facere iusto unde necessitatibus ipsam deleniti sint, itaque animi quisquam at molestiae, quis, asperiores repellat dignissimos excepturi ut magnam ab!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at delectus est in perspiciatis iste soluta facilis, id consequuntur qui praesentium sint quaerat cupiditate dolorum harum consectetur expedita, illum aut!</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, aliquam saepe. Maiores alias mollitia corrupti enim vero modi, suscipit non, reiciendis, laborum maxime exercitationem. Assumenda commodi quos aliquid! Dolor, mollitia.</p>
+        <button type="button" class="btn btn-info btn-block"><strong>{{effects.effectName}}</strong> {{effects.effectDescription}}</button>
     </div>
 
 </div>
 </div>
-<!-- link to charCreation.js -->
-<script src="../public/js/charCreation.js"></script>
+<!-- link to game-page.js -->
+<script src="../public/js/game-page.js"></script>
+</body>
+</html>

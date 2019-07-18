@@ -19,9 +19,9 @@
         }
 
         #nav-bar.row {
-            align-content: center;
             background-color: #D1603D;
             padding: 10px;
+            margin: 0 auto;
         }
 
         .nav-links {
@@ -65,13 +65,36 @@
         }
 
         #log {
-            overflow: scroll;
-            height: 100vh;
+            overflow: auto;
+            height: 90vh;
         }
 
         hr {
             background-color: #D1603D;
             height: 3px;
+        }
+        .gamepad {
+            position: absolute;
+            width: 98%;
+            left: .5%;
+        }
+        #patientSymptoms {
+            margin: auto;
+            width: 90%;
+        }
+        #treatmentOptions {
+            margin: auto;
+            width: 90%;
+        }
+        .btn-info {
+            background-color: #A4C3B2;
+            border-color: #A4C3B2;
+            color: black;
+        }
+        .btn-info:hover {
+            background-color: #6B9080;
+            border-color: #6B9080;
+            color: white;
         }
     </style>
 
@@ -92,7 +115,7 @@
 </div>
 
 <!-- THREE PANELS -->
-<div class="container">
+<div class="gamepad">
     <div class="row">
 
     <!-- LEFT PANEL -->
@@ -100,23 +123,23 @@
         <!-- LEFT PANEL PLAYER AVATAR -->
         <div id="playerAvatar" class="female-char character">
             <lottie-player 
-                src="https://assets1.lottiefiles.com/packages/lf20_FQaALa.json" id="doc_fem" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop autoplay >
+                src="https://assets1.lottiefiles.com/packages/lf20_FQaALa.json" id="doc_fem" background="transparent"  speed="1"  style="width: 50%; height: 50%; margin: auto;"  loop autoplay >
             </lottie-player>
         </div>
         <hr>
         <!-- LEFT PANEL PATIENT INFO & TREATMENTS -->
         <div id="patientSymptoms">
             <h2>PATIENT SYMPTOMS</h2>
-            <p>Difficulty Breathing</p>
-            <p>Heart Palpitations</p>
-            <p>Brain Swelling</p>
+            <button type="button" class="btn btn-info btn-block">Difficulty Breathing</button>
+            <button type="button" class="btn btn-info btn-block">Heart Palpitations</button>
+            <button type="button" class="btn btn-info btn-block">Brain Swelling</button>
         </div>
         <hr>
         <div id="treatmentOptions">
             <h2>TREATMENT OPTIONS</h2>
-            <p>Give Tylenol</p>
-            <p>Administer Fluids</p>
-            <p>Punch Patient In Face</p>
+            <button type="button" class="btn btn-info btn-block">Give Tylenol</button>
+            <button type="button" class="btn btn-info btn-block">Administer Fluids</button>
+            <button type="button" class="btn btn-info btn-block">Punch Patient In Face</button>
         </div>
         <hr>
 
@@ -126,7 +149,7 @@
     <div class="col-md-4" id="patient-panel" style="border-right: solid 3px #D1603D; border-left: solid 3px #D1603D;">
         <h2>PATIENT</h2>
         <lottie-player
-        src="https://assets3.lottiefiles.com/packages/lf20_4rH0mn.json"  background="transparent"  speed="1"  style="width: 100%; height: 65%;"  loop autoplay >
+        src="https://assets3.lottiefiles.com/packages/lf20_4rH0mn.json"  background="transparent"  speed="1"  style="width: 60%; height: 75%; margin: auto;"  loop autoplay >
         </lottie-player>
         <hr>
         <div id="patientHealth">
@@ -138,13 +161,18 @@
     <!-- RIGHT PANEL = PLAYER'S LOG -->
     <div class="col-md-4" id="log">
         <h2>LOG BOOK</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus eveniet facere iusto unde necessitatibus ipsam deleniti sint, itaque animi quisquam at molestiae, quis, asperiores repellat dignissimos excepturi ut magnam ab!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at delectus est in perspiciatis iste soluta facilis, id consequuntur qui praesentium sint quaerat cupiditate dolorum harum consectetur expedita, illum aut!</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, aliquam saepe. Maiores alias mollitia corrupti enim vero modi, suscipit non, reiciendis, laborum maxime exercitationem. Assumenda commodi quos aliquid! Dolor, mollitia.</p>
+        <button type="button" class="btn btn-info btn-block"><strong>Lorem ipsum,</strong> dolor sit amet consectetur adipisicing elit. Repellendus eveniet facere iusto unde necessitatibus ipsam deleniti sint, itaque animi quisquam at molestiae, quis, asperiores repellat dignissimos excepturi ut magnam ab!</button>
+        <button type="button" class="btn btn-info btn-block"><strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Nisi at delectus est in perspiciatis iste soluta facilis, id consequuntur qui praesentium sint quaerat cupiditate dolorum harum consectetur expedita, illum aut!</button>
+        <button type="button" class="btn btn-info btn-block"><strong>Lorem ipsum,</strong> dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</button>
+        <button type="button" class="btn btn-info btn-block"><strong>Lorem ipsum,</strong> dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</button>
+        <button type="button" class="btn btn-info btn-block"><strong>Lorem ipsum,</strong> dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</button>
+        <button type="button" class="btn btn-info btn-block"><strong>Lorem ipsum,</strong> dolor sit amet consectetur adipisicing elit. In, esse, veniam velit itaque voluptatem odit necessitatibus quae iste, reprehenderit minus et corporis dicta quidem quisquam laudantium magni eaque. Dolor, iusto?</button>
+        <button type="button" class="btn btn-info btn-block"><strong>Lorem ipsum,</strong> dolor sit amet consectetur adipisicing elit. Iste, aliquam saepe. Maiores alias mollitia corrupti enim vero modi, suscipit non, reiciendis, laborum maxime exercitationem. Assumenda commodi quos aliquid! Dolor, mollitia.</button>
+        <button type="button" class="btn btn-info btn-block"><strong>Lorem ipsum,</strong> dolor sit amet consectetur adipisicing elit. Iste, aliquam saepe. Maiores alias mollitia corrupti enim vero modi, suscipit non, reiciendis, laborum maxime exercitationem. Assumenda commodi quos aliquid! Dolor, mollitia.</button>
+        <button type="button" class="btn btn-info btn-block"><strong>Lorem ipsum,</strong> dolor sit amet consectetur adipisicing elit. Iste, aliquam saepe. Maiores alias mollitia corrupti enim vero modi, suscipit non, reiciendis, laborum maxime exercitationem. Assumenda commodi quos aliquid! Dolor, mollitia.</button>
+        <button type="button" class="btn btn-info btn-block"><strong>Lorem ipsum,</strong> dolor sit amet consectetur adipisicing elit. Iste, aliquam saepe. Maiores alias mollitia corrupti enim vero modi, suscipit non, reiciendis, laborum maxime exercitationem. Assumenda commodi quos aliquid! Dolor, mollitia.</button>
+        <button type="button" class="btn btn-info btn-block"><strong>Lorem ipsum,</strong> dolor sit amet consectetur adipisicing elit. Iste, aliquam saepe. Maiores alias mollitia corrupti enim vero modi, suscipit non, reiciendis, laborum maxime exercitationem. Assumenda commodi quos aliquid! Dolor, mollitia.</button>
+        <button type="button" class="btn btn-info btn-block"><strong>Lorem ipsum,</strong> dolor sit amet consectetur adipisicing elit. Iste, aliquam saepe. Maiores alias mollitia corrupti enim vero modi, suscipit non, reiciendis, laborum maxime exercitationem. Assumenda commodi quos aliquid! Dolor, mollitia.</button>
     </div>
 
 </div>

@@ -3,9 +3,9 @@ body {
 }
 
 #nav-bar.row {
-    align-content: center;
     background-color: #D1603D;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .nav-links {
@@ -33,6 +33,8 @@ p {
     color: black;
     font-family: 'Lato', sans-serif;
     background-color: #A4C3B2;
+    padding: 10px;
+    text-align:center;
 }
 
 #stats {
@@ -47,11 +49,34 @@ p {
 }
 
 #log {
-    overflow: scroll;
-    height: 100vh;
+    overflow: auto;
+    height: 90vh;
 }
 
 hr {
     background-color: #D1603D;
     height: 3px;
+}
+.gamepad {
+    position: absolute;
+    width: 98%;
+    left: .5%;
+}
+#patientSymptoms {
+    margin: auto;
+    width: 90%;
+}
+#treatmentOptions {
+    margin: auto;
+    width: 90%;
+}
+.btn-info {
+    background-color: #A4C3B2;
+    border-color: #A4C3B2;
+    color: black;
+}
+.btn-info:hover {
+    background-color: #6B9080;
+    border-color: #6B9080;
+    color: white;
 }
