@@ -9,7 +9,8 @@ if (process.env.JAWSDB_URL) {
     host: "localhost",
     user: "root",
     password: "Lenaluna",
-    database: "endemic_db"
+    database: "endemic_db",
+    
   });
 }
 connection.connect();
