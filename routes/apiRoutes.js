@@ -9,6 +9,7 @@ module.exports = function(app) {
       res.json(dbPlayers);
     });
   });
+  
 
   // Create a new player
   app.post("/api/players", function(req, res) {
@@ -41,8 +42,8 @@ module.exports = function(app) {
       gender: req.body.gender,
       age: req.body.age,
       medicinalPreference: req.body.medicinalPreference
-    }).then(function(dbPlayers){
-      res.json(dbPlayers);
+    }).then(function(){
+      res.redirect("/game");
     });
   });
 
