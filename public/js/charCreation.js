@@ -4,13 +4,13 @@ var specialistSelected;
 
 
 //disable the specialist selection divs until the gender is selected
-function disableMaleChars(){
+function disableMaleChars() {
   $("#male-chars").css("opacity", "0.1");
   $(".male-doctor").off("click");
   $(".male-bioChemist").off("click");
   $(".male-shaman").off("click");
 }
-function disableFemaleChars(){
+function disableFemaleChars() {
   $("#female-chars").css("opacity", "0.1");
   $(".female-doctor").off("click");
   $(".female-bioChemist").off("click");
@@ -21,16 +21,16 @@ disableFemaleChars();
 
 
 //if the male icon is NOT selected yet, fade in and out ELSE stay at opacity 1
-$("#maleIcon").hover(function(){
+$("#maleIcon").hover(function () {
   $(this).css("opacity", "1");
-},function(){
-  if(genderSelected !== "male"){
+}, function () {
+  if (genderSelected !== "male") {
     $(this).css("opacity", "0.5");
   }
 });
 
 //if the male gender is selected enable the male character selectors
-$("#maleIcon").click(function(){
+$("#maleIcon").click(function () {
   $(this).css("opacity", "1");
   genderSelected = "male";
   $("#femaleIcon").css("opacity", "0.5");
@@ -39,16 +39,16 @@ $("#maleIcon").click(function(){
 });
 
 //if the female icon is NOT selected yet, fade in and out ELSE stay at opacity 1
-$("#femaleIcon").hover(function(){
+$("#femaleIcon").hover(function () {
   $(this).css("opacity", "1");
-},function(){
-  if(genderSelected !== "female"){
+}, function () {
+  if (genderSelected !== "female") {
     $(this).css("opacity", "0.5");
   }
 });
 
 //if the male gender is selected enable the male character selectors
-$("#femaleIcon").click(function(){
+$("#femaleIcon").click(function () {
   $(this).css("opacity", "1");
   genderSelected = "female";
   $("#maleIcon").css("opacity", "0.5");
@@ -57,22 +57,23 @@ $("#femaleIcon").click(function(){
 });
 
 
-function enableMaleChars(){
+function enableMaleChars() {
   $("#male-chars").css("opacity", "0.5");
-  $(".male-char").on("click", function(){
+  $(".male-char").on("click", function () {
     specialistSelected = $(this).data("specialist");
     console.log(specialistSelected);
   });
 }
 
-function enableFemaleChars(){
+function enableFemaleChars() {
   $("#female-chars").css("opacity", "0.5");
-  $(".female-char").on("click", function(){
+  $(".female-char").on("click", function () {
     specialistSelected = $(this).data("specialist");
     console.log(specialistSelected);
   });
 }
 
-$("#startGameButt").click(function(){
-  console.log("I've been clicked");
+$("#gameStartButt").on("click", function(event){
+  event.preventDefault();
+  window.location.href = "/game";
 });

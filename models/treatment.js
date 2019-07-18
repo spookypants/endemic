@@ -6,11 +6,32 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    treatmentName: DataTypes.STRING,
-    treatmentCategory: DataTypes.STRING,
-    doctorEffect: DataTypes.INTEGER,
-    shamanEffect: DataTypes.INTEGER,
-    biochemistEffect: DataTypes.INTEGER
+
+    treatmentName: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+
+    treatmentCategory: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+
+    doctorEffect: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+
+    shamanEffect: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+
+    biochemistEffect: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    }
+    
   });
   return Treatment;
 };
