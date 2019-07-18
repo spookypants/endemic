@@ -28,8 +28,8 @@ h3 {
     font-weight: 400;
     font-size: 32px;
     line-height: 1.5em;
-    color: white;
-    text-shadow: 1px 1px black;
+    color: black;
+    text-shadow: 1px 1px whitesmoke;
     padding-bottom: 2%;
 }
 
@@ -44,8 +44,8 @@ p {
     font-size: 17px;
     line-height: 1.5em;
     letter-spacing: .5em;
-    color: white;
-    text-shadow: 1px 1px black;
+    color: black;
+    text-shadow: 1px 1px whitesmoke;
 }
 
 #landing-title {
