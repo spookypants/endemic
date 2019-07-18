@@ -43,15 +43,19 @@ module.exports = function(app) {
       age: req.body.age,
       medicinalPreference: req.body.medicinalPreference
     }).then(function(){
-      res.redirect("/game");
+      res.redirect("/characters");
     });
   });
 
   app.post("/createavatar", function(req, res){
     db.Avatar.create({
-      avatarName: req.body.avatarName
+      avatarName: req.body.avatarName,
+      gender: req.body.gender,
+      specialistType: req.body.specialistType
+    }).then(function(){
+      res.redirect("/game")
     })
-  })
+  });
 
   app.post("/api/login", passport.authenticate("local"), function(req, res){
     res.json(req.user);

@@ -15,7 +15,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
 
-    speciatistType: {
+    specialistType: {
       type: DataTypes.STRING,
       allowNull: false
     },
