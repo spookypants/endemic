@@ -19,14 +19,6 @@ module.exports = function(sequelize, DataTypes) {
     positiveEffect: {
       type: DataTypes.BOOLEAN,
       allowNull: false
-    },
-
-    createdAt: {
-      type: DataTypes.DATETIME
-    },
-
-    updatedAt: {
-      type: DataTypes.DATETIME
     }
 
   });

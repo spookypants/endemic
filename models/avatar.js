@@ -38,14 +38,6 @@ module.exports = function(sequelize, DataTypes) {
 
     happyVoiceEmote: {
       type: DataTypes.STRING
-    },
-
-    createdAt: {
-      type: DataTypes.DATETIME
-    },
-
-    updatedAt: {
-      type: DataTypes.DATETIME
     }
     
   });

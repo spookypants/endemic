@@ -23,14 +23,6 @@ module.exports = function(sequelize, DataTypes) {
   
     displayImage: {
       type: DataTypes.STRING
-    },
-  
-    createdAt: {
-      type: DataTypes.DATETIME
-    },
-  
-    updatedAt: {
-      type: DataTypes.DATETIME
     }
       
   });
