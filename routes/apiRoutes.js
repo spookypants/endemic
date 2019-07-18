@@ -9,6 +9,7 @@ module.exports = function(app) {
       res.json(dbPlayers);
     });
   });
+  
 
   // Create a new player
   app.post("/api/players", function(req, res) {
@@ -34,15 +35,25 @@ module.exports = function(app) {
     });
   });
 
-  app.post("api/signup", function(req, res){
-    db.Player.create({
+  app.post("/api/signup", function(req, res){
+    db.Players.create({
       userName: req.body.userName,
       password: req.body.password,
       gender: req.body.gender,
       age: req.body.age,
       medicinalPreference: req.body.medicinalPreference
-    }).then(function(dbPlayers){
-      res.json(dbPlayers);
+    }).then(function(){
+      res.redirect("/characters");
+    });
+  });
+
+  app.post("/createavatar", function(req, res){
+    db.Avatar.create({
+      avatarName: req.body.avatarName,
+      gender: req.body.gender,
+      specialistType: req.body.specialistType
+    }).then(function(){
+      res.redirect("/game");
     });
   });
 
