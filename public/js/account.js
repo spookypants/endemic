@@ -1,4 +1,4 @@
-$("#add-player").on("click", function (event) {
+$("#add-account").on("click", function (event) {
   event.preventDefault();
   console.log("Add player button clicked.");
   console.log($("#inputUserName").val());
@@ -15,7 +15,7 @@ $("#add-player").on("click", function (event) {
   if (newPlayer.playerKey.length > 0 && newPlayer.email.length > 0 && newPlayer.lastName.length > 0 && newPlayer.firstName.length > 0) {
     $.ajax({
       type: "post",
-      url: "/signup",
+      url: "/api/signup",
       data: newPlayer
     }).then(function () {
       window.location.href = "/character";
