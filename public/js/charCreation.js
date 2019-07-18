@@ -73,7 +73,7 @@ function enableFemaleChars() {
   });
 }
 
-$("#gameStart").on("click", function(event){
+$("#gameStartButt").on("click", function(event){
   event.preventDefault();
   window.location.href = "/game";
 });

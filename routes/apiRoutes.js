@@ -9,6 +9,7 @@ module.exports = function(app) {
       res.json(dbPlayers);
     });
   });
+  
 
   // Create a new player
   app.post("/api/players", function(req, res) {
