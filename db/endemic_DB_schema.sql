@@ -20,12 +20,12 @@ CREATE TABLE diseases(
 CREATE TABLE treatments(
 	id INT( 10 ) AUTO_INCREMENT NOT NULL,
 	treatmentName VARCHAR(255) NOT NULL,
-  treatmentCategory VARCHAR(255) NOT NULL,
+  	treatmentCategory VARCHAR(255) NOT NULL,
 	doctorEffect INTEGER (10) NOT NULL,
-  shamanEffect INTEGER (10) NOT NULL,
-  biochemistEffect INTEGER (10) NOT NULL,
+  	shamanEffect INTEGER (10) NOT NULL,
+  	biochemistEffect INTEGER (10) NOT NULL,
 	createdAt DATETIME,
-  updatedAt DATETIME,
+  	updatedAt DATETIME,
 	PRIMARY KEY ( id )
 );
 
@@ -33,9 +33,9 @@ CREATE TABLE effects(
 	id Int( 10 ) AUTO_INCREMENT NOT NULL,
 	effectName VARCHAR(255) NOT NULL,
 	effectDescription TEXT,
-  positiveEffect BOOLEAN NOT NULL,
+  	positiveEffect BOOLEAN NOT NULL,
 	createdAt DATETIME,
-  updatedAt DATETIME,
+  	updatedAt DATETIME,
 	PRIMARY KEY ( id )
 );
 
@@ -62,8 +62,8 @@ CREATE TABLE avatars(
 	happyImage VARCHAR(255),
 	sadVoiceEmote VARCHAR(255),
 	happyVoiceEmote VARCHAR (255),
-  reatedAt DATETIME,
-  updatedAt DATETIME,
+  	createdAt DATETIME,
+	updatedAt DATETIME,
 	PRIMARY KEY ( id )
 );
 
@@ -74,6 +74,6 @@ CREATE TABLE patientConditionGraphic(
 	maxHealth INTEGER(10) NOT NULL,
 	displayImage VARCHAR(255),
 	createdAt DATETIME,
-  updatedAt DATETIME,
+  	updatedAt DATETIME,
 	PRIMARY KEY ( id )
 );
