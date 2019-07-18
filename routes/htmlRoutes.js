@@ -40,7 +40,7 @@ module.exports = function(app) {
     db.Players.findOne({ where: { userName: res.body.userName}});
     res.render("/welcomeBack");
   });
-// ------------ testing -------------------------------
+  // ------------ testing -------------------------------
   // character creation
   app.get("/characterCreation", function(req, res){
     res.render("characterCreation");
@@ -50,7 +50,7 @@ module.exports = function(app) {
   app.get("/game-page", function(req, res){
     res.render("game-page");
   });
-// ------------- testing ------------------------------
+  // ------------- testing ------------------------------
   //logout
    
   app.get("/logout", function(req, res){
@@ -58,6 +58,14 @@ module.exports = function(app) {
     res.redirect("/");
   });
   
+  app.get("/characters", function(req, res){
+    res.render("characterCreation");
+  });
+
+  app.get("/game", function(req, res){
+    res.render("gamePage");
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");

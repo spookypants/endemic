@@ -6,9 +6,21 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    effectName: DataTypes.STRING,
-    effectDescription: DataTypes.STRING,
-    positiveEffect: DataTypes.BOOLEAN
+
+    effectName: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+
+    effectDescription: {
+      type: DataTypes.STRING,
+    },
+
+    positiveEffect: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false
+    }
+
   });
   return Effect;
 };
