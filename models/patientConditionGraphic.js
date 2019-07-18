@@ -1,45 +1,38 @@
 module.exports = function(sequelize, DataTypes) {
-  var Disease = sequelize.define("Disease", {
+  var patientConditionGraphic = sequelize.define("patientConditionGraphic", {
     id: {
       autoIncrement: true,
       primaryKey: true,
       type: DataTypes.INTEGER,
       allowNull: false
     },
-
-    diseaseName: {
-      type: DataTypes.STRING,
-      allowNull: false
+  
+    conditionName: {
+      type: DataTypes.STRING
     },
-    
-    symptom1: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-
-    symptom2: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-
-    symptom3: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-
-    agressiveness: {
+  
+    minHealth: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-
+  
+    maxHealth: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+  
+    displayImage: {
+      type: DataTypes.STRING
+    },
+  
     createdAt: {
       type: DataTypes.DATETIME
     },
-
+  
     updatedAt: {
       type: DataTypes.DATETIME
     }
-    
+      
   });
-  return Disease;
+  return patientConditionGraphic;
 };

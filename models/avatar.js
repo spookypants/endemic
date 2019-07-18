@@ -6,15 +6,48 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    avatarName: DataTypes.STRING,
-    gender: DataTypes.STRING,
-    speciatistType: DataTypes.STRING,
-    specialistType: DataTypes.STRING,
-    baseImage: DataTypes.STRING,
-    sadImage: DataTypes.STRING,
-    happyImage: DataTypes.STRING,
-    sadVoiceEmote: DataTypes.STRING,
-    happyVoiceEmote: DataTypes.STRING,
+    avatarName: {
+      type: DataTypes.STRING
+    },
+
+    gender: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+
+    speciatistType: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+
+    baseImage: {
+      type: DataTypes.STRING
+    },
+
+    sadImage: {
+      type: DataTypes.STRING
+    },
+
+    happyImage: {
+      type: DataTypes.STRING
+    },
+
+    sadVoiceEmote: {
+      type: DataTypes.STRING
+    },
+
+    happyVoiceEmote: {
+      type: DataTypes.STRING
+    },
+
+    createdAt: {
+      type: DataTypes.DATETIME
+    },
+
+    updatedAt: {
+      type: DataTypes.DATETIME
+    }
+    
   });
   return Avatar;
 };
