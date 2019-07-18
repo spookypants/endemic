@@ -34,8 +34,8 @@ module.exports = function(app) {
     });
   });
 
-  app.post("api/signup", function(req, res){
-    db.Player.create({
+  app.post("/api/signup", function(req, res){
+    db.Players.create({
       userName: req.body.userName,
       password: req.body.password,
       gender: req.body.gender,
