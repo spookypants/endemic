@@ -30,14 +30,6 @@ module.exports = function(sequelize, DataTypes) {
     agressiveness: {
       type: DataTypes.INTEGER,
       allowNull: false
-    },
-
-    createdAt: {
-      type: DataTypes.DATETIME
-    },
-
-    updatedAt: {
-      type: DataTypes.DATETIME
     }
     
   });
