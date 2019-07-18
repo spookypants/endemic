@@ -38,10 +38,15 @@ footer {
 .gender-name {
     position: relative;
     bottom: 90px;
-    left: 50px;
+    left: 100px;
     color: #364958;
     font-weight: 900;
     background: transparent;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
 
 hr {
