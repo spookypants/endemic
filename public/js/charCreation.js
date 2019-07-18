@@ -47,7 +47,7 @@ $("#femaleIcon").hover(function () {
   }
 });
 
-//if the male gender is selected enable the male character selectors
+//if the female gender is selected enable the female character selectors
 $("#femaleIcon").click(function () {
   $(this).css("opacity", "1");
   genderSelected = "female";
@@ -73,6 +73,9 @@ function enableFemaleChars() {
   });
 }
 
+function createAvatar(avatarData){
+  $.post("/")
+}
 $("#gameStartButt").on("click", function(event){
   event.preventDefault();
   window.location.href = "/game";

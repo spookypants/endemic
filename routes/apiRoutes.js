@@ -47,6 +47,12 @@ module.exports = function(app) {
     });
   });
 
+  app.post("/createavatar", function(req, res){
+    db.Avatar.create({
+      avatarName: req.body.avatarName
+    })
+  })
+
   app.post("/api/login", passport.authenticate("local"), function(req, res){
     res.json(req.user);
   });
