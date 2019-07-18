@@ -57,12 +57,11 @@ db.sequelize.sync(syncOptions).then(function () {
       console.log(
         "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
         PORT,
-        PORT,
-        "Nice! Passport db work looks fine."
+        PORT
       );
     }
     else{console.log(err, "Something went wrong with the possport db update");}
   });
 });
 
-module.exports = app;
+// module.exports = app;
