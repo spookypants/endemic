@@ -40,7 +40,7 @@ module.exports = function(app) {
     db.Players.findOne({ where: { userName: res.body.userName}});
     res.render("/welcomeBack");
   });
-// ------------ testing -------------------------------
+  // ------------ testing -------------------------------
   // character creation
   app.get("/characterCreation", function(req, res){
     res.render("characterCreation");
@@ -50,7 +50,7 @@ module.exports = function(app) {
   app.get("/game-page", function(req, res){
     res.render("game-page");
   });
-// ------------- testing ------------------------------
+  // ------------- testing ------------------------------
   //logout
    
   app.get("/logout", function(req, res){

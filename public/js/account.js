@@ -21,16 +21,16 @@ $("#add-account").on("click", function (event) {
     lastGameLog: $("#lastGameLog").val(),
   });
 });
-  // if (newPlayer.userName.length > 0 && newPlayer.password.length > 0) {
-  //   $.ajax({
-  //     type: "post",
-  //     url: "/api/signup",
-  //     data: newPlayer
-  //   }).then(function () {
-  //     window.location.href = "/character";
-  //   });
-  // } else {
-  //   console.log("**Please complete the entire form.**");
-  //   $("#create-err-msg").empty("").text("**Please complete the entire form.**");
-  // }
+// if (newPlayer.userName.length > 0 && newPlayer.password.length > 0) {
+//   $.ajax({
+//     type: "post",
+//     url: "/api/signup",
+//     data: newPlayer
+//   }).then(function () {
+//     window.location.href = "/character";
+//   });
+// } else {
+//   console.log("**Please complete the entire form.**");
+//   $("#create-err-msg").empty("").text("**Please complete the entire form.**");
+// }
 

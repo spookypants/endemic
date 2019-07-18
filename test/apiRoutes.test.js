@@ -71,7 +71,7 @@ describe("POST /api/examples", function(){
         
       })
   }
-})
+)
 
 //our game tests:
 // describe("POST/api/signup", function(){
