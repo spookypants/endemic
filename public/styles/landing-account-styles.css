@@ -19,17 +19,22 @@ body {
 
 h1 {
     text-align: center;
-    color: white;
+    font-family: 'Teko', 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.5em;
+    color: black;
+    text-shadow: 1.5px 1.5px whitesmoke;
 }
 
 h3 {
     text-align: center;
     font-family: 'Teko', 'Oswald', sans-serif;
-    font-weight: 400;
-    font-size: 32px;
+    font-weight: 500;
+    font-size: 42px;
     line-height: 1.5em;
     color: black;
-    text-shadow: 1px 1px whitesmoke;
+    text-shadow: 1.5px 1.5px whitesmoke;
     padding-bottom: 2%;
 }
 
@@ -40,12 +45,12 @@ h5 {
 
 p {
     font-family: 'Teko', 'Oswald', sans-serif;
-    font-weight: 300;
-    font-size: 17px;
+    font-weight: 400;
+    font-size: 21px;
     line-height: 1.5em;
-    letter-spacing: .5em;
+    letter-spacing: .01em;
     color: black;
-    text-shadow: 1px 1px whitesmoke;
+    text-shadow: 1.5px 1.5px whitesmoke;
 }
 
 #landing-title {
@@ -93,4 +98,18 @@ p {
     padding: 3% 5% 2% 5%;
     margin-top: 40%;
     width: 90%;
+}
+
+#create-form {
+    font-family: 'Teko', 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5em;
+    letter-spacing: .01em;
+    color: black;
+    text-shadow: 1.5px 1.5px whitesmoke;
+}
+
+#add-account {
+    align-content: center;
 }
