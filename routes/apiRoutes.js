@@ -41,8 +41,8 @@ module.exports = function(app) {
       gender: req.body.gender,
       age: req.body.age,
       medicinalPreference: req.body.medicinalPreference
-    }).then(function(dbPlayers){
-      res.json(dbPlayers);
+    }).then(function(){
+      res.redirect("/game");
     });
   });
 

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="public/styles/landing-account-styles.css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="../public/styles/landing-account-styles.css" media="screen" title="no title" charset="utf-8">
 
 <div class="center-align container">
   <div class="content-box">
@@ -23,11 +23,11 @@
         <div class="input-field col-md-4">
           <label for="gender">Gender (optional) &nbsp;</label>
           <div class="form-check form-check-inline" id="gender">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gender-male" value="Male">
             <label class="form-check-label" for="inlineRadio1">Male &nbsp;</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gender-female" value="Female">
             <label class="form-check-label" for="inlineRadio2">Female</label>
           </div>
         </div>
@@ -35,19 +35,18 @@
           <label for="age">Age (optional)</label>
           <input type="number" id="age">
         </div>
-        <div class="input-field col-md-5">
+        <div class="input-field col-md-5 medicinalPreference">
           <label for="medicinalPreference">Medicinal Preference*</label>
-          <div class="form-check form-check-inline" id="gender">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadio1" id="inlineRadio1" value="Doctor">
             <label class="form-check-label" for="inlineRadio1">Doctor &nbsp;</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <input class="form-check-input" type="radio" name="inlineRadio1" id="inlineRadio2" value="Shaman">
             <label class="form-check-label" for="inlineRadio2">Shaman &nbsp;</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
-              disabled>
+            <input class="form-check-input" type="radio" name="inlineRadio1" id="inlineRadio3" value="Biochemist">
             <label class="form-check-label" for="inlineRadio3">Biochemist</label>
           </div>
 
@@ -64,4 +63,4 @@
   </div>
 </div>
 
-<script src="/js/accounts.js"></script>
+<script src="./js/account.js"></script>
