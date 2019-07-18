@@ -9,6 +9,7 @@ $("#sign-in").on("click", function(event) {
     userName: $("#userName").val(),
     password: $("#account_password").val()
   };
+
   $.post("/api/login", user, function(results) {
     if (results) {
       $(location).attr("href", "/welcomeBack");

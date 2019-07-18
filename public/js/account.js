@@ -1,9 +1,11 @@
+
 function addPlayer(playerData) {
   $.post("/api/signup", playerData).then(function () {
     // res.render("characterCreation");
     window.location.href = "/characters";
   });
 }
+
 $("#add-account").on("click", function (event) {
   event.preventDefault();
   console.log("Add player button clicked.");
@@ -20,7 +22,9 @@ $("#add-account").on("click", function (event) {
     medicinalPreference: $(".medicinalPreference").val(),
     lastAvatarId: $("#lastAvatarId").val(),
     lastGameLog: $("#lastGameLog").val(),
+
   });
+
 });
 // if (newPlayer.userName.length > 0 && newPlayer.password.length > 0) {
 //   $.ajax({
