@@ -1,8 +1,5 @@
 body {
-    /* background-color: #364958; */
     box-sizing: inherit;
-    /* color: white; */
-    /* font-weight: bolder; */
     line-height: 1.5em;
     display: flex;
     min-height: 100vh;
@@ -27,8 +24,8 @@ h1 {
 
 h3 {
     text-align: center;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: 300;
+    font-family: 'Teko', 'Oswald', sans-serif;
+    font-weight: 400;
     font-size: 32px;
     line-height: 1.5em;
     color: white;
@@ -42,10 +39,11 @@ h5 {
 }
 
 p {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Teko', 'Oswald', sans-serif;
     font-weight: 300;
     font-size: 17px;
     line-height: 1.5em;
+    letter-spacing: .5em;
     color: white;
     text-shadow: 1px 1px black;
 }
@@ -59,7 +57,6 @@ p {
 }
 
 .game-logo {
-    /* padding-left: 5%; */
     position: absolute;
     color: white;
     display: inline-block;
@@ -89,7 +86,7 @@ p {
 }
 
 .content-box {
-    background-color: rgba(226, 225, 224, 0.1);
+    background-color: rgba(224, 221, 217, 0.1);
     filter: alpha(opacity=10);
     opacity: .8;
     box-shadow: 0 3px 3px 3px rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
