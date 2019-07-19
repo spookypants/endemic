@@ -1,94 +1,138 @@
 <link rel="stylesheet" href="/styles/character-creation-styles.css" media="screen" title="no title" charset="utf-8">
 
 
-<div class="container">
+<!-- Create Character Body -->
+<div class="container" id="create-character-body">
   <div class="row">
     <div class="col-md-12">
-        <h2>CREATE YOUR SPECIALIST</h2>
+      <h2>CREATE YOUR SPECIALIST</h2>
     </div>
   </div>
-  <div id="gender-row" class="row">
-    <div class="col-md-3"></div>
+  <div class="row" id="gender-row">
     <div class="col-md-3">
-        <div id="maleIcon"  data-gender="male">
-          <img class="icons hoverEff" src="../images/Male_icon.svg" height="150px" width="150px">
-          <div class="gender-name">Male</div>
-        </div>
+      <div class="card card-body h-100"></div>
     </div>
     <div class="col-md-3">
-        <div id="femaleIcon"  data-gender="female">
-          <img class="icons hoverEff" src="../images/Female_icon.svg" height="150px" width="150px">
-          <div class="gender-name">Female</div>
+      <div class="card card-body h-100" id="maleIcon" data-gender="male">
+        <img class="card-img-top rounded mx-auto d-block">
+        <div>
+          <!-- <h5 class="card-title">Male</h5> -->
+          <img class="icons hoverEff" src="../public/images/Male_icon.svg" height="150px" width="150px">
+          <!-- <div class="gender-name">Male</div> -->
         </div>
-    </div>
-    <div class="col-md-3"></div>
-  </div>
-<hr>
-  <div class="container">
-      <div class="row" style="color:white; font-weight: 900; position: relative; text-align:center;">
-        <div class="col-md-4"><span>DOCTOR</span></div>
-        <div class="col-md-4"><span>BIOCHEMIST</span></div>
-        <div class="col-md-4"><span>SHAMAN</span></div>
       </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card card-body h-100" id="femaleIcon" data-gender="female">
+        <img class="card-img-top rounded mx-auto d-block">
+        <div>
+          <!-- <h5 class="card-title">Female</h5> -->
+          <img class="icons hoverEff" src="../public/images/Female_icon.svg" height="150px" width="150px">
+          <!-- <div class="gender-name">Female</div> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card card-body h-100"></div>
+    </div>
   </div>
   <hr>
-  <div class="container male">
-      <div id="male-chars" class="row">
-          <div class="col-md-4">
-              <div id="male-doctor" class="male-char" data-specialist="doctor" data-avatarname="Jack">
-                <lottie-player 
-                    src="https://assets5.lottiefiles.com/packages/lf20_gGmZKN.json" id="doc_male" background="transparent"  speed="1"  style="width: 200px; height: 200px; margin:auto;"  loop autoplay >
-                </lottie-player>
-              </div>
+  <div class="row container-male" id="male-chars">
+    <div class="col-md-4">
+      <div class="card card-body h-100">
+        <div class="male-char" id="maleIcon" data-gender="male">
+          <img class="card-img-top rounded mx-auto d-block">
+          <div id="male-doctor" data-specialist="doctor" data-avatarname="Jack">
+            <h5 class="card-title">DOCTOR</h5>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_gGmZKN.json" id="doc_male"
+              background="transparent" speed="1" style="width: 200px; height: 200px; margin:auto;" loop autoplay>
+            </lottie-player>
           </div>
-          <div class="col-md-4">
-              <div id="male-bioChemist" class="male-char" data-specialist="bioChemist" data-avatarName="Hermann">
-                <lottie-player 
-                    src="https://assets5.lottiefiles.com/packages/lf20_3ikJct.json" id="bio_male" background="transparent"  speed="1"  style="width: 200px; height: 200px; margin:auto;"  loop autoplay >
-                </lottie-player>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div id="male-shaman" class="male-char" data-specialist="shaman" data-avatarName="Thunderbolt">
-                <lottie-player 
-                    src="https://assets4.lottiefiles.com/packages/lf20_qs1nyM.json" id="sha_male" background="transparent"  speed="1"  style="width: 200px; height: 200px; margin:auto;"  loop autoplay >
-                </lottie-player>
-              </div>
-          </div>
-      </div>
-  </div>
-<hr>
-  <div class="container female">
-        <div id="female-chars" class="row">
-            <div class="col-md-4">
-                <div id="female-doctor" class="female-char" data-specialist="doctor" data-avatarName="Susan">
-                  <lottie-player 
-                      src="https://assets1.lottiefiles.com/packages/lf20_FQaALa.json" id="doc_fem" background="transparent"  speed="1"  style="width: 200px; height: 200px; margin:auto;"  loop autoplay >
-                  </lottie-player>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div id="female-bioChemist" class="female-char" data-specialist="bioChemist" data-avatarName="Ashanti">
-                  <lottie-player 
-                      src="https://assets1.lottiefiles.com/packages/lf20_9wt70U.json" id="bio_fem" background="transparent"  speed="1"  style="width: 200px; height: 200px; margin:auto;"  loop autoplay >
-                  </lottie-player>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div id="male-shaman" class="female-char" data-specialist="shaman" data-avatarName="Eagle Talon">
-                  <lottie-player 
-                      src="https://assets1.lottiefiles.com/packages/lf20_VofP3Z.json" id="sha_fem" background="transparent"  speed="1"  style="width: 200px; height: 200px; margin:auto;"  loop autoplay >
-                  </lottie-player>
-                </div>
-            </div>
         </div>
+        <a id="doc-male-select" href=""><button type="button" class="btn btn-secondary">Select</button></a>
+      </div>
     </div>
+    <div class="col-md-4">
+      <div class="card card-body h-100">
+        <div class="male-char" id="maleIcon" data-gender="male">
+          <img class="card-img-top rounded mx-auto d-block">
+          <div id="male-bioChemist" class="male-char" data-specialist="bioChemist" data-avatarName="Hermann">
+            <h5 class="card-title">BIOCHEMIST</h5>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_3ikJct.json" id="bio_male"
+              background="transparent" speed="1" style="width: 200px; height: 200px; margin:auto;" loop autoplay>
+            </lottie-player>
+          </div>
+        </div>
+        <a id="bio-male-select" href=""><button type="button" class="btn btn-secondary">Select</button></a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-body h-100">
+        <div class="male-char" id="maleIcon" data-gender="male">
+          <img class="card-img-top rounded mx-auto d-block">
+          <div id="male-shaman" class="male-char" data-specialist="shaman" data-avatarName="Thunderbolt">
+            <h5 class="card-title">SHAMAN</h5>
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_qs1nyM.json" id="sha_male"
+              background="transparent" speed="1" style="width: 200px; height: 200px; margin:auto;" loop autoplay>
+            </lottie-player>
+          </div>
+        </div>
+        <a id="sha-male-select" href=""><button type="button" class="btn btn-secondary">Select</button></a>
+      </div>
+    </div>
+  </div>
   <hr>
+
+  <div class="row container female" id="female-chars">
+    <div class="col-md-4">
+      <div class="card card-body h-100">
+        <div class="female-char" id="femaleIcon" data-gender="female">
+          <img class="card-img-top rounded mx-auto d-block">
+          <div id="female-doctor" class="female-char" data-specialist="doctor" data-avatarName="Susan">
+            <h5 class="card-title">DOCTOR</h5>
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_FQaALa.json" id="doc_fem"
+              background="transparent" speed="1" style="width: 200px; height: 200px; margin:auto;" loop autoplay>
+            </lottie-player>
+          </div>
+        </div>
+        <a id="doc-female-select" href=""><button type="button" class="btn btn-secondary">Select</button></a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-body h-100">
+        <div class="female-char" id="femaleIcon" data-gender="female">
+          <img class="card-img-top rounded mx-auto d-block">
+          <div id="female-bioChemist" class="female-char" data-specialist="bioChemist" data-avatarName="Ashanti">
+            <h5 class="card-title">BIOCHEMIST</h5>
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_9wt70U.json" id="bio_fem"
+              background="transparent" speed="1" style="width: 200px; height: 200px; margin:auto;" loop autoplay>
+            </lottie-player>
+          </div>
+        </div>
+        <a id="bio-female-select" href=""><button type="button" class="btn btn-secondary">Select</button></a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-body h-100">
+        <div class="female-char" id="femaleIcon" data-gender="female">
+          <img class="card-img-top rounded mx-auto d-block">
+          <div id="female-shaman" class="female-char" data-specialist="shaman" data-avatarName="Eagle Talon">
+            <h5 class="card-title">SHAMAN</h5>
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_VofP3Z.json" id="sha_fem"
+              background="transparent" speed="1" style="width: 200px; height: 200px; margin:auto;" loop autoplay>
+            </lottie-player>
+          </div>
+        </div>
+        <a id="sha-female-select" href=""><button type="button" class="btn btn-secondary">Select</button></a>
+      </div>
+    </div>
+  </div>
+  <br /><br />
   <div class="container">
     <div class="col-md-12">
-      <button id="gameStartButt" type="button" class="btn btn-lg btn-primary" style="width: 100%; background-color: #D1603D">CLICK TO START THE GAME!</button>
+      <button id="gameStartButt" type="button" class="btn btn-lg btn-primary"
+        style="width: 100%; background-color: #D1603D">CLICK TO START THE GAME!</button>
     </div>
   </div>
 </div>
-
-<script src="./js/charCreation.js"></script>
+<script src="/js/main.js"></script>

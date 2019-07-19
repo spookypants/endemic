@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Endemic</title>
 
   <!-- Bootstrap and Lottie Player-->
   {{!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"> --}}
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald|Teko&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|BioRhyme|Signika:400,700&display=swap"
+    rel="stylesheet">
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
 
@@ -23,27 +25,69 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div class="row" id="nav-bar">
-  <ul class="nav" id="nav-links">
-    <li class="nav-item">
-         <div  class="nav-link">ENDEMIC</div>
-    </li>
-    <li class="nav-item">
-         <div id="sign-in" class="nav-link active" >Login</div>
-    </li>
-    <li class="nav-item">
-         <div id="sign-up" class="nav-link" >Link</div>
-    </li>
-  </ul>
-</div>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">ENDEMIC</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Play Game </a>
+      </li>
+    </ul>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Sign Up</a>
+        </li>
+        <li class="nav-item active">
+          <!-- <a class="nav-link" href="#">Sign In</a> -->
+          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signInModal">
+            Sign In
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="create-form">
+            <div class="row">
+              <div class="input-field">
+                <label for="userName">User Name*</label>
+                <input type="text" id="userName">
+              </div>
+              <div class="input-field">
+                <label for="inputPassword">Password*</label>
+                <input type="password" id="inputPassword">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Create Character</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   {{{body}}}
-  
-<div class="footer">
-  <p id="footer">Copyright &#169; 2019 &nbsp;::&nbsp; Team ENDEMIC</p>
-</div>
+
+  <div class="footer">
+    <p id="footer">Copyright &#169; 2019 &nbsp;::&nbsp; Team ENDEMIC</p>
+  </div>
   <script src="/js/main.js"></script>
 </body>
-</html>
 
+</html>
