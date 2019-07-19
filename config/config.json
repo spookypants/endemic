@@ -1,14 +1,9 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
     "password": "Lenaluna",
-=======
-    "password": "rootroot",
->>>>>>> master
     "database": "endemic_db",
     "host": "localhost",
-    "port": 8889,
     "dialect": "mysql"
   },
   "test": {
