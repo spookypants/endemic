@@ -103,5 +103,6 @@ $("#gameStartButt").on("click", function(event){
   console.log(avatarObj);
   $.ajax({url: "/api/players/pick_character", data: avatarObj, method: "PUT"}).then(function(response){
     console.log(response);
+    window.location.href = "/game";
   });
 });
