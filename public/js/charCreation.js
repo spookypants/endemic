@@ -65,6 +65,7 @@ $("#femaleIcon").click(function () {
 function enableMaleChars() {
   $("#male-chars").css("opacity", "0.5");
   $(".male-char").on("click", function () {
+    $(this).css("opacity", "1");
     specialistSelected = $(this).data("specialist");
     avatarName = $(this).data("avatarname");
     console.log(specialistSelected, avatarName);

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endemic</title>
+
+    <!-- Bootstrap and Lottie Player-->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|BioRhyme|Signika:400,700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <!-- <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8"> -->
+
+    <!-- jquery reference -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <style>
+        .list-group-item {
+            line-height: 2.5;
+        }
+
+        /* Style sheet for character creation page */
+        body {
+            background-color: #364958;
+        }
+
+        #submit {
+            align-content: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            font-family: 'Share Tech Mono', monospace;
+            margin-top: 20px;
+
+        }
+
+        #femaleIcon,
+        #maleIcon {
+            opacity: 0.5;
+        }
+
+        .gender-name {
+            position: relative;
+            bottom: 90px;
+            left: 50px;
+            color: #364958;
+            font-weight: 900;
+            background: transparent;
+        }
+
+        hr {
+            background-color: #D1603D;
+            height: 3px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #364958;
+            color: white;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        /* NEW STYLES for CARDS and NAV */
+        .card {
+            background-color: #364958;
+            border: 0px solid #364958;
+
+        }
+
+        .card-title {
+            color: white;
+            font-weight: 900;
+            position: relative;
+            text-align: center;
+        }
+
+
+        .navbar {
+            align-content: center;
+            background-color: #D1603D;
+            padding: 10px 40px 10px 40px;
+        }
+
+        .navbar-brand {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        a {
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        a:hover {
+            color: #689080;
+        }
+
+        a:visited {
+            color: #white;
+        }
+
+        a:disabled {
+            color: #white; 
+        }
+
+        .btn-secondary {
+            background-color: #689080;
+            font-family: 'Alegreya Sans', sans-serif;
+            font-size: 15px;
+            text-align: center;
+            margin-top: 20px;
+            border: 1px solid #587291;
+            color: #EFFFFA;
+            vertical-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">ENDEMIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Play Game </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sign In
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Sign In</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">View Account</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Play Game</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">View Account</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Create Character Body -->
+    <div class="container" id="create-character-body">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>CREATE YOUR SPECIALIST</h2>
+            </div>
+        </div>
+        <div class="row" id="gender-row">
+            <div class="col-md-3">
+                <div class="card card-body h-100"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-body h-100" id="maleIcon" data-gender="male">
+                    <img class="card-img-top rounded mx-auto d-block">
+                    <div>
+                        <h5 class="card-title">Male</h5>
+                        <img class="icons hoverEff" src="../images/Male_icon.svg" height="150px" width="150px">
+                        <div class="gender-name">Female</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-body h-100" id="femaleIcon" data-gender="female">
+                    <img class="card-img-top rounded mx-auto d-block">
+                    <div>
+                        <h5 class="card-title">Female</h5>
+                        <img class="icons hoverEff" src="../images/Female_icon.svg" height="150px" width="150px">
+                        <div class="gender-name">Female</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-body h-100"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="row container-male" id="male-chars">
+            <div class="col-md-4">
+                <div class="card card-body h-100">
+                    <div class="male-char" id="maleIcon" data-gender="male">
+                        <img class="card-img-top rounded mx-auto d-block">
+                        <div id="male-doctor" data-specialist="doctor" data-avatarname="Jack">
+                            <h5 class="card-title">DOCTOR</h5>
+                            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_gGmZKN.json" id="doc_male"
+                                background="transparent" speed="1" style="width: 200px; height: 200px; margin:auto;"
+                                loop autoplay>
+                            </lottie-player>
+                        </div>
+                    </div>
+                    <a id="doc-male-select" href=""><button type="button" class="btn btn-secondary">Select</button></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-body h-100">
+                    <div class="male-char" id="maleIcon" data-gender="male">
+                        <img class="card-img-top rounded mx-auto d-block">
+                        <div id="male-bioChemist" class="male-char" data-specialist="bioChemist"
+                            data-avatarName="Hermann">
+                            <h5 class="card-title">BIOCHEMIST</h5>
+                            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_3ikJct.json" id="bio_male"
+                                background="transparent" speed="1" style="width: 200px; height: 200px; margin:auto;"
+                                loop autoplay>
+                            </lottie-player>
+                        </div>
+                    </div>
+                    <a id="bio-male-select" href=""><button type="button" class="btn btn-secondary">Select</button></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-body h-100">
+                    <div class="male-char" id="maleIcon" data-gender="male">
+                        <img class="card-img-top rounded mx-auto d-block">
+                        <div id="male-shaman" class="male-char" data-specialist="shaman" data-avatarName="Thunderbolt">
+                            <h5 class="card-title">SHAMAN</h5>
+                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_qs1nyM.json" id="sha_male"
+                                background="transparent" speed="1" style="width: 200px; height: 200px; margin:auto;"
+                                loop autoplay>
+                            </lottie-player>
+                        </div>
+                    </div>
+                    <a id="sha-male-select" href=""><button type="button" class="btn btn-secondary">Select</button></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row container female" id="female-chars">
+            <div class="col-md-4">
+                <div class="card card-body h-100">
+                    <div class="female-char" id="femaleIcon" data-gender="female">
+                        <img class="card-img-top rounded mx-auto d-block">
+                        <div id="female-doctor" class="female-char" data-specialist="doctor" data-avatarName="Susan">
+                            <h5 class="card-title">DOCTOR</h5>
+                            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_FQaALa.json" id="doc_fem"
+                                background="transparent" speed="1" style="width: 200px; height: 200px; margin:auto;"
+                                loop autoplay>
+                            </lottie-player>
+                        </div>
+                    </div>
+                    <a id="doc-female-select" href=""><button type="button"
+                            class="btn btn-secondary">Select</button></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-body h-100">
+                    <div class="female-char" id="femaleIcon" data-gender="female">
+                        <img class="card-img-top rounded mx-auto d-block">
+                        <div id="female-bioChemist" class="female-char" data-specialist="bioChemist"
+                            data-avatarName="Ashanti">
+                            <h5 class="card-title">BIOCHEMIST</h5>
+                            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_9wt70U.json" id="bio_fem"
+                                background="transparent" speed="1" style="width: 200px; height: 200px; margin:auto;"
+                                loop autoplay>
+                            </lottie-player>
+                        </div>
+                    </div>
+                    <a id="bio-female-select" href=""><button type="button"
+                            class="btn btn-secondary">Select</button></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-body h-100">
+                    <div class="female-char" id="femaleIcon" data-gender="female">
+                        <img class="card-img-top rounded mx-auto d-block">
+                        <div id="female-shaman" class="female-char" data-specialist="shaman"
+                            data-avatarName="Eagle Talon">
+                            <h5 class="card-title">SHAMAN</h5>
+                            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_VofP3Z.json" id="sha_fem"
+                                background="transparent" speed="1" style="width: 200px; height: 200px; margin:auto;"
+                                loop autoplay>
+                            </lottie-player>
+                        </div>
+                    </div>
+                    <a id="sha-female-select" href=""><button type="button"
+                            class="btn btn-secondary">Select</button></a>
+                </div>
+            </div>
+        </div>
+        <br /><br />
+        <div class="container">
+            <div class="col-md-12">
+                <button id="gameStartButt" type="button" class="btn btn-lg btn-primary"
+                    style="width: 100%; background-color: #D1603D">CLICK TO START THE GAME!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="footer">
+  <p id="footer">Copyright &#169; 2019 &nbsp;::&nbsp; Team ENDEMIC</p>
+</div> -->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
