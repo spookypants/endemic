@@ -18,9 +18,10 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/api/mychar", isAuthenticated, function(req, res){
+  app.post("/api/mychar/", passport.authenticate("local", { successRedirect: "/welcomeback",
+    failureRedirect: "/login" })), function(req, res){
     db.Players.findOne({
-      where: {PlayerId: req.user.id}
+      where: {userName: req.user.userName}
     }).then(function(dbPlayers){
       if(!dbPlayers){
         res.status(404).json(false);
@@ -33,7 +34,24 @@ module.exports = function(app) {
         res.status(401).json(false);
       }
     });
+  };
+
+  app.post("/login", passport.authenticate("local"), function(req, res) {
+    res.json(req.user);
   });
+
+  // app.post("api/players/:id", function(req, res){
+  //   db.Player.update(
+  //     {lastAvatarid: req.body.avatarId},
+  //     {where: {
+  //       id: req.user.id}}
+  //   ).then(function(dbPlayers){
+
+  //   });
+  // db.Players.put(req.body).then(function(dbPlayer){
+  //   res.json(dbPlayer)
+  // });
+
 
   app.post("/api/signup", function(req, res){
     db.Players.create({
@@ -41,30 +59,23 @@ module.exports = function(app) {
       password: req.body.password,
       gender: req.body.gender,
       age: req.body.age,
-      // medicinalPreference: req.body.medicinalPreference
     }).then(function(){
       res.redirect("/characters");
     });
   });
 
-  app.post("/createavatar", function(req, res){
-    db.Avatar.create({
-      avatarName: req.body.avatarName,
-      gender: req.body.gender,
-      specialistType: req.body.specialistType
-    }).then(function(){
-      res.redirect("/game");
-    });
-  });
 
-  app.post("/api/login", passport.authenticate("local"), function(req, res){
-    if(isAuthenticated){
-      res.redirect("/welcomeback");
-    } else {
-      res.status(404).json(false);
-      res.redirect("/");
-    }
-  });
+
+  // app.post("/api/login", passport.authenticate("local", { successRedirect: "/welcomeback",
+  // failureRedirect: "/login" })), function(req, res){
+  //   res.json(req.user);
+  // if(isAuthenticated){
+  //   res.redirect("/welcomeback");
+  // } else {
+  //   res.status(404).json(false);
+  //   res.redirect("/");
+  // }
+  // });
   // app.post("api/login", function(req, res){
   //   if(isAuthenticated){
   //     res.redirect("/welcomeback");

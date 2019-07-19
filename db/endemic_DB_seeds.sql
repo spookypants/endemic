@@ -1,4 +1,4 @@
-
+DROP TABLE avatars
 USE endemic_db;
 
 -- Avatars seeds

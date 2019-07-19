@@ -72,7 +72,7 @@ $(document).ready(function() {
     });
   }
 
-  $(".treatment").click(function(event){
+  $(".treatment").on("click", function(event){
     getEffect();
     //check if the effect picked is positive or negative
     var effectType;

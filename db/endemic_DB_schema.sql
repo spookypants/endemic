@@ -2,6 +2,7 @@ DROP DATABASE IF EXISTS endemic_db;
 
 CREATE DATABASE endemic_db;
 
+SELECT * FROM players
 -- USE endemic_db;
 
 -- CREATE TABLE diseases(
@@ -52,20 +53,20 @@ CREATE DATABASE endemic_db;
 -- -- PRIMARY KEY ( id )
 -- -- );
 
--- CREATE TABLE avatars(
--- 	id INT(10) AUTO_INCREMENT NOT NULL,
--- 	avatarName VARCHAR(255),
--- 	gender VARCHAR(50) NOT NULL,
--- 	specialistType VARCHAR (50) NOT NULL, -- link this as a foreign key later (maybe)
--- 	baseImage VARCHAR (255),
--- 	sadImage VARCHAR(255),
--- 	happyImage VARCHAR(255),
--- 	sadVoiceEmote VARCHAR(255),
--- 	happyVoiceEmote VARCHAR (255),
+CREATE TABLE avatars (
+id INT(10) AUTO_INCREMENT NOT NULL,
+avatarName VARCHAR(255),
+gender VARCHAR(50) NOT NULL,
+specialistType VARCHAR (50) NOT NULL, -- link this as a foreign key later (maybe)
+baseImage VARCHAR (255),
+sadImage VARCHAR(255),
+happyImage VARCHAR(255),
+sadVoiceEmote VARCHAR(255),
+happyVoiceEmote VARCHAR (255),
 --   	createdAt DATETIME,
 -- 	updatedAt DATETIME,
--- 	PRIMARY KEY ( id )
--- );
+PRIMARY KEY ( id )
+);
 
 -- CREATE TABLE patientConditionGraphic(
 -- 	id INT(10) AUTO_INCREMENT NOT NULL,
