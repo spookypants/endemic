@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // $("#gameMusic").get(0).play().volume();
+  $("#gameMusic").get(0).play();
   getDisease();
   getTreatments();
   getEffect();
@@ -28,6 +28,7 @@ $(document).ready(function() {
     }).then(function (res){
       disease = res;
       //assign the initial values to load the game page
+      $("#diseaseName").text(disease.diseaseName);
       $("#symptom-1").text(disease.symptom1);
       $("#symptom-2").text(disease.symptom2);
       $("#symptom-3").text(disease.symptom3);
@@ -147,10 +148,10 @@ $(document).ready(function() {
 
   function gameLost(){
     $("#failureModal").modal("show");
-  };
+  }
 
   function gameWon(){
     $("#successModal").modal("show");
-  };
+  }
 });
 
