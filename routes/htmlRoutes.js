@@ -63,8 +63,11 @@ module.exports = function(app) {
     res.render("characterCreation");
   });
 
+  // app.get("/game", function(req, res){
+  //   res.sendFile(path.join(__dirname, "../views/game-page.html"));
+  // });
   app.get("/game", function(req, res){
-    res.sendFile(path.join(__dirname, "../views/game-page.html"));
+    res.render("gamePage");
   });
 
   // Render 404 page for any unmatched routes
