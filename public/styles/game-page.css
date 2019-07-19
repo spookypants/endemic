@@ -79,3 +79,24 @@ hr {
     border-color: #6B9080;
     color: white;
 }
+.btn-primary {
+    background-color:#D1603D;
+    border-color: #D1603D;
+}
+.btn-primary:hover {
+    background-color: #D1603D;
+    border-color: #D1603D;
+}
+.modal-body {
+    background-color: #364958;
+    color:white;
+    font-size: 20px;
+}
+.modal-header {
+    background-color: #D1603D;
+    color:white;
+    font-family: 'Share Tech Mono', monospace;
+}
+.modal-footer {
+    background-color: #364958;
+}
