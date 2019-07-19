@@ -8,13 +8,20 @@
 
     <form id="create-form">
       <div class="row">
-        <div class="input-field col-md-4">
+        <div class="input-field col-md-5">
           <label for="userName">User Name*</label>
           <input type="text" id="userName">
         </div>
-        <div class="input-field col-md-8">
-          <label for="medicinalPreference">Medicinal Preference*</label>
-          <div class="form-check form-check-inline" id="gender">
+        <div class="input-field col-md-5">
+          <label for="inputPassword">Password*</label>
+          <input type="password" id="inputPassword">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col-md-5 gender">
+          <label for="gender">Gender*</label>
+          <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gender-male" value="Male">
             <label class="form-check-label" for="inlineRadio1">Male &nbsp;</label>
           </div>
@@ -23,32 +30,9 @@
             <label class="form-check-label" for="inlineRadio2">Female</label>
           </div>
         </div>
-      </div>
-      <br />
-      <div class="row">
-        <div class="input-field col-md-4">
-          <label for="inputPassword">Password*</label>
-          <input type="password" id="inputPassword">
-        </div>
-        <div class="input-field col-md-8">
+        <div class="input-field col-md-5">
           <label for="age">Age (optional)</label>
           <input type="number" id="age">
-        </div>
-        <div class="input-field col-md-5 medicinalPreference">
-          <label for="medicinalPreference">Medicinal Preference*</label>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadio1" id="inlineRadio1" value="Doctor">
-            <label class="form-check-label" for="inlineRadio1">Doctor &nbsp;</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadio1" id="inlineRadio2" value="Shaman">
-            <label class="form-check-label" for="inlineRadio2">Shaman &nbsp;</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadio1" id="inlineRadio3" value="Biochemist">
-            <label class="form-check-label" for="inlineRadio3">Biochemist</label>
-          </div>
-
         </div>
       </div>
 
@@ -56,10 +40,10 @@
         <h2 id="message"></h2>
       </div>
       <div class="row">
-        <button type="submit" id="add-account" class="col-sm-6 btn btn-primary">Create Account</button>
+        <button type="submit" id="add-account" class="col-sm-12 btn btn-primary">Create Account</button>
       </div>
     </form>
   </div>
 </div>
-{{!-- make sure our links to js files are correct in the handlbars files --}}
+{{!-- make sure our links to js files are correct in the handlebars files --}}
 <script src="./js/account.js"></script>

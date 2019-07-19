@@ -11,6 +11,7 @@ body {
   align-content: center;
   background-color: #D1603D;
   padding: 10px;
+  margin: 0 auto;
 }
 
 .nav-links {

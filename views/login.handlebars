@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/styles/landing-account-styles.css" media="screen" title="no title" charset="utf-8">
+
+<div class="container content-box">
+    <h1 class="page-title center-align">Login</h1>
+    <hr>
+    <br />
+    <form id="login-form">
+        <div class="row">
+            <div class="input-field col-md-6">
+                <label for="inputUserName">User Name</label>
+                <input type="text" class="form-control" id="inputUserName" value="{{userName.body}}"
+                    placeholder="username">
+            </div>
+            <div class="input-field col-md-6">
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" value="{{password.body}}"
+                    placeholder="password">
+            </div>
+            <div class="row">
+                <button type="submit" id="login" class="col-sm-12 btn btn-primary">Login</button>
+            </div>
+        </div>
+    </form>
+
+{{!-- make sure our links to js files are correct in the handlebars files --}}
+<script src="./js/landing.js"></script>

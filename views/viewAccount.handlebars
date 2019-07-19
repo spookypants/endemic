@@ -1,64 +1,59 @@
-<br/><br/>
-<main>
-  <div class="container rounded-content-box z-depth-5">
-    <h1 class="page-title center-align">Your Account</h1>
-      <header class="center-align">
-        <div class="accountID">
-          <h5 id="account-number" data-userName="{{userName.body}}">User Name: {{userName.body}}</h5>
-        </div>
-        <h3 id="update-err-msg"></h3>
-      </header>
-      <hr>
-      <br/>
-      <form id="account-form">
-        <div class="row">
-          <div class="input-field col s12 m6">
-            <label for="inputUserName">User Name</label>
-            <input type="text" class="form-control" id="inputUserName" value="{{userName.body}}" placeholder="April Montes">
-          </div>
-          <div class="input-field col s12 m6">
-            <label for="inputPassword">Password</label>
-            <input type="password" class="form-control" id="inputPassword" value="{{password.body}}" placeholder="password">
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12 m6">
-            <label for="inputGender">Gender</label>
-            <input type="radio" class="form-control" id="inputGender" value="{{gender.body}}">
-          </div>
-          <div class="input-field col s12 m6">
-            <label for="inputAge">Age</label>
-            <input type="number" class="form-control" id="inputAge" value="{{age.body}}">
-          </div>
-          <div class="input-field col s12 m6">
-            <label for="inputMedicinalPreference">Medicinal Preference</label>
-            <input type="number" class="form-control" id="inputMedicinalPreference" value="{{medicinalPreference.body}}">
-          </div>        </div>
-        <div class="row center-align">
-          <button type="submit" id="update-account" class="btn btn-primary">SUBMIT CHANGES</button>
-          <button href="#delete-account-modal" type="submit" id="delete-account" class="btn btn-primary modal-trigger">DELETE ACCOUNT</button>
-          <button type="submit" id="view-account" class="btn btn-primary">REFRESH PAGE</button>
-        </div>
-      </form>
-      <div class="modal" id="delete-account-modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Re-Enter Credentials to delete account</h5>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h3 id="err-msg"></h3>
-              <form>
-                <div class="input-field">
-                  <label for="passwordConfirm">Confirm Your Password</label>
-                  <input type="password" class="form-control" id="passwordConfirm">
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button id="confirm-delete" type="button" class="btn btn-primary">Confirm Delete</button>
-              <button type="button" class="btn btn-secondary modal-close">Nevermind I'll stay</button>
-            </div>
+<link rel="stylesheet" href="/styles/landing-account-styles.css" media="screen" title="no title" charset="utf-8">
+
+<div class="container content-box">
+  <h1 class="page-title center-align">Your Account</h1>
+  <header class="center-align">
+    <div class="accountID">
+      <h5 id="account-number" data-userName="{{userName.body}}">User Name: {{userName.body}}</h5>
+    </div>
+    <h3 id="update-err-msg"></h3>
+  </header>
+  <hr>
+  <br />
+  <form id="account-form">
+    <div class="row">
+      <div class="input-field col-md-6">
+        <label for="inputUserName">User Name</label>
+        <input type="text" class="form-control" id="inputUserName" value="{{userName.body}}" placeholder="April Montes">
+      </div>
+      <div class="input-field col-md-6">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" value="{{password.body}}" placeholder="password">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col-md-6">
+        <label for="inputGender">Gender</label>
+        <input type="radio" class="form-control" id="inputGender" value="{{gender.body}}">
+      </div>
+      <div class="input-field col-md-6">
+        <label for="inputAge">Age</label>
+        <input type="number" class="form-control" id="inputAge" value="{{age.body}}">
+      </div>
+      <div class="input-field col-md-6">
+        <label for="inputMedicinalPreference">Medicinal Preference</label>
+        <input type="number" class="form-control" id="inputMedicinalPreference" value="{{medicinalPreference.body}}">
+      </div>
+    </div>
+    <div class="row center-align">
+      <button type="submit" id="update-account" class="btn btn-primary">SUBMIT CHANGES</button>
+      <button href="#delete-account-modal" type="submit" id="delete-account"
+        class="btn btn-primary modal-trigger">DELETE ACCOUNT</button>
+      <button type="submit" id="view-account" class="btn btn-primary">REFRESH PAGE</button>
+    </div>
+  </form>
+  <div class="modal" id="delete-account-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Re-Enter Credentials to delete account</h5>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 id="err-msg"></h3>
+        <form>
+          <div class="input-field">
+            <label for="passwordConfirm">Confirm Your Password</label>
+            <input type="password" class="form-control" id="passwordConfirm">
           </div>
         </form>
       </div>
@@ -67,5 +62,10 @@
         <button type="button" class="btn btn-secondary modal-close">Nevermind I'll stay</button>
       </div>
     </div>
-  </div> --}}
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button id="confirm-delete" type="button" class="btn btn-primary">Confirm Delete</button>
+    <button type="button" class="btn btn-secondary modal-close">Nevermind I'll stay</button>
+  </div>
 </div>

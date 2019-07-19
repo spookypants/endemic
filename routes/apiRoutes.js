@@ -41,13 +41,36 @@ module.exports = function(app) {
       password: req.body.password,
       gender: req.body.gender,
       age: req.body.age,
-      medicinalPreference: req.body.medicinalPreference
+      // medicinalPreference: req.body.medicinalPreference
+    }).then(function(){
+      res.redirect("/characters");
+    });
+  });
+
+  app.post("/createavatar", function(req, res){
+    db.Avatar.create({
+      avatarName: req.body.avatarName,
+      gender: req.body.gender,
+      specialistType: req.body.specialistType
     }).then(function(){
       res.redirect("/game");
     });
   });
 
   app.post("/api/login", passport.authenticate("local"), function(req, res){
-    res.json(req.user);
+    if(isAuthenticated){
+      res.redirect("/welcomeback");
+    } else {
+      res.status(404).json(false);
+      res.redirect("/");
+    }
   });
+  // app.post("api/login", function(req, res){
+  //   if(isAuthenticated){
+  //     res.redirect("/welcomeback");
+  //   } else {
+  //     res.status(404).json(false);
+  //     res.redirect("/");
+  //   }
+  // });
 };
