@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // $("#gameMusic").get(0).play().volume();
   getDisease();
   getTreatments();
   getEffect();
@@ -72,7 +73,8 @@ $(document).ready(function() {
     });
   }
 
-  $(".treatment").click(function(event){
+  $(".treatment").click(function(event) {
+  // $(document).click(".treatment", function(event){ // adjusted to look at entire document, then run if TREATMENT is selected
     getEffect();
     //check if the effect picked is positive or negative
     var effectType;
@@ -86,27 +88,28 @@ $(document).ready(function() {
     //get the treatment row based on the id of the button clicked
     var treatmentData;
     var buttonId = this.id.split("-")[1];
+    // var buttonId = 1;
 
     //apply the appropriate specialist healing effect based on avatar type selected
     switch (specialistType) {
     case "doctor":
       patientLifePoints += treatments[buttonId - 1].doctorEffect * effectType;
       $("#effectLog").prepend("<button type=\"button\" class=\"btn btn-info btn-block disabled=\"disabled\">"+ 
-          treatments[buttonId - 1].doctorEffect * effectType + " | " + effect.effectName +
+          treatments[buttonId - 1].doctorEffect * effectType + " | " + effect.effectName + " " +
           effect.effectDescription +"</button>");
       $("#patientHealth").text(patientLifePoints);
       break;
     case "biochemist":
       patientLifePoints += treatments[buttonId - 1].biochemistEffect * effectType;
       $("#effectLog").prepend("<button type=\"button\" class=\"btn btn-info btn-block disabled=\"disabled\">"+ 
-          treatments[buttonId - 1].biochemistEffect * effectType + " | " + effect.effectName +
+          treatments[buttonId - 1].biochemistEffect * effectType + " | " + effect.effectName + " " +
           effect.effectDescription +"</button>");
       $("#patientHealth").text(patientLifePoints);
       break;
     case "shaman":
       patientLifePoints += treatments[buttonId - 1].shamanEffect * effectType;
       $("#effectLog").prepend("<button type=\"button\" class=\"btn btn-info btn-block disabled=\"disabled\">"+ 
-          treatments[buttonId - 1].shamanEffect * effectType + " | " + effect.effectName +
+          treatments[buttonId - 1].shamanEffect * effectType + " | " + effect.effectName + " " +
           effect.effectDescription +"</button>");
       $("#patientHealth").text(patientLifePoints);
       break;
@@ -115,6 +118,7 @@ $(document).ready(function() {
     }
 
     //check patient health after each treatment and take appropriate action
+    console.log(patientLifePoints);
     if(patientLifePoints <= 0){
       gameLost();
     }else if(patientLifePoints >= 100){
@@ -122,23 +126,31 @@ $(document).ready(function() {
     }else if(patientLifePoints > 0 && patientLifePoints <= 25){
       $("#patientSymptoms").css("opacity", "1");
       //show appropriate animation on patient
+      $("#patient").empty();
+      $("#patient").append("<lottie-player src='https://assets5.lottiefiles.com/packages/lf20_WIegQA.json'  id='patientAvatar' background='transparent'  speed='1'  style='width: 60%; height: 75%; margin: auto;'  loop autoplay > </lottie-player>");
     }else if(patientLifePoints > 25 && patientLifePoints <= 50){
       $("#patientSymptoms").css("opacity", "0.5");
       //show appropriate animation on patient
+      $("#patient").empty();
+      $("#patient").append("<lottie-player src='https://assets3.lottiefiles.com/packages/lf20_4rH0mn.json'  id='patientAvatar' background='transparent'  speed='1'  style='width: 60%; height: 75%; margin: auto;'  loop autoplay > </lottie-player>");
     }else if(patientLifePoints > 50 && patientLifePoints <= 75){
       //show appropriate animation on patient
+      $("#patient").empty();
+      $("#patient").append("<lottie-player src='https://assets6.lottiefiles.com/packages/lf20_axMZra.json'  id='patientAvatar' background='transparent'  speed='1'  style='width: 60%; height: 75%; margin: auto;'  loop autoplay > </lottie-player>");
     }else if(patientLifePoints > 75 && patientLifePoints <= 99){
       $("#patientSymptoms").css("opacity", "0.1");
       //show appropriate animation on patient
+      $("#patient").empty();
+      $("#patient").append("<lottie-player src='https://assets4.lottiefiles.com/packages/lf20_6LvRSb.json'  id='patientAvatar' background='transparent'  speed='1'  style='width: 60%; height: 75%; margin: auto;'  loop autoplay > </lottie-player>");
     }
   });
 
   function gameLost(){
-    //Pop a modal?
-  }
+    $("#failureModal").modal("show");
+  };
 
   function gameWon(){
-    //pop a modal?
-  }
+    $("#successModal").modal("show");
+  };
 });
 
