@@ -29,6 +29,13 @@ h2 {
     font-family: 'Share Tech Mono', monospace;
 }
 
+h6 {
+    text-align: center;
+    color:white;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+}
+
 p {
     color: black;
     font-family: 'Lato', sans-serif;
@@ -49,7 +56,7 @@ p {
 
 #log {
     overflow: auto;
-    height: 90vh;
+    height: 60vh;
 }
 
 hr {
@@ -72,7 +79,13 @@ hr {
 .btn-info {
     background-color: #A4C3B2;
     border-color: #A4C3B2;
-    color: black;
+    color: #364958;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-info:disabled {
+    background-color: #6B9080;
+    border-color: #6B9080;
 }
 .btn-info:hover {
     background-color: #6B9080;
@@ -99,4 +112,7 @@ hr {
 }
 .modal-footer {
     background-color: #364958;
+}
+.footer {
+    background-color: #D1603D;
 }
