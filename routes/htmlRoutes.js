@@ -48,13 +48,8 @@ module.exports = function(app) {
   });
 
   // game page
-<<<<<<< HEAD
-  app.get("/game-page", function(req, res){
-    res.render("gamePage");
-=======
   app.get("/gamepage", function(req, res){
     res.render("gamepage");
->>>>>>> master
   });
   // ------------- testing ------------------------------
   //logout
