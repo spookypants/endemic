@@ -26,11 +26,11 @@ $(document).ready(function() {
       url: "/api/disease/" + randomId
     }).then(function (res){
       disease = res;
-        //assign the initial values to load the game page
+      //assign the initial values to load the game page
       $("#symptom-1").text(disease.symptom1);
       $("#symptom-2").text(disease.symptom2);
       $("#symptom-3").text(disease.symptom3);
-      });
+    });
   }
 
 

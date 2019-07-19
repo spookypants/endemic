@@ -41,7 +41,7 @@ module.exports = function(app) {
       password: req.body.password,
       gender: req.body.gender,
       age: req.body.age,
-      medicinalPreference: req.body.medicinalPreference
+      // medicinalPreference: req.body.medicinalPreference
     }).then(function(){
       res.redirect("/characters");
     });

@@ -1,4 +1,5 @@
 var db = require("../models");
+var path = require("path");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
@@ -63,7 +64,7 @@ module.exports = function(app) {
   });
 
   app.get("/game", function(req, res){
-    res.render("gamePage");
+    res.sendFile(path.join(__dirname, "../views/game-page.html"));
   });
 
   // Render 404 page for any unmatched routes
