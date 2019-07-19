@@ -1,9 +1,10 @@
 {
   "development": {
     "username": "root",
-    "password": "h3lpc0mput3r",
+    "password": "rootroot",
     "database": "endemic_db",
     "host": "localhost",
+    "port": 8889,
     "dialect": "mysql"
   },
   "test": {
