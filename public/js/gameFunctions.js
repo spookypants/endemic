@@ -61,8 +61,7 @@ $(document).ready(function() {
 
   //GET 1 random EFFECT
   function getEffect(){
-    var randomId = getRandomId(37);
-    var ids = [];
+    var randomId = getRandomId(28);
 
     //effect = select * from effects where id = randomId
     $.ajax({
@@ -73,7 +72,7 @@ $(document).ready(function() {
     });
   }
 
-  $(".treatment").click(function(event) {
+  $(".treatment").click(function() {
   // $(document).click(".treatment", function(event){ // adjusted to look at entire document, then run if TREATMENT is selected
     getEffect();
     //check if the effect picked is positive or negative
@@ -85,8 +84,6 @@ $(document).ready(function() {
       effectType = -1;
     }
 
-    //get the treatment row based on the id of the button clicked
-    var treatmentData;
     var buttonId = this.id.split("-")[1];
     // var buttonId = 1;
 
@@ -147,10 +144,10 @@ $(document).ready(function() {
 
   function gameLost(){
     $("#failureModal").modal("show");
-  };
+  }
 
   function gameWon(){
     $("#successModal").modal("show");
-  };
+  }
 });
 
