@@ -1,7 +1,5 @@
 $(document).ready(function() {
-  $("#gameMusic").get(0).play();
-  var music = document.getElementById("#gameMusic");
-  music.volume = 0.2;
+  // $("#gameMusic").get(0).play().volume();
   getDisease();
   getTreatments();
   getEffect();
