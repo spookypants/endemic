@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/styles/game-page.css" media="screen" title="no title" charset="utf-8">
-{{!-- <audio id="gameMusic" volume="0.2" src="../music/endemic_game.mp3" loop="loop"></audio> --}}
+<audio id="gameMusic" src="../music/endemic_game.mp3" loop="loop"></audio>
 
 <!-- THREE PANELS -->
 <div class="gamepad">
@@ -17,9 +17,9 @@
         <!-- LEFT PANEL PATIENT INFO & TREATMENTS -->
         <div id="patientSymptoms">
             <h2>PATIENT SYMPTOMS</h2>
-            <button id="symptom-1" type="button" class="btn btn-info btn-block symptom" disabled="disabled"></button>
-            <button id="symptom-2" type="button" class="btn btn-info btn-block symptom" disabled="disabled"></button>
-            <button id="symptom-3" type="button" class="btn btn-info btn-block symptom" disabled="disabled"></button>
+            <button id="symptom-1" type="button" class="btn btn-info btn-block symptom" disabled></button>
+            <button id="symptom-2" type="button" class="btn btn-info btn-block symptom" disabled></button>
+            <button id="symptom-3" type="button" class="btn btn-info btn-block symptom" disabled></button>
         </div>
         <hr>
         <div id="treatmentOptions">
@@ -35,23 +35,30 @@
     <!-- CENTER PANEL = PATIENT -->
     <div class="col-md-4" id="patient-panel" style="border-right: solid 3px #D1603D; border-left: solid 3px #D1603D;">
         <h2>PATIENT</h2>
+        <h6>Diagnosis: <span id="diseaseName"></span></h6>
       <div id="patient">
         <lottie-player
-        src="https://assets3.lottiefiles.com/packages/lf20_4rH0mn.json"  id="patientAvatar" background="transparent"  speed="1"  style="width: 60%; height: 75%; margin: auto;"  loop autoplay >
+        src="https://assets3.lottiefiles.com/packages/lf20_4rH0mn.json"  id="patientAvatar" background="transparent"  speed="1"  style="width: 60%; height: 60%; margin: auto;"  loop autoplay >
         </lottie-player>
       </div>
-        <hr>
-        <div>
+        {{!-- <div>
             <h2>Life Force</h2>
             <h1 id="patientHealth">100</h1>
-        </div>
+        </div> --}}
     </div>
   
     <!-- RIGHT PANEL = PLAYER'S LOG -->
-    <div class="col-md-4" id="log">
-        <h2>LOG BOOK</h2>
-        <div id="effectLog">
-          {{!-- <button type="button" class="btn btn-info btn-block"></button> --}}
+    <div class="col-md-4">
+        <div>
+            <h2>LIFE FORCE</h2>
+            <h1 id="patientHealth">100</h1>
+        </div>
+        <hr>
+        <div id="log">
+            <h2>LOG BOOK</h2>
+            <div id="effectLog">
+            {{!-- <button type="button" class="btn btn-info btn-block"></button> --}}
+            </div>
         </div>
     </div>
 
