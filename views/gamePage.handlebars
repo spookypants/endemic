@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/styles/game-page.css" media="screen" title="no title" charset="utf-8">
+<audio id="gameMusic" volume="0.2" src="../music/endemic_game.mp3" loop="loop"></audio>
 
 <!-- THREE PANELS -->
 <div class="gamepad">
@@ -34,9 +35,11 @@
     <!-- CENTER PANEL = PATIENT -->
     <div class="col-md-4" id="patient-panel" style="border-right: solid 3px #D1603D; border-left: solid 3px #D1603D;">
         <h2>PATIENT</h2>
+      <div id="patient">
         <lottie-player
         src="https://assets3.lottiefiles.com/packages/lf20_4rH0mn.json"  id="patientAvatar" background="transparent"  speed="1"  style="width: 60%; height: 75%; margin: auto;"  loop autoplay >
         </lottie-player>
+      </div>
         <hr>
         <div>
             <h2>Life Force</h2>
@@ -72,7 +75,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">New Game</button>
+        {{!-- <button type="button" class="btn btn-primary">New Game</button> --}}
       </div>
     </div>
   </div>
@@ -95,7 +98,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">New Game</button>
+        {{!-- <button type="button" class="btn btn-primary">New Game</button> --}}
       </div>
     </div>
   </div>

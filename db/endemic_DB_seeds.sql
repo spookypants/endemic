@@ -19,7 +19,7 @@ INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Malaria","Fever","Chills","Sweats", 5);
 
 INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
-VALUES ("Bubonic Plague","Sudden Fever","Headache","Swollen, Tender and Painful Lymph Nodes",7);
+VALUES ("Bubonic Plague","Sudden Fever","Headache","Swollen, Tender Lymph Nodes",7);
 
 INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Dengue Fever","Nausea/Vomiting","Bleeding From the Nose or Gums","Aches and Pains (eyes, muscles, joints, or bones)",4);
@@ -31,45 +31,45 @@ INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Pertusis","Persistent Cough","Runny Nose","Sneezing",3);
 
 INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
-VALUES ("Measles","Conjunctivitis","Koplik Spots","Rash Made of Large, Flat Blotches",4);
+VALUES ("Measles","Conjunctivitis","Koplik Spots","Rash",4);
 
 INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
-VALUES ("Lyme Disease","Erythema Migrans (EM) Rash","Neck Stiffness","Heart Palpitations",8);
+VALUES ("Lyme Disease","Rash","Neck Stiffness","Heart Palpitations",8);
 
 INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Zika","Conjunctivitis","Joint Pain","Headache",2);
 
 INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
-VALUES ("Varicella","Itchy Rash of Blisters","Headache","Fatigue",2);
+VALUES ("Varicella","Itchy Rash","Headache","Fatigue",2);
 
 
 -- Treatments Seeds
 INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
-VALUES ("20cc Alimdafinil", "Conventional Medicine", 20, 10, 5);
+VALUES ("20cc Alimdafinil", "Conventional", 20, 10, 5);
 
 INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
-VALUES ("Leeches", "Shamanistic Medicine", 5, 20, 10);
+VALUES ("Leeches", "Shamanistic", 5, 20, 10);
 
 INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
-VALUES ("250 mg Galanruvax", "Experimental Medicine", 15, 5, 20);
+VALUES ("250 mg Galanruvax", "Experimental", 15, 5, 20);
 
 INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
-VALUES ("100 mg Robamumab", "Conventional Medicine", 20, 10, 5);
+VALUES ("100 mg Robamumab", "Conventional", 20, 10, 5);
 
 INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
-VALUES ("Gondwanian Throat Singing", "Shamanistic Medicine", 5, 20, 10);
+VALUES ("Gondwanian Throat Singing", "Shamanistic", 5, 20, 10);
 
 INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
-VALUES ("400cc Fluaxane", "Experimental Medicine", 15, 5, 20);
+VALUES ("400cc Fluaxane", "Experimental", 15, 5, 20);
 
 INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
-VALUES ("500 mg Dexlannate Vitronuma", "Conventional Medicine", 20, 10, 5);
+VALUES ("500 mg Dexlannate Vitronuma", "Conventional", 20, 10, 5);
 
 INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
-VALUES ("Deslopirin Tea", "Shamanistic Medicine", 5, 20, 10);
+VALUES ("Deslopirin Tea", "Shamanistic", 5, 20, 10);
 
 INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
-VALUES ("10cc Colezolam Albendadocin", "Experimental Medicine", 15, 5, 20);
+VALUES ("10cc Colezolam Albendadocin", "Experimental", 15, 5, 20);
 
 -- Effects Seeds
 INSERT INTO effects (effectName, effectDescription, positiveEffect)
