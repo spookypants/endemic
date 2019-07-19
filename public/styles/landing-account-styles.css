@@ -4,7 +4,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background: url("/images/background-art.jpg") no-repeat;
+    background: url("/images/background-art-mono.jpg") no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
