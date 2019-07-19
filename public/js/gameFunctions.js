@@ -92,21 +92,21 @@ $(document).ready(function() {
     case "doctor":
       patientLifePoints += treatments[buttonId - 1].doctorEffect * effectType;
       $("#effectLog").prepend("<button type=\"button\" class=\"btn btn-info btn-block disabled=\"disabled\">"+ 
-          treatments[buttonId - 1].doctorEffect * effectType + " | " + effect.effectName +
+          treatments[buttonId - 1].doctorEffect * effectType + " | " + effect.effectName + " " +
           effect.effectDescription +"</button>");
       $("#patientHealth").text(patientLifePoints);
       break;
     case "biochemist":
       patientLifePoints += treatments[buttonId - 1].biochemistEffect * effectType;
       $("#effectLog").prepend("<button type=\"button\" class=\"btn btn-info btn-block disabled=\"disabled\">"+ 
-          treatments[buttonId - 1].biochemistEffect * effectType + " | " + effect.effectName +
+          treatments[buttonId - 1].biochemistEffect * effectType + " | " + effect.effectName + " " +
           effect.effectDescription +"</button>");
       $("#patientHealth").text(patientLifePoints);
       break;
     case "shaman":
       patientLifePoints += treatments[buttonId - 1].shamanEffect * effectType;
       $("#effectLog").prepend("<button type=\"button\" class=\"btn btn-info btn-block disabled=\"disabled\">"+ 
-          treatments[buttonId - 1].shamanEffect * effectType + " | " + effect.effectName +
+          treatments[buttonId - 1].shamanEffect * effectType + " | " + effect.effectName + " " +
           effect.effectDescription +"</button>");
       $("#patientHealth").text(patientLifePoints);
       break;
@@ -122,23 +122,27 @@ $(document).ready(function() {
     }else if(patientLifePoints > 0 && patientLifePoints <= 25){
       $("#patientSymptoms").css("opacity", "1");
       //show appropriate animation on patient
+      $("#patientAvatar").attr("src", "https://assets5.lottiefiles.com/packages/lf20_WIegQA.json");
     }else if(patientLifePoints > 25 && patientLifePoints <= 50){
       $("#patientSymptoms").css("opacity", "0.5");
       //show appropriate animation on patient
+      $("#patientAvatar").attr("src", "https://assets3.lottiefiles.com/packages/lf20_4rH0mn.json");
     }else if(patientLifePoints > 50 && patientLifePoints <= 75){
       //show appropriate animation on patient
+      $("#patientAvatar").attr("src", "https://assets6.lottiefiles.com/packages/lf20_axMZra.json");
     }else if(patientLifePoints > 75 && patientLifePoints <= 99){
       $("#patientSymptoms").css("opacity", "0.1");
       //show appropriate animation on patient
+      $("#patientAvatar").attr("src", "https://assets4.lottiefiles.com/packages/lf20_6LvRSb.json");
     }
   });
 
   function gameLost(){
-    //Pop a modal?
-  }
+    $("#failureModal").modal("{show: true, backdrop: 'static', keyboard: false}");
+  };
 
   function gameWon(){
-    //pop a modal?
-  }
+    $("#successModal").modal("{show: true, backdrop: 'static', keyboard: false}");
+  };
 });
 

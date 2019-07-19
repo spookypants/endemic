@@ -54,6 +54,52 @@
 
 </div>
 </div>
+{{!-- SUCCESS MODAL --}}
+<div class="modal fade show" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">SUCCESS!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <lottie-player 
+            src="https://assets3.lottiefiles.com/packages/lf20_uMS02q.json" id="doc_fem" background="transparent"  speed="1"  style="width: 50%; height: 50%; margin: auto;"  loop autoplay >
+        </lottie-player>
+        Congratulations! The patient is expected to make a full recovery. Meanwhile, your next patient is ready...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">New Game</button>
+      </div>
+    </div>
+  </div>
+</div>
+{{!-- FAILURE MODAL --}}
+<div class="modal fade show" id="failureModal" tabindex="-1" role="dialog" aria-labelledby="failureModal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">FAILURE!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <lottie-player 
+            src="https://assets3.lottiefiles.com/packages/lf20_0oPGzC.json" id="doc_fem" background="transparent"  speed="1"  style="width: 50%; height: 50%; margin: auto;"  loop autoplay >
+        </lottie-player>
+        Despite your best efforts, we've lost the patient. Don't blame yourself. Your other patients are waiting...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">New Game</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- link to game-page.js -->
 <script src="/js/gameFunctions.js"></script>
 </body>
