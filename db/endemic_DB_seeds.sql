@@ -79,7 +79,7 @@ VALUES
 ("Blood Pressure Dropping!", "The patient's blood pressure is at dangerously low levels! The patient could lose consciousness -- this could be bad!", 0),
 ("Blood Pressure Rising!", "The patient's blood pressure is reaching dangerously high levels! The patient looks discomforted -- this could get worse!", 0),
 
-("Temperature Stabilizing!", "Treatment has brough the patient's temperature back into normal range. The patient should rest easier now.", 1),
+("c!", "Treatment has brough the patient's temperature back into normal range. The patient should rest easier now.", 1),
 ("Temperature Holding!", "No change in the patient's temperature. At least it's not worse. Yet.", 1),
 ("Temperature Rising!", "The patient's temperature is rising! Bring that fever down -- stat!", 0),
 ("Temperature Dropping!", "The patient's temperature is plummeting! Whatever you did -- do better!", 0),

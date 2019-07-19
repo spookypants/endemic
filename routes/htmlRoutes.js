@@ -44,6 +44,8 @@ module.exports = function(app) {
     res.redirect("/");
   });
 
+ 
+  // ------------ testing -------------------------------
   // character creation
   app.get("/characters", function(req, res){
     res.render("characterCreation");
@@ -68,6 +70,17 @@ module.exports = function(app) {
     req.logout();
     res.redirect("/");
   });
+  
+  app.get("/characters", function(req, res){
+    res.render("characterCreation");
+  });
+
+  // app.get("/game", function(req, res){
+  //   res.sendFile(path.join(__dirname, "../views/game-page.html"));
+  // });
+  // app.get("/game", function(req, res){
+  //   res.render("gamepage");
+  // });
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {

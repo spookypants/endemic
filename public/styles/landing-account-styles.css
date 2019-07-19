@@ -19,7 +19,7 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Teko', 'Oswald', sans-serif;
+    font-family: 'Alegreya Sans';
     font-weight: 500;
     font-size: 48px;
     line-height: 1.5em;
@@ -27,14 +27,15 @@ h1 {
     text-shadow: 1.5px 1.5px whitesmoke;
 }
 
-h3 {
+h3,
+.modal-title {
     text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    font-size: 45px;
+    font-family: 'Signika';
+    font-weight: 700;
+    font-size: 32px;
     line-height: 1.5em;
-    color: black;
-    text-shadow: 1.5px 1.5px whitesmoke;
+    color: #D1603D;
+    text-shadow: 1.5px 1.5px black;
     padding-bottom: 2%;
 }
 
@@ -45,7 +46,7 @@ h5 {
 
 p {
     font-family: 'Oswald', sans-serif;
-    font-weight: 400;
+    font-weight: bolder;
     font-size: 21px;
     line-height: 1.5em;
     letter-spacing: .01em;
@@ -53,12 +54,83 @@ p {
     text-shadow: 1px 1px whitesmoke;
 }
 
-#landing-title {
-    font-size: 800%;
-    text-shadow: 6px 6px 5px #D1603D;
-    font-family: Decorative;
-    padding-top: 20%;
-    padding-bottom: 1%;
+.input-field {
+    font-family: 'Signika';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 2em;
+    letter-spacing: .03em;
+    color: black;
+    word-spacing: .06em;
+    /* text-shadow: 1px 1px #364958; */
+}
+
+a {
+    color: white;
+    font-weight: bolder;
+    /* text-align: center; */
+}
+
+a:hover {
+    color: #689080;
+}
+
+a:visited {
+    color: white;
+}
+
+a:disabled {
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #689080;
+    font-family: 'Alegreya Sans';
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid #587291;
+    color: #EFFFFA;
+    vertical-align: center;
+}
+
+.card {
+    background-color: #364958;
+    border: 0px solid #364958;
+
+}
+
+.card-title {
+    color: white;
+    font-weight: 900;
+    position: relative;
+    text-align: center;
+}
+
+.content-box {
+    background-color: rgba(235, 137, 8, 0.1);
+    filter: alpha(opacity=10);
+    opacity: .8;
+    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 3% 5% 2% 5%;
+    margin-top: 50%;
+    width: 100%;
+}
+
+.navbar {
+    /* align-content: center; */
+    background-color: #D1603D;
+    padding: 10px 40px 10px 40px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: normal;
 }
 
 .game-logo {
@@ -87,7 +159,34 @@ p {
     text-align: center;
     padding-top: 5px;
     color: #eee;
-    height: 30px;   
+    height: 30px;
+}
+
+#box-text {
+    font-family: 'Signika';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2em;
+    letter-spacing: .03em;
+    color: white;
+    word-spacing: .06em;
+    /* text-shadow: 1px 1px #364958; */
+}
+
+#landing-title {
+    font-size: 800%;
+    text-shadow: 6px 6px 5px #D1603D;
+    font-family: Decorative;
+    padding-top: 20%;
+    padding-bottom: 1%;
+}
+
+.game-logo {
+    position: absolute;
+    color: white;
+    display: inline-block;
+    font-size: 2rem;
+    position: absolute;
 }
 
 .content-box {

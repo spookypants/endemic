@@ -1,4 +1,8 @@
 
+$(document).ready(function() {
+  $("#gameMusic").get(0).play();
+});
+
 $("#sign-up").on("click", function(event) {
   event.preventDefault();
   window.location.href = "/signup";
@@ -7,6 +11,11 @@ $("#sign-up").on("click", function(event) {
 $("#sign-in").on("click", function(event) {
   event.preventDefault();
   window.location.href = "/login";
+});
+
+$("#play").on("click", function(event){
+  event.preventDefault();
+  window.location.href = "/game";
 });
 
 $("#login").on("click", function(event){
