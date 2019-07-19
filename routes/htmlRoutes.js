@@ -1,4 +1,4 @@
-var db = require("../models");
+// var db = require("../models");
 // var path = require("path");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 
@@ -25,12 +25,14 @@ module.exports = function(app) {
 
   // "viewaccount" signin
   app.get("/login", function(req, res) {
-    console.log("is user authenticated" + isAuthenticated);
-    // If the user already has an account send them to the members page
-    if (req.user, isAuthenticated) {
+  //   console.log("is user authenticated" + isAuthenticated);
+  //   // If the user already has an account send them to the members page
+    if (req.user) {
       res.redirect("/characters");
+    } else {
+      res.render("login");
     }
-    // res.render("characterCreation");
+
   });
   // app.get("/viewAccount", isAuthenticated, function(req, res){
   //   res.send("viewAccount");
@@ -45,9 +47,12 @@ module.exports = function(app) {
  
   // ------------ testing -------------------------------
   // character creation
-  app.get("/characterCreation", function(req, res){
+  app.get("/characters", function(req, res){
     res.render("characterCreation");
   });
+
+  // ------------ testing -------------------------------
+
 
   // game page
   app.get("/game", function(req, res){

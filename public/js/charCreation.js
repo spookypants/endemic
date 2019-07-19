@@ -1,11 +1,14 @@
+
 //global variables
 var genderSelected;
 var specialistSelected;
 var avatarName;
+var avatarId;
 var avatarObj = {
   avatarName: "",
   gender: "",
-  specialistType: ""
+  specialistType: "",
+  avatarId: ""
 };
 
 //disable the specialist selection divs until the gender is selected
@@ -68,6 +71,7 @@ function enableMaleChars() {
     $(this).css("opacity", "1");
     specialistSelected = $(this).data("specialist");
     avatarName = $(this).data("avatarname");
+    avatarId = $(this).data("id");
     console.log(specialistSelected, avatarName);
   });
 }
@@ -77,16 +81,17 @@ function enableFemaleChars() {
   $(".female-char").on("click", function () {
     specialistSelected = $(this).data("specialist");
     avatarName = $(this).data("avatarname");
+    avatarId = $(this).data("id");
     console.log(specialistSelected, avatarName);
   });
 }
 
-function createAvatar(avatarData){
-  $.post("/createavatar", avatarData).then(function (){
-    console.log(avatarData);
-    window.location.href = "/game";
-  });
-}
+// function createAvatar(avatarData){
+//   $.post("/createavatar", avatarData).then(function (){
+//     console.log(avatarData);
+//     window.location.href = "/game";
+//   });
+// }
 
 $("#gameStartButt").on("click", function(event){
   event.preventDefault();
@@ -94,8 +99,9 @@ $("#gameStartButt").on("click", function(event){
   avatarObj.avatarName = avatarName;
   avatarObj.gender = genderSelected;
   avatarObj.specialistType = specialistSelected;
-
+  avatarObj.avatarId = avatarId;
   console.log(avatarObj);
-
-  createAvatar(avatarObj);
+  $.ajax({url: "/api/players/pick_character", data: avatarObj, method: "PUT"}).then(function(response){
+    console.log(response);
+  });
 });
