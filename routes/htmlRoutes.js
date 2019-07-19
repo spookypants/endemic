@@ -1,5 +1,5 @@
 var db = require("../models");
-var path = require("path");
+// var path = require("path");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
@@ -24,8 +24,13 @@ module.exports = function(app) {
   });
 
   // "viewaccount" signin
-  app.get("/login", function(req, res){
-    res.render("login");
+  app.get("/login", function(req, res) {
+    console.log("is user authenticated" + isAuthenticated);
+    // If the user already has an account send them to the members page
+    if (req.user, isAuthenticated) {
+      res.redirect("/characters");
+    }
+    // res.render("characterCreation");
   });
   // app.get("/viewAccount", isAuthenticated, function(req, res){
   //   res.send("viewAccount");
@@ -37,10 +42,7 @@ module.exports = function(app) {
     res.redirect("/");
   });
 
-  app.get("/welcomeback", isAuthenticated, function(req, res){
-    db.Players.findOne({ where: { userName: res.body.userName}});
-    res.render("/welcomeBack");
-  });
+ 
   // ------------ testing -------------------------------
   // character creation
   app.get("/characterCreation", function(req, res){
@@ -48,12 +50,17 @@ module.exports = function(app) {
   });
 
   // game page
-  app.get("/gamepage", function(req, res){
+  app.get("/game", function(req, res){
     res.render("gamepage");
   });
+
+  app.post("api/mychar", isAuthenticated, function(req, res){
+    // db.Players.findOne({ where: { userName: res.body.userName}});
+    res.render("/welcomeBack");
+  });
   // ------------- testing ------------------------------
-  //logout
-   
+  
+  //logout 
   app.get("/logout", function(req, res){
     req.logout();
     res.redirect("/");
@@ -63,9 +70,12 @@ module.exports = function(app) {
     res.render("characterCreation");
   });
 
-  app.get("/game", function(req, res){
-    res.sendFile(path.join(__dirname, "../views/game-page.html"));
-  });
+  // app.get("/game", function(req, res){
+  //   res.sendFile(path.join(__dirname, "../views/game-page.html"));
+  // });
+  // app.get("/game", function(req, res){
+  //   res.render("gamepage");
+  // });
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
