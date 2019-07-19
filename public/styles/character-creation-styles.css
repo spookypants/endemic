@@ -2,14 +2,20 @@ body {
     background-color: #364958;
 }
 
-#nav-bar.row {
-    align-content: center;
+.navbar {
+    /* align-content: center; */
     background-color: #D1603D;
-    padding: 10px;
+    padding: 10px 40px 10px 40px;
 }
 
-.nav-links {
-    color: white;
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: normal;
 }
 
 #submit {
@@ -54,6 +60,31 @@ hr {
     height: 3px;
 }
 
+
+.card {
+    background-color: #364958;
+    border: 0px solid #364958;
+
+}
+
+.card-title {
+    color: white;
+    font-weight: 900;
+    position: relative;
+    text-align: center;
+}
+
+
+.btn-secondary {
+    background-color: #689080;
+    font-family: 'Alegreya Sans';
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid #587291;
+    color: #EFFFFA;
+    vertical-align: center;
+}
 
 /* .main {
 display: grid;
