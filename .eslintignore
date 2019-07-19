@@ -3,3 +3,5 @@ node_modules
 public/images
 public/images/animated
 lottie.js
+db/endemic_DB_schema.sql
+db/endemic_DB_seeds.sql
