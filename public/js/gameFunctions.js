@@ -69,7 +69,7 @@ $(document).ready(function() {
       url: "/api/effect/" + randomId
     }).then(function (res){
       effect = res;
-      });
+    });
   }
 
   $(".treatment").click(function(event){
@@ -89,29 +89,29 @@ $(document).ready(function() {
 
     //apply the appropriate specialist healing effect based on avatar type selected
     switch (specialistType) {
-      case "doctor":
-        patientLifePoints += treatments[buttonId - 1].doctorEffect * effectType;
-        $("#effectLog").prepend('<button type="button" class="btn btn-info btn-block disabled="disabled">'+ 
-          treatments[buttonId - 1].doctorEffect * effectType + ' | ' + effect.effectName +
-          effect.effectDescription +'</button>');
-        $("#patientHealth").text(patientLifePoints);
-        break;
-      case "biochemist":
-        patientLifePoints += treatments[buttonId - 1].biochemistEffect * effectType;
-        $("#effectLog").prepend('<button type="button" class="btn btn-info btn-block disabled="disabled">'+ 
-          treatments[buttonId - 1].biochemistEffect * effectType + ' | ' + effect.effectName +
-          effect.effectDescription +'</button>');
-        $("#patientHealth").text(patientLifePoints);
-        break;
-      case "shaman":
-        patientLifePoints += treatments[buttonId - 1].shamanEffect * effectType;
-        $("#effectLog").prepend('<button type="button" class="btn btn-info btn-block disabled="disabled">'+ 
-          treatments[buttonId - 1].shamanEffect * effectType + ' | ' + effect.effectName +
-          effect.effectDescription +'</button>');
-        $("#patientHealth").text(patientLifePoints);
-        break;
-      default:
-        break;
+    case "doctor":
+      patientLifePoints += treatments[buttonId - 1].doctorEffect * effectType;
+      $("#effectLog").prepend("<button type=\"button\" class=\"btn btn-info btn-block disabled=\"disabled\">"+ 
+          treatments[buttonId - 1].doctorEffect * effectType + " | " + effect.effectName +
+          effect.effectDescription +"</button>");
+      $("#patientHealth").text(patientLifePoints);
+      break;
+    case "biochemist":
+      patientLifePoints += treatments[buttonId - 1].biochemistEffect * effectType;
+      $("#effectLog").prepend("<button type=\"button\" class=\"btn btn-info btn-block disabled=\"disabled\">"+ 
+          treatments[buttonId - 1].biochemistEffect * effectType + " | " + effect.effectName +
+          effect.effectDescription +"</button>");
+      $("#patientHealth").text(patientLifePoints);
+      break;
+    case "shaman":
+      patientLifePoints += treatments[buttonId - 1].shamanEffect * effectType;
+      $("#effectLog").prepend("<button type=\"button\" class=\"btn btn-info btn-block disabled=\"disabled\">"+ 
+          treatments[buttonId - 1].shamanEffect * effectType + " | " + effect.effectName +
+          effect.effectDescription +"</button>");
+      $("#patientHealth").text(patientLifePoints);
+      break;
+    default:
+      break;
     }
 
     //check patient health after each treatment and take appropriate action
