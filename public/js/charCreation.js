@@ -99,9 +99,9 @@ $("#gameStartButt").on("click", function(event){
   avatarObj.avatarName = avatarName;
   avatarObj.gender = genderSelected;
   avatarObj.specialistType = specialistSelected;
-  avatarObj.avatarId = id;
+  avatarObj.avatarId = avatarId;
   console.log(avatarObj);
-  $.post("api/players/:id", function(avatarObj){
-    // avatarId = req.user.lastPlayerAvatar;
+  $.ajax({url: "/api/players/pick_character", data: avatarObj, method: "PUT"}).then(function(response){
+    console.log(response);
   });
 });

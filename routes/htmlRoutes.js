@@ -25,11 +25,14 @@ module.exports = function(app) {
 
   // "viewaccount" signin
   app.get("/login", function(req, res) {
-    // If the user already has an account send them to the members page
-    if (req.user, isAuthenticated) {
+  //   console.log("is user authenticated" + isAuthenticated);
+  //   // If the user already has an account send them to the members page
+    if (req.user) {
       res.redirect("/characters");
+    } else {
+      res.render("login");
     }
-    // res.render("characterCreation");
+
   });
   // app.get("/viewAccount", isAuthenticated, function(req, res){
   //   res.send("viewAccount");
@@ -41,12 +44,13 @@ module.exports = function(app) {
     res.redirect("/");
   });
 
- 
-  // ------------ testing -------------------------------
   // character creation
-  app.get("/characterCreation", function(req, res){
+  app.get("/characters", function(req, res){
     res.render("characterCreation");
   });
+
+  // ------------ testing -------------------------------
+
 
   // game page
   app.get("/game", function(req, res){
@@ -64,17 +68,6 @@ module.exports = function(app) {
     req.logout();
     res.redirect("/");
   });
-  
-  app.get("/characters", function(req, res){
-    res.render("characterCreation");
-  });
-
-  // app.get("/game", function(req, res){
-  //   res.sendFile(path.join(__dirname, "../views/game-page.html"));
-  // });
-  // app.get("/game", function(req, res){
-  //   res.render("gamepage");
-  // });
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {

@@ -32,7 +32,7 @@ function loginUser(userName, password) {
     password: password
   })
     .then(function() {
-      window.location.replace("/welcomeback");
+      window.location.replace("/characters");
       // If there's an error, log the error
     })
     .catch(function(err) {
