@@ -53,8 +53,8 @@ module.exports = function(app) {
       gender: req.body.gender,
       specialistType: req.body.specialistType
     }).then(function(){
-      res.redirect("/game")
-    })
+      res.redirect("/game");
+    });
   });
 
   app.post("/api/login", passport.authenticate("local"), function(req, res){
