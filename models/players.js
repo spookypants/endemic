@@ -26,10 +26,10 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: true
     },
-    medicinalPreference: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
+    // medicinalPreference: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false
+    // },
     lastAvatarId: {
       type: DataTypes.INTEGER
     },

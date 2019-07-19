@@ -17,9 +17,9 @@ $("#add-account").on("click", function (event) {
     id: $("#id").val(),
     userName: $("#userName").val(),
     password: $("#inputPassword").val(),
-    gender: $("#inputGender").val(),
-    age: $("#inputAge").val(),
-    medicinalPreference: $(".medicinalPreference").val(),
+    gender: $("input[name=inlineRadioOptions]:checked").val(),
+    age: $("#age").val(),
+    // medicinalPreference: $(".medicinalPreference").val(),
     lastAvatarId: $("#lastAvatarId").val(),
     lastGameLog: $("#lastGameLog").val(),
 

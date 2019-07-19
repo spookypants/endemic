@@ -3,9 +3,9 @@ var db = require("../models");
 module.exports = function(app) {
   app.get("/api/disease/:id", function(req, res) {
     db.Disease.findOne({
-        where: {
-            id: req.params.id
-          },
+      where: {
+        id: req.params.id
+      },
     }).then(function(disease) {
       res.json(disease);
     });
@@ -14,9 +14,9 @@ module.exports = function(app) {
 
   app.get("/api/treatment/:id", function(req, res) {
     db.Treatment.findOne({
-        where: {
-            id: req.params.id
-          },
+      where: {
+        id: req.params.id
+      },
     }).then(function(treatment) {
       res.json(treatment);
     });
@@ -35,9 +35,9 @@ module.exports = function(app) {
   // })
   app.get("/api/effect/:id", function(req, res) {
     db.Effect.findOne({
-        where: {
-            id: req.params.id
-          },
+      where: {
+        id: req.params.id
+      },
     }).then(function(effect) {
       res.json(effect);
     });
