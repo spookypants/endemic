@@ -1,13 +1,10 @@
 body {
-    /* background-color: #364958; */
     box-sizing: inherit;
-    /* color: white; */
-    /* font-weight: bolder; */
     line-height: 1.5em;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background: url("/images/background-art.jpg") no-repeat;
+    background: url("/images/background-art-mono.jpg") no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -22,17 +19,22 @@ body {
 
 h1 {
     text-align: center;
-    color: white;
+    font-family: 'Teko', 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.5em;
+    color: black;
+    text-shadow: 1.5px 1.5px whitesmoke;
 }
 
 h3 {
     text-align: center;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: 300;
-    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
     line-height: 1.5em;
-    color: white;
-    text-shadow: 1px 1px black;
+    color: black;
+    text-shadow: 1.5px 1.5px whitesmoke;
     padding-bottom: 2%;
 }
 
@@ -42,12 +44,13 @@ h5 {
 }
 
 p {
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: 300;
-    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
     line-height: 1.5em;
-    color: white;
-    text-shadow: 1px 1px black;
+    letter-spacing: .01em;
+    color: black;
+    text-shadow: 1px 1px whitesmoke;
 }
 
 #landing-title {
@@ -59,7 +62,6 @@ p {
 }
 
 .game-logo {
-    /* padding-left: 5%; */
     position: absolute;
     color: white;
     display: inline-block;
@@ -89,10 +91,25 @@ p {
 }
 
 .content-box {
-    background-color: rgba(226, 225, 224, 0.1);
+    background-color: rgba(224, 221, 217, 0.1);
     filter: alpha(opacity=10);
     opacity: .8;
     box-shadow: 0 3px 3px 3px rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     padding: 3% 5% 2% 5%;
     margin-top: 40%;
+    width: 90%;
+}
+
+#create-form {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 1.5em;
+    letter-spacing: .01em;
+    color: black;
+    text-shadow: 1.5px 1.5px whitesmoke;
+}
+
+#add-account {
+    align-content: center;
 }

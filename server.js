@@ -1,4 +1,4 @@
-require("dotenv").config();
+//require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
 var passport = require("passport");
@@ -39,8 +39,10 @@ app.set("view engine", "handlebars");
 
 // Routes
 require("./routes/apiRoutes")(app);
+require("./routes/gameplayRoutes")(app);
 require("./routes/htmlRoutes")(app);
 // require("./routes/auth")(app);
+
 
 var syncOptions = { force: false };
 
@@ -57,12 +59,11 @@ db.sequelize.sync(syncOptions).then(function () {
       console.log(
         "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
         PORT,
-        PORT,
-        "Nice! Passport db work looks fine."
+        PORT
       );
     }
     else{console.log(err, "Something went wrong with the possport db update");}
   });
 });
 
-module.exports = app;
+// module.exports = app;

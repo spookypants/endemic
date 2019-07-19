@@ -1,4 +1,5 @@
 var db = require("../models");
+var path = require("path");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
@@ -23,8 +24,8 @@ module.exports = function(app) {
   });
 
   // "viewaccount" signin
-  app.get("/viewAccount", isAuthenticated, function(req, res){
-    res.render("viewAccount");
+  app.get("/login", function(req, res){
+    res.render("login");
   });
   // app.get("/viewAccount", isAuthenticated, function(req, res){
   //   res.send("viewAccount");
@@ -32,11 +33,11 @@ module.exports = function(app) {
  
   // "welcome-back"
   //if a user is not logged in and tries to access this page they will be redirected to the signin page
-  app.get("/welcome-back", function(req, res){
+  app.get("/welcomeback", function(req, res){
     res.redirect("/");
   });
 
-  app.get("/welcome-back", isAuthenticated, function(req, res){
+  app.get("/welcomeback", isAuthenticated, function(req, res){
     db.Players.findOne({ where: { userName: res.body.userName}});
     res.render("/welcomeBack");
   });
@@ -47,8 +48,13 @@ module.exports = function(app) {
   });
 
   // game page
+<<<<<<< HEAD
   app.get("/game-page", function(req, res){
     res.render("gamePage");
+=======
+  app.get("/gamepage", function(req, res){
+    res.render("gamepage");
+>>>>>>> master
   });
   // ------------- testing ------------------------------
   //logout
@@ -63,7 +69,7 @@ module.exports = function(app) {
   });
 
   app.get("/game", function(req, res){
-    res.render("gamePage");
+    res.sendFile(path.join(__dirname, "../views/game-page.html"));
   });
 
   // Render 404 page for any unmatched routes
