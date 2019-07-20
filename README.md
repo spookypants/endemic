@@ -9,12 +9,12 @@
   Good luck to you and your patient! (especially your patient!!!)
 
 ## Quick Start
-1. Create an account. (optional)
-2. Create an Avatar:
+#### 1. Create an account. (optional)
+#### 2. Create an Avatar:
   * Select your character's gender.
   * Select one of the three specialists, Doctor, Biochemist or Shaman.
   * Click the "Start Game" button to start the game.
-3. Play the Game:
+#### 3. Play the Game:
   * The patient has a highly contagious disease, associated symptoms and is at half their life force (50 points).
   * Your character has at his disposal three treaments that are to be tested on this disease. Click on the treatment to administer it.
   * The game logs the effect/reaction of the treatment and the resulting life force value for the patient.
