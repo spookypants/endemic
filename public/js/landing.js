@@ -1,7 +1,7 @@
 
-$(document).ready(function() {
-  $("#gameMusic").get(0).play();
-});
+// $(document).ready(function() {
+//   $("#gameMusic").get(0).play();
+// });
 
 $("#sign-up").on("click", function(event) {
   event.preventDefault();
