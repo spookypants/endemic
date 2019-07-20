@@ -3,15 +3,6 @@
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
-  // // Load index page
-  // app.get("/", function(req, res) {
-  //   db.Example.findAll({}).then(function(dbExamples) {
-  //     res.render("index", {
-  //       msg: "Welcome! You are now using Passport with Sequelize! Go team!",
-  //       examples: dbExamples
-  //     });
-  //   });
-  // });
 
   //Load our landing page
   app.get("/", function(req, res) {
@@ -44,8 +35,11 @@ module.exports = function(app) {
     res.redirect("/");
   });
 
+  // game page
+  app.get("/game", function(req, res){
+    res.render("gamepage");
+  });
  
-  // ------------ testing -------------------------------
   // character creation
   app.get("/characters", function(req, res){
     res.render("characterCreation");
