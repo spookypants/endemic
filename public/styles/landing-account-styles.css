@@ -19,20 +19,19 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Alegreya Sans';
-    font-weight: 500;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
     font-size: 48px;
     line-height: 1.5em;
     color: black;
     text-shadow: 1.5px 1.5px whitesmoke;
 }
 
-h3,
-.modal-title {
+h3 {
     text-align: center;
-    font-family: 'Signika';
-    font-weight: 700;
-    font-size: 32px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    font-size: 42px;
     line-height: 1.5em;
     color: #D1603D;
     text-shadow: 1.5px 1.5px black;
@@ -45,24 +44,14 @@ h5 {
 }
 
 p {
-    font-family: 'Oswald', sans-serif;
-    font-weight: bolder;
-    font-size: 21px;
-    line-height: 1.5em;
-    letter-spacing: .01em;
-    color: black;
-    text-shadow: 1px 1px whitesmoke;
-}
-
-.input-field {
-    font-family: 'Signika';
-    font-weight: 400;
+    font-family: 'Signika', sans-serif;
+    font-weight: bold;
     font-size: 20px;
     line-height: 2em;
     letter-spacing: .03em;
-    color: black;
     word-spacing: .06em;
-    /* text-shadow: 1px 1px #364958; */
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
 }
 
 a {
@@ -85,7 +74,7 @@ a:disabled {
 
 .btn-secondary {
     background-color: #689080;
-    font-family: 'Alegreya Sans';
+    font-family: 'Share Tech Mono', monospace;
     font-size: 15px;
     text-align: center;
     margin-top: 20px;
@@ -107,18 +96,7 @@ a:disabled {
     text-align: center;
 }
 
-.content-box {
-    background-color: rgba(235, 137, 8, 0.1);
-    filter: alpha(opacity=10);
-    opacity: .8;
-    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    padding: 3% 5% 2% 5%;
-    margin-top: 50%;
-    width: 100%;
-}
-
 .navbar {
-    /* align-content: center; */
     background-color: #D1603D;
     padding: 10px 40px 10px 40px;
 }
@@ -141,26 +119,7 @@ a:disabled {
     position: absolute;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #364958;
-    color: white;
-    text-align: center;
-    padding-top: 5px;
-}
 
-#footer {
-    font-size: 12px;
-    font-family: 'Share Tech Mono', monospace;
-    letter-spacing: 0.05em;
-    text-align: center;
-    padding-top: 5px;
-    color: #eee;
-    height: 30px;
-}
 
 #box-text {
     font-family: 'Signika';
@@ -170,7 +129,6 @@ a:disabled {
     letter-spacing: .03em;
     color: white;
     word-spacing: .06em;
-    /* text-shadow: 1px 1px #364958; */
 }
 
 #landing-title {
@@ -190,7 +148,7 @@ a:disabled {
 }
 
 .content-box {
-    background-color: rgba(224, 221, 217, 0.1);
+    background-color: rgba(230, 111, 7, 0.1);
     filter: alpha(opacity=10);
     opacity: .8;
     box-shadow: 0 3px 3px 3px rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
@@ -199,16 +157,16 @@ a:disabled {
     width: 90%;
 }
 
-#create-form {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    font-size: 21px;
-    line-height: 1.5em;
-    letter-spacing: .01em;
-    color: black;
-    text-shadow: 1.5px 1.5px whitesmoke;
-}
-
 #add-account {
     align-content: center;
 }
+
+#footer {
+    font-size: 12px;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding-top: 5px;
+    color: #eee;
+    height: 30px;
+  }

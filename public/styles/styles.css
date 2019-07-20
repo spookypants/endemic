@@ -14,7 +14,8 @@ body {
   margin: 0 auto;
 }
 
-.nav-links {
+.nav-links,
+.btn-link {
   color: white;
 }
 
@@ -53,7 +54,53 @@ hr {
   bottom: 0;
   width: 100%;
   background-color: #364958;
-  color: white;
   text-align: center;
   padding-top: 5px;
+  height: 30px;
+}
+
+.modal-body {
+  background-color: #364958;
+  color:white;
+  font-size: 20px;
+  font-family: 'Share Tech Mono', monospace;
+  padding-left: 5%;
+}
+.modal-header {
+  background-color: #D1603D;
+  color:white;
+  font-family: 'Share Tech Mono', monospace;
+}
+.modal-footer {
+  background-color: #364958;
+}
+
+#footer {
+  font-size: 12px;
+  font-family: 'Share Tech Mono', monospace;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding-top: 5px;
+  color: #eee;
+}
+
+.close {
+  color: white;
+  font-size: 200%;
+}
+
+#new-account-form1 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 16px;
+  line-height: 2em;
+  color:white;
+  padding-left: 5%;
+}
+
+#new-account-form2 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 16px;
+  line-height: 2em;
+  color:white;
+  padding-left: 5%;
 }
