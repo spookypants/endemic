@@ -11,15 +11,15 @@
 ## Quick Start
 1. Create an account. (optional)
 2. Create an Avatar:
-  *a.)* Select your character's gender.
-  *b.)* Select one of the three specialists, Doctor, Biochemist or Shaman.
-  *c.)* Click the "Start Game" button to start the game.
+  * Select your character's gender.
+  * Select one of the three specialists, Doctor, Biochemist or Shaman.
+  * Click the "Start Game" button to start the game.
 3. Play the Game:
-  *a.)* The patient has a highly contagious disease, associated symptoms and is at half their life force (50 points).
-  *b.)* Your character has at his disposal three treaments that are to be tested on this disease. Click on the treatment to administer it.
-  *c.)* The game logs the effect/reaction of the treatment and the resulting life force value for the patient.
-  *d.)* Continue to administer the treatments as you see fit until the patient returns to full life force (100) or dies (0).
-  *e.)* At this point a pop-up gives you the choice to select a new avatar and play a new game or exit.
+  * The patient has a highly contagious disease, associated symptoms and is at half their life force (50 points).
+  * Your character has at his disposal three treaments that are to be tested on this disease. Click on the treatment to administer it.
+  * The game logs the effect/reaction of the treatment and the resulting life force value for the patient.
+  * Continue to administer the treatments as you see fit until the patient returns to full life force (100) or dies (0).
+  * At this point a pop-up gives you the choice to select a new avatar and play a new game or exit.
 
 ## About
   This game was developed as a team project for the Web Development Course at UT Austin in July 2019.
@@ -49,7 +49,7 @@
 ![Character Creation](https://github.com/spookypants/endemic/blob/readme_edits/public/images/screenshots/Screenshot_CharacterCreation.PNG)
 
 ### Game Page
-(https://github.com/spookypants/endemic/blob/readme_edits/public/images/screenshots/Screenshot_GamePage.PNG)
+![Game Page](https://github.com/spookypants/endemic/blob/readme_edits/public/images/screenshots/Screenshot_GamePage.PNG)
 
 
 
