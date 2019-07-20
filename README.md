@@ -1,50 +1,58 @@
-# Project-2-Starter
-A repository for starting project 2
-- [X] Copy this template
+# Endemic
+  https://endemic-game.herokuapp.com/
 
-### Once you have copied this template do the following
-- [X] Invite all collaborators
-- [X] Create a slack channel and invite all the team members and the instructional staff
-- [X] Protect the master branch
-- [ ] Set up a pipeline with heroku with a staging environment and a production environment
-- [ ] Setup the staging app to deploy the master branch automatically
-- [ ] Modify this README to include 
-  - [ ] each of your team members names and links to their github profiles
-  - [ ] the title of your project
-  - [ ] a link to your production deployed version
+## Several Endemic Diseases, One Top Secret Lab and Three Top Specialists!
+  Several contagious diseases have broken out all over the world. Fight the diseases as one of the three specialists in the game by administering highly controversial treatments to the patient? These treatments are highly potent but extremely volatile and unpredictable.
   
-#### Requirements for the project
+  This game is playable on any modern web browser and is equally enjoyable on mobile, tablet or desktop devices.
   
-- [X] Must use a Node and Express Web Server
+  Good luck to you and your patient! (especially your patient!!!)
 
-- [X] Must be backed by a MySQL Database with a Sequelize ORM  
+## Quick Start
+#### 1. Create an account. (optional)
+#### 2. Create an Avatar:
+  * Select your character's gender.
+  * Select one of the three specialists, Doctor, Biochemist or Shaman.
+  * Click the "Start Game" button to start the game.
+#### 3. Play the Game:
+  * The patient has a highly contagious disease, associated symptoms and is at half their life force (50 points).
+  * Your character has at his disposal three treaments that are to be tested on this disease. Click on the treatment to administer it.
+  * The game logs the effect/reaction of the treatment and the resulting life force value for the patient.
+  * Continue to administer the treatments as you see fit until the patient returns to full life force (100) or dies (0).
+  * At this point a pop-up gives you the choice to select a new avatar and play a new game or exit.
 
-- [X] Must have both GET and POST routes for retrieving and adding new data
+## About
+  This game was developed as a team project for the Web Development Course at UT Austin in July 2019.
 
-- [ ] Must be deployed using Heroku (with Data)
+## Technologies Utilized
+  * HTML, CSS, Bootstrap.
+  * Lottie, SVG Animations.
+  * Node, Express, Express-Handlebars.
+  * Javascript, jQuery, AJAX.
+  * MySQL, Sequelize.
+  * Model View Controller (MVC) Design Pattern.
+  * Source Control: Git and GitHub.
 
-- [X] Must utilize at least one new library, package, or technology that we haven’t discussed
+## Team Endemic
+  * Gabe Alvarez:- https://github.com/spookypants
+  * Juan Baquera:- https://github.com/jebaquera
+  * Sylvia Jonon:- https://github.com/sjonon
+  * Avinash Singh:- https://github.com/avinashsinghdhillon
+  * Brittany Taylor:- https://github.com/britt421
 
-- [ ] Must have a polished frontend / UI 
+## Screenshots
 
-- [ ] Must have folder structure that meets MVC Paradigm
+### Main Page
+![Main Page](https://github.com/spookypants/endemic/blob/readme_edits/public/images/screenshots/Screenshot_LandingPage.PNG)
 
-- [ ] Must meet good quality coding standards (indentation, scoping, naming)
+### Character Creation
+![Character Creation](https://github.com/spookypants/endemic/blob/readme_edits/public/images/screenshots/Screenshot_CharacterCreation.PNG)
 
-- [ ] Must not expose sensitive API key information on the server
+### Game Page
+![Game Page](https://github.com/spookypants/endemic/blob/readme_edits/public/images/screenshots/Screenshot_GamePage.PNG)
 
 
-Project #2-- Game: Endemic
 
-Group Members:
-Gabe Alvarez
-Juan Baquera
-Sylvia Jonon
-Avinash Singh
-Brittany Taylor
-
-OUR APP
-App name : Endemic
 
 General Idea
 An online game that prompts the user to deliver treatments to a patient. The patient’s Life Force number will either improve or deteriorate. If their score improves up to 100, then they’re cured and the player’s score improves. However, if their score dwindles down to zero, then they have died and the player’s score goes down.
@@ -66,8 +74,8 @@ How it Works
 1. Create an account
 2. Select Character Avatar
 3. Play the game!
-    a.) The patient has a list of symptoms and treatment options.
-    b.) The Player selects from the list of treatment options.
-    c.) The game logs the results of that treatment and the corresponding point value. The log also provides information about the patient’s current condition. The Player has new treatment options.
-    d.) Game play continues until the patient’s ‘life force’ equals 0 or 100.
-    e.) At this point a module pops-up giving the player the choice to select a new avatar and play a new game or exit the game.
+  a.) The patient has a list of symptoms and treatment options.
+  b.) The Player selects from the list of treatment options.
+  c.) The game logs the results of that treatment and the corresponding point value. The log also provides information about the patient’s current condition. The Player has new treatment options.
+  d.) Game play continues until the patient’s ‘life force’ equals 0 or 100.
+  e.) At this point a module pops-up giving the player the choice to select a new avatar and play a new game or exit the game.
