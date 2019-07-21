@@ -129,7 +129,6 @@ $(document).ready(function(){
     console.log(avatarObj);
     $.ajax({method: "PUT", url: "/api/players/pick_character", data: avatarObj}).then(function(response){
       console.log("response: " + response);
-      debugger;
       window.location.href = "/game";
     });
   });

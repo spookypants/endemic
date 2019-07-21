@@ -149,12 +149,18 @@ $(document).ready(function() {
     $("#failureModal").modal("show");
     const failSound = new Audio("../sfx/onFail.mp3");
     failSound.play();
+    $.ajax({method: "PUT", url: "/api/players/"+patientLifePoints}).then(function(response){
+      console.log("score: " + patientLifePoints);
+    });
   }
 
   function gameWon(){
     $("#successModal").modal("show");
     const successSound = new Audio("../sfx/onSuccess.mp3");
     successSound.play();
+    $.ajax({method: "PUT", url: "/api/players/"+patientLifePoints}).then(function(response){
+      console.log("score: " + patientLifePoints);
+    });
   }
 });
 
