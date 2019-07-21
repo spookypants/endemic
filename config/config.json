@@ -4,6 +4,7 @@
     "password": "h3lpc0mput3r",
     "database": "endemic_db",
     "host": "localhost",
+    "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   },
   "test": {
