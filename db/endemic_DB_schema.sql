@@ -63,8 +63,8 @@ sadImage VARCHAR(255),
 happyImage VARCHAR(255),
 sadVoiceEmote VARCHAR(255),
 happyVoiceEmote VARCHAR (255),
---   	createdAt DATETIME,
--- 	updatedAt DATETIME,
+  	createdAt DATETIME,
+	updatedAt DATETIME,
 PRIMARY KEY ( id )
 );
 
