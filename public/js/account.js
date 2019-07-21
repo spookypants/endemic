@@ -11,6 +11,8 @@ function addPlayer(playerData) {
 
 $("#add-account").on("click", function (event) {
   event.preventDefault();
+  const buttonSound = new Audio("../sfx/onButtonClick.mp3");
+  buttonSound.play();
   console.log("Add player button clicked.");
   console.log($(".medicinalPreference").val());
   //validate the form here?

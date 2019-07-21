@@ -31,6 +31,8 @@ $(document).ready(function(){
 
   //if the male icon is NOT selected yet, fade in and out ELSE stay at opacity 1
   $("#maleIcon").hover(function () {
+    const hoverSound = new Audio("../sfx/onHover.mp3");
+    hoverSound.play();
     $(this).css("opacity", "1");
   }, function () {
     if (genderSelected !== "male") {
@@ -52,6 +54,8 @@ $(document).ready(function(){
 
   //if the female icon is NOT selected yet, fade in and out ELSE stay at opacity 1
   $("#femaleIcon").hover(function () {
+    const hoverSound = new Audio("../sfx/onHover.mp3");
+    hoverSound.play();
     $(this).css("opacity", "1");
   }, function () {
     if (genderSelected !== "female") {
@@ -78,6 +82,8 @@ $(document).ready(function(){
   }
   $(".male-chars").click(function (event) {
     event.preventDefault();
+    const buttonSound = new Audio("../sfx/onButtonClick.mp3");
+    buttonSound.play();
     specialistSelected = $(this).data("specialist");
     avatarName = $(this).data("avatarname");
     avatarId = $(this).data("id");
@@ -91,6 +97,8 @@ $(document).ready(function(){
 
   $(".female-chars").on("click", function (event) {
     event.preventDefault();
+    const buttonSound = new Audio("../sfx/onButtonClick.mp3");
+    buttonSound.play();
     specialistSelected = $(this).data("specialist");
     avatarName = $(this).data("avatarname");
     avatarId = $(this).data("id");
@@ -106,8 +114,8 @@ $(document).ready(function(){
 
   $("#gameStartButt").on("click", function(event){
     event.preventDefault();
-    const buttonSound = new Audio("../sfx/onButtonClick.mp3");
-    buttonSound.play();
+    const successSound = new Audio("../sfx/onSuccess.mp3");
+    successSound.play();
     // debugger;
     console.log("The player chose: " + avatarName, specialistSelected);
     avatarObj.avatarName = avatarName;
