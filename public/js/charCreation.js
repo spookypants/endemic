@@ -88,6 +88,8 @@ $(document).ready(function(){
     avatarName = $(this).data("avatarname");
     avatarId = $(this).data("id");
     console.log("male " + specialistSelected, avatarName, avatarId);
+    $(".male-chars").css("opacity", "0.5");
+    $(this).css("opacity", "1");
   });
 
   //enable female avatars to display and handle clicks for female avatars
@@ -103,6 +105,8 @@ $(document).ready(function(){
     avatarName = $(this).data("avatarname");
     avatarId = $(this).data("id");
     console.log("female " + specialistSelected, avatarName, avatarId);
+    $(".female-chars").css("opacity", "0.5");
+    $(this).css("opacity", "1");
   });
 
   // function createAvatar(avatarData){
