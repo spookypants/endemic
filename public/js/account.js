@@ -1,3 +1,7 @@
+$(document).ready(function() {
+  $("#accountMusic").get(0).play();
+});
+
 function addPlayer(playerData) {
   $.post("/api/signup", playerData).then(function () {
     // res.render("characterCreation");
@@ -8,6 +12,8 @@ function addPlayer(playerData) {
 
 $("#add-account").on("click", function (event) {
   event.preventDefault();
+  const buttonSound = new Audio("../sfx/onButtonClick.mp3");
+  buttonSound.play();
   console.log("Add player button clicked.");
 
   //validate the form here?
