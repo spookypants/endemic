@@ -74,6 +74,8 @@ $(document).ready(function() {
   }
 
   $(".treatment").click(function() {
+    const buttonSound = new Audio("../sfx/onButtonClick.mp3");
+    buttonSound.play();
   // $(document).click(".treatment", function(event){ // adjusted to look at entire document, then run if TREATMENT is selected
     getEffect();
     //check if the effect picked is positive or negative
@@ -145,10 +147,14 @@ $(document).ready(function() {
 
   function gameLost(){
     $("#failureModal").modal("show");
+    const failSound = new Audio("../sfx/onFail.mp3");
+    failSound.play();
   }
 
   function gameWon(){
     $("#successModal").modal("show");
+    const successSound = new Audio("../sfx/onSuccess.mp3");
+    successSound.play();
   }
 });
 

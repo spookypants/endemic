@@ -1,3 +1,6 @@
+$(document).ready(function() {
+  $("#accountMusic").get(0).play();
+});
 
 function addPlayer(playerData) {
   $.post("/api/signup", playerData).then(function () {

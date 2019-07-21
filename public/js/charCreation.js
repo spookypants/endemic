@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $("#characterMusic").get(0).play();
 //global variables
   var genderSelected;
   var specialistSelected;
@@ -40,6 +41,8 @@ $(document).ready(function(){
   //if the male gender is selected enable the male character selectors
   $("#maleIcon").click(function (event) {
     event.preventDefault();
+    const buttonSound = new Audio("../sfx/onButtonClick.mp3");
+    buttonSound.play();
     $(this).css("opacity", "1");
     genderSelected = "male";
     $("#femaleIcon").css("opacity", "0.5");
@@ -58,7 +61,9 @@ $(document).ready(function(){
 
   //if the female gender is selected enable the female character selectors
   $("#femaleIcon").click(function (event) {
-    event.preventDefault;
+    event.preventDefault();
+    const buttonSound = new Audio("../sfx/onButtonClick.mp3");
+    buttonSound.play();
     $(this).css("opacity", "1");
     genderSelected = "female";
     $("#maleIcon").css("opacity", "0.5");
@@ -101,7 +106,9 @@ $(document).ready(function(){
 
   $("#gameStartButt").on("click", function(event){
     event.preventDefault();
-    debugger;
+    const buttonSound = new Audio("../sfx/onButtonClick.mp3");
+    buttonSound.play();
+    // debugger;
     console.log("The player chose: " + avatarName, specialistSelected);
     avatarObj.avatarName = avatarName;
     avatarObj.gender = genderSelected;
