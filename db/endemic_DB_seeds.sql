@@ -2,7 +2,7 @@ DROP TABLE avatars
 USE endemic_db;
 
 -- Avatars seeds
-INSERT INTO avatars (avatarName, gender, specialistType)
+INSERT INTO Avatars (avatarName, gender, specialistType)
 VALUES 
 ("Jack", "male", "doctor"),
 ("Thunderbolt", "male", "shaman"),
@@ -12,74 +12,74 @@ VALUES
 ("Ashanti", "female", "bioChemist");
 
 -- Diseases Seeds
-INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO Diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Hepatitis B","Jaundice","Dark Urine","Clay-Colored Bowel Movements",5);
 
-INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO Diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Malaria","Fever","Chills","Sweats", 5);
 
-INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO Diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Bubonic Plague","Sudden Fever","Headache","Swollen, Tender Lymph Nodes",7);
 
-INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO Diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Dengue Fever","Nausea/Vomiting","Bleeding From the Nose or Gums","Aches and Pains (eyes, muscles, joints, or bones)",4);
 
-INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO Diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Rickettsiosis","Lack of Appetite","Stomach Pain","Muscle Pain",6);
 
-INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO Diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Pertusis","Persistent Cough","Runny Nose","Sneezing",3);
 
-INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO Diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Measles","Conjunctivitis","Koplik Spots","Rash",4);
 
-INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO Diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Lyme Disease","Rash","Neck Stiffness","Heart Palpitations",8);
 
-INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO Diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Zika","Conjunctivitis","Joint Pain","Headache",2);
 
-INSERT INTO diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
+INSERT INTO Diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
 VALUES ("Varicella","Itchy Rash","Headache","Fatigue",2);
 
 
 -- Treatments Seeds
-INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
+INSERT INTO Treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
 VALUES ("20cc Alimdafinil", "Conventional", 20, 10, 5);
 
-INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
+INSERT INTO Treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
 VALUES ("Leeches", "Shamanistic", 5, 20, 10);
 
-INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
+INSERT INTO Treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
 VALUES ("250 mg Galanruvax", "Experimental", 15, 5, 20);
 
-INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
+INSERT INTO Treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
 VALUES ("100 mg Robamumab", "Conventional", 20, 10, 5);
 
-INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
+INSERT INTO Treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
 VALUES ("Gondwanian Throat Singing", "Shamanistic", 5, 20, 10);
 
-INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
+INSERT INTO Treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
 VALUES ("400cc Fluaxane", "Experimental", 15, 5, 20);
 
-INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
+INSERT INTO Treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
 VALUES ("500 mg Dexlannate Vitronuma", "Conventional", 20, 10, 5);
 
-INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
+INSERT INTO Treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
 VALUES ("Deslopirin Tea", "Shamanistic", 5, 20, 10);
 
-INSERT INTO treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
+INSERT INTO Treatments (treatmentName, treatmentCategory, doctorEffect, shamanEffect, biochemistEffect) 
 VALUES ("10cc Colezolam Albendadocin", "Experimental", 15, 5, 20);
 
 -- Effects Seeds
-INSERT INTO effects (effectName, effectDescription, positiveEffect)
+INSERT INTO Effects (effectName, effectDescription, positiveEffect)
 VALUES
 ("Blood Pressure Stabilizing!", "Treatment has lead to the patient's blood pressure reaching normal levels. The patient looks to be feeling at least a little better.", 1),
 ("Blood Pressure Holding!", "No change in the patient's blood pressure. The patient is stable -- not good, but not bad -- which is probably good. For now.", 1),
 ("Blood Pressure Dropping!", "The patient's blood pressure is at dangerously low levels! The patient could lose consciousness -- this could be bad!", 0),
 ("Blood Pressure Rising!", "The patient's blood pressure is reaching dangerously high levels! The patient looks discomforted -- this could get worse!", 0),
 
-("c!", "Treatment has brough the patient's temperature back into normal range. The patient should rest easier now.", 1),
+("Temperature Stabilizing!", "Treatment has brough the patient's temperature back into normal range. The patient should rest easier now.", 1),
 ("Temperature Holding!", "No change in the patient's temperature. At least it's not worse. Yet.", 1),
 ("Temperature Rising!", "The patient's temperature is rising! Bring that fever down -- stat!", 0),
 ("Temperature Dropping!", "The patient's temperature is plummeting! Whatever you did -- do better!", 0),
