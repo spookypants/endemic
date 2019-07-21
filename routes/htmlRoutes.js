@@ -9,6 +9,10 @@ module.exports = function(app) {
     res.render("landing");
   });
 
+  // app.get("/", function(req, res, next) {
+  //   res.sendfile("./html/auth.html");
+  // });
+
   //Load our sign-up page
   app.get("/signup", function(req, res){
     res.render("newAccount");

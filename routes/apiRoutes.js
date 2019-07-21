@@ -42,5 +42,16 @@ module.exports = function (app) {
     });
   });
 
+  app.put("/api/players/:score", function(req, res){
+    console.log("put request for score");
+    db.Players.update(
+      { lastGameLog: req.params.score},
+      {
+        where: {userName: req.user.userName}
+      }
+    ).then(function(dbPlayers) {
+      res.json(dbPlayers);
+    });
+  });
 
 };
