@@ -161,4 +161,20 @@ a:disabled {
     padding-top: 5px;
     color: #eee;
     height: 30px;
+}
+
+#new-account-form1 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    line-height: 2em;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+  }
+  
+  #new-account-form2 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    line-height: 2em;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
   }
