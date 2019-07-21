@@ -101,15 +101,15 @@ $(document).ready(function(){
 
   $("#gameStartButt").on("click", function(event){
     event.preventDefault();
-    debugger;
     console.log("The player chose: " + avatarName, specialistSelected);
     avatarObj.avatarName = avatarName;
     avatarObj.gender = genderSelected;
     avatarObj.specialistType = specialistSelected;
     avatarObj.avatarId = avatarId;
     console.log(avatarObj);
-    $.ajax({url: "/api/players/pick_character", data: avatarObj, type: "PUT"}).then(function(response){
-      console.log(response);
+    $.ajax({method: "PUT", url: "/api/players/pick_character", data: avatarObj}).then(function(response){
+      console.log("response: " + response);
+      debugger;
       window.location.href = "/game";
     });
   });
