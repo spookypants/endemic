@@ -40,9 +40,6 @@ module.exports = function(app) {
     res.render("characterCreation");
   });
 
-  // ------------ testing -------------------------------
-
-
   // game page
   app.get("/game", isAuthenticated, function(req, res){
     res.render("gamepage");
@@ -52,7 +49,7 @@ module.exports = function(app) {
     // db.Players.findOne({ where: { userName: res.body.userName}});
     res.render("/welcomeBack");
   });
-  // ------------- testing ------------------------------
+ 
   
   //logout 
   app.get("/logout", function(req, res){
