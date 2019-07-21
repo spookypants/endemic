@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Lenaluna",
+    "password": "",
     "database": "endemic_db",
     "host": "localhost",
     "dialect": "mysql"

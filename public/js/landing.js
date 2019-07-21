@@ -1,4 +1,4 @@
-commented out until we have music functional
+
 $(document).ready(function() {
   $("#gameMusic").get(0).play();
 });
