@@ -7,7 +7,7 @@ $(document).ready(function() {
   var patientLifePoints = 50;
   var disease;
   var treatments = [];
-  var effect;
+  var Effect;
   var specialistType = "doctor";
 
   $("#patientHealth").text(patientLifePoints);
@@ -69,7 +69,7 @@ $(document).ready(function() {
       method: "GET",
       url: "/api/effect/" + randomId
     }).then(function (res){
-      effect = res;
+      Effect = res;
     });
   }
 
