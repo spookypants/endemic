@@ -2,14 +2,15 @@ DROP TABLE avatars
 USE endemic_db;
 
 -- Avatars seeds
-INSERT INTO Avatars (avatarName, gender, specialistType)
+INSERT INTO Avatars (avatarName, gender, specialistType, baseImage, sadImage, happyImage)
 VALUES 
-("Jack", "male", "doctor"),
-("Thunderbolt", "male", "shaman"),
-("Hermann", "male", "bioChemist"),
-("Susan", "female", "doctor"),
-("Eagle Talon", "female", "shaman"),
-("Ashanti", "female", "bioChemist");
+("Jack", "male", "doctor", "https://assets5.lottiefiles.com/packages/lf20_gGmZKN.json", "https://assets2.lottiefiles.com/packages/lf20_MvScI3.json", "https://assets7.lottiefiles.com/packages/lf20_wbGNqQ.json"),
+("Thunderbolt", "male", "shaman", "https://assets4.lottiefiles.com/packages/lf20_qs1nyM.json", "https://assets1.lottiefiles.com/packages/lf20_vdAfYA.json", "https://assets6.lottiefiles.com/packages/lf20_eBsMlx.json"),
+("Hermann", "male", "bioChemist", "https://assets5.lottiefiles.com/packages/lf20_3ikJct.json", "https://assets7.lottiefiles.com/packages/lf20_fB390C.json", "https://assets10.lottiefiles.com/packages/lf20_6FStCq.json"),
+("Susan", "female", "doctor", "https://assets1.lottiefiles.com/packages/lf20_FQaALa.json", "https://assets3.lottiefiles.com/packages/lf20_0oPGzC.json", "https://assets3.lottiefiles.com/packages/lf20_uMS02q.json"),
+("Eagle Talon", "female", "shaman", "https://assets1.lottiefiles.com/packages/lf20_VofP3Z.json", "https://assets6.lottiefiles.com/packages/lf20_qeLI4z.json", "https://assets7.lottiefiles.com/packages/lf20_mzjWVv.json"),
+("Ashanti", "female", "bioChemist", "https://assets1.lottiefiles.com/packages/lf20_9wt70U.json", "https://assets9.lottiefiles.com/packages/lf20_4tj4bj.json", "https://assets6.lottiefiles.com/packages/lf20_DvaQUy.json");
+
 
 -- Diseases Seeds
 INSERT INTO Diseases(diseaseName, symptom1,symptom2,symptom3,agressiveness)
