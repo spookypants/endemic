@@ -42,7 +42,7 @@ module.exports = function(app) {
 
   // game page
   app.get("/game", isAuthenticated, function(req, res){
-    res.render("gamepage");
+    res.render("gamePage");
   });
 
   app.post("api/mychar", isAuthenticated, function(req, res){
