@@ -1,37 +1,16 @@
-.list-group-item {
-  line-height: 2.5;
-}
-
-/* Style sheet for character creation page */
 body {
   background-color: #364958;
-}
-
-#nav-bar.row {
-  align-content: center;
-  background-color: #D1603D;
-  padding: 10px;
-  margin: 0 auto;
-}
-
-.nav-links,
-.btn-link {
-  color: white;
-}
-
-#submit {
-  align-content: center;
 }
 
 h2 {
   text-align: center;
   color:white;
   font-family: 'Share Tech Mono', monospace;
-
 }
 
-#femaleIcon, #maleIcon {
-  opacity: 0.5;
+hr {
+  background-color: #D1603D;
+  height: 3px;
 }
 
 .gender-name {
@@ -43,20 +22,64 @@ h2 {
   background: transparent;
 }
 
-hr {
-  background-color: #D1603D;
-  height: 3px;
+.list-group-item {
+  line-height: 2.5;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #364958;
-  text-align: center;
-  padding-top: 5px;
-  height: 30px;
+#submit {
+  align-content: center;
+}
+
+/* NAVIGATION STYLES */
+a {
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+a:hover {
+  color: #689080;
+}
+
+a:visited {
+  color: white;
+}
+
+a:disabled {
+  color: white;
+}
+
+.navbar {
+  background-color: #D1603D;
+  padding: 10px 40px 10px 40px;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.active {
+  color: white; 
+}
+
+.btn-link {
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+
+/* SIGN IN MODAL */
+.modal-header {
+  background-color: #D1603D;
+  color:white;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .modal-body {
@@ -66,22 +89,9 @@ hr {
   font-family: 'Share Tech Mono', monospace;
   padding-left: 5%;
 }
-.modal-header {
-  background-color: #D1603D;
-  color:white;
-  font-family: 'Share Tech Mono', monospace;
-}
+
 .modal-footer {
   background-color: #364958;
-}
-
-#footer {
-  font-size: 12px;
-  font-family: 'Share Tech Mono', monospace;
-  letter-spacing: 0.05em;
-  text-align: center;
-  padding-top: 5px;
-  color: #eee;
 }
 
 .close {
@@ -89,18 +99,22 @@ hr {
   font-size: 200%;
 }
 
-#new-account-form1 {
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 16px;
-  line-height: 2em;
-  color:white;
-  padding-left: 5%;
+/*  FOOTER STYLES */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #D1603D;
+  text-align: center;
+  height: 30px;
+  padding-bottom: 2%;
 }
 
-#new-account-form2 {
+#footer {
+  font-size: 12px;
   font-family: 'Share Tech Mono', monospace;
-  font-size: 16px;
-  line-height: 2em;
-  color:white;
-  padding-left: 5%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #eee;
 }

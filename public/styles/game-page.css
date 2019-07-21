@@ -2,14 +2,27 @@ body {
     background-color: #364958;
 }
 
-#nav-bar.row {
+.navbar {
     background-color: #D1603D;
-    padding: 10px;
-    margin: 0 auto;
+    padding: 10px 40px 10px 40px;
 }
 
-.nav-links {
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.game-logo {
+    position: absolute;
     color: white;
+    display: inline-block;
+    font-size: 2rem;
+    position: absolute;
 }
 
 #submit {
@@ -115,4 +128,23 @@ hr {
 }
 .footer {
     background-color: #D1603D;
+}
+
+
+a {
+    color: white;
+    font-weight: bolder;
+    /* text-align: center; */
+}
+
+a:hover {
+    color: #689080;
+}
+
+a:visited {
+    color: white;
+}
+
+a:disabled {
+    color: white;
 }

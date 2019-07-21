@@ -24,7 +24,7 @@ h1 {
     font-size: 48px;
     line-height: 1.5em;
     color: black;
-    text-shadow: 1.5px 1.5px whitesmoke;
+    text-shadow: 1px 1px #689080;
 }
 
 h3 {
@@ -33,8 +33,8 @@ h3 {
     font-weight: bold;
     font-size: 42px;
     line-height: 1.5em;
-    color: #D1603D;
-    text-shadow: 1.5px 1.5px black;
+    color: black;
+    text-shadow: 1px 1px #689080;
     padding-bottom: 2%;
 }
 
@@ -131,24 +131,16 @@ a:disabled {
     word-spacing: .06em;
 }
 
-#landing-title {
+/* #landing-subtitle {
     font-size: 800%;
     text-shadow: 6px 6px 5px #D1603D;
-    font-family: Decorative;
     padding-top: 20%;
     padding-bottom: 1%;
-}
+} */
 
-.game-logo {
-    position: absolute;
-    color: white;
-    display: inline-block;
-    font-size: 2rem;
-    position: absolute;
-}
 
 .content-box {
-    background-color: rgba(230, 111, 7, 0.1);
+    background-color: rgba(233, 159, 95, 0.2);
     filter: alpha(opacity=10);
     opacity: .8;
     box-shadow: 0 3px 3px 3px rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
@@ -169,4 +161,20 @@ a:disabled {
     padding-top: 5px;
     color: #eee;
     height: 30px;
+}
+
+#new-account-form1 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    line-height: 2em;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+  }
+  
+  #new-account-form2 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    line-height: 2em;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
   }
