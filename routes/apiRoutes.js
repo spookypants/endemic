@@ -53,6 +53,7 @@ module.exports = function (app) {
       }
     ).then(function(dbPlayers){
       res.json(dbPlayers);
+      res.redirect("/game");
     });
     // db.Players.put(req.body).then(function(dbPlayer){
     //   res.json(dbPlayer)

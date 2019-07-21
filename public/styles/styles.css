@@ -1,36 +1,16 @@
-.list-group-item {
-  line-height: 2.5;
-}
-
-/* Style sheet for character creation page */
 body {
   background-color: #364958;
-}
-
-#nav-bar.row {
-  align-content: center;
-  background-color: #D1603D;
-  padding: 10px;
-  margin: 0 auto;
-}
-
-.nav-links {
-  color: white;
-}
-
-#submit {
-  align-content: center;
 }
 
 h2 {
   text-align: center;
   color:white;
   font-family: 'Share Tech Mono', monospace;
-
 }
 
-#femaleIcon, #maleIcon {
-  opacity: 0.5;
+hr {
+  background-color: #D1603D;
+  height: 3px;
 }
 
 .gender-name {
@@ -42,18 +22,99 @@ h2 {
   background: transparent;
 }
 
-hr {
-  background-color: #D1603D;
-  height: 3px;
+.list-group-item {
+  line-height: 2.5;
 }
 
+#submit {
+  align-content: center;
+}
+
+/* NAVIGATION STYLES */
+a {
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+a:hover {
+  color: #689080;
+}
+
+a:visited {
+  color: white;
+}
+
+a:disabled {
+  color: white;
+}
+
+.navbar {
+  background-color: #D1603D;
+  padding: 10px 40px 10px 40px;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.active {
+  color: white; 
+}
+
+.btn-link {
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+
+/* SIGN IN MODAL */
+.modal-header {
+  background-color: #D1603D;
+  color:white;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.modal-body {
+  background-color: #364958;
+  color:white;
+  font-size: 20px;
+  font-family: 'Share Tech Mono', monospace;
+  padding-left: 5%;
+}
+
+.modal-footer {
+  background-color: #364958;
+}
+
+.close {
+  color: white;
+  font-size: 200%;
+}
+
+/*  FOOTER STYLES */
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #364958;
-  color: white;
+  background-color: #D1603D;
   text-align: center;
-  padding-top: 5px;
+  height: 30px;
+  padding-bottom: 2%;
+}
+
+#footer {
+  font-size: 12px;
+  font-family: 'Share Tech Mono', monospace;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #eee;
 }

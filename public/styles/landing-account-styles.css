@@ -19,23 +19,22 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Alegreya Sans';
-    font-weight: 500;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
     font-size: 48px;
     line-height: 1.5em;
     color: black;
-    text-shadow: 1.5px 1.5px whitesmoke;
+    text-shadow: 1px 1px #689080;
 }
 
-h3,
-.modal-title {
+h3 {
     text-align: center;
-    font-family: 'Signika';
-    font-weight: 700;
-    font-size: 32px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    font-size: 42px;
     line-height: 1.5em;
-    color: #D1603D;
-    text-shadow: 1.5px 1.5px black;
+    color: black;
+    text-shadow: 1px 1px #689080;
     padding-bottom: 2%;
 }
 
@@ -45,24 +44,14 @@ h5 {
 }
 
 p {
-    font-family: 'Oswald', sans-serif;
-    font-weight: bolder;
-    font-size: 21px;
-    line-height: 1.5em;
-    letter-spacing: .01em;
-    color: black;
-    text-shadow: 1px 1px whitesmoke;
-}
-
-.input-field {
-    font-family: 'Signika';
-    font-weight: 400;
+    font-family: 'Signika', sans-serif;
+    font-weight: bold;
     font-size: 20px;
     line-height: 2em;
     letter-spacing: .03em;
-    color: black;
     word-spacing: .06em;
-    /* text-shadow: 1px 1px #364958; */
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
 }
 
 a {
@@ -85,7 +74,7 @@ a:disabled {
 
 .btn-secondary {
     background-color: #689080;
-    font-family: 'Alegreya Sans';
+    font-family: 'Share Tech Mono', monospace;
     font-size: 15px;
     text-align: center;
     margin-top: 20px;
@@ -107,18 +96,7 @@ a:disabled {
     text-align: center;
 }
 
-.content-box {
-    background-color: rgba(235, 137, 8, 0.1);
-    filter: alpha(opacity=10);
-    opacity: .8;
-    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    padding: 3% 5% 2% 5%;
-    margin-top: 50%;
-    width: 100%;
-}
-
 .navbar {
-    /* align-content: center; */
     background-color: #D1603D;
     padding: 10px 40px 10px 40px;
 }
@@ -141,15 +119,38 @@ a:disabled {
     position: absolute;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #364958;
+
+
+#box-text {
+    font-family: 'Signika';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2em;
+    letter-spacing: .03em;
     color: white;
-    text-align: center;
-    padding-top: 5px;
+    word-spacing: .06em;
+}
+
+/* #landing-subtitle {
+    font-size: 800%;
+    text-shadow: 6px 6px 5px #D1603D;
+    padding-top: 20%;
+    padding-bottom: 1%;
+} */
+
+
+.content-box {
+    background-color: rgba(233, 159, 95, 0.2);
+    filter: alpha(opacity=10);
+    opacity: .8;
+    box-shadow: 0 3px 3px 3px rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    padding: 3% 5% 2% 5%;
+    margin-top: 40%;
+    width: 90%;
+}
+
+#add-account {
+    align-content: center;
 }
 
 #footer {
@@ -162,53 +163,18 @@ a:disabled {
     height: 30px;
 }
 
-#box-text {
-    font-family: 'Signika';
-    font-weight: 700;
+#new-account-form1 {
+    font-family: 'Share Tech Mono', monospace;
     font-size: 20px;
     line-height: 2em;
-    letter-spacing: .03em;
-    color: white;
-    word-spacing: .06em;
-    /* text-shadow: 1px 1px #364958; */
-}
-
-#landing-title {
-    font-size: 800%;
-    text-shadow: 6px 6px 5px #D1603D;
-    font-family: Decorative;
-    padding-top: 20%;
-    padding-bottom: 1%;
-}
-
-.game-logo {
-    position: absolute;
-    color: white;
-    display: inline-block;
-    font-size: 2rem;
-    position: absolute;
-}
-
-.content-box {
-    background-color: rgba(224, 221, 217, 0.1);
-    filter: alpha(opacity=10);
-    opacity: .8;
-    box-shadow: 0 3px 3px 3px rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    padding: 3% 5% 2% 5%;
-    margin-top: 40%;
-    width: 90%;
-}
-
-#create-form {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    font-size: 21px;
-    line-height: 1.5em;
-    letter-spacing: .01em;
-    color: black;
-    text-shadow: 1.5px 1.5px whitesmoke;
-}
-
-#add-account {
-    align-content: center;
-}
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+  }
+  
+  #new-account-form2 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    line-height: 2em;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+  }
