@@ -14,7 +14,7 @@ module.exports = function(app) {
     res.render("newAccount");
   });
 
-  // "viewaccount" signin
+  // modal signin
   app.get("/login", function(req, res) {
   //   console.log("is user authenticated" + isAuthenticated);
   //   // If the user already has an account send them to the members page
@@ -34,11 +34,6 @@ module.exports = function(app) {
   app.get("/welcomeback", function(req, res){
     res.redirect("/");
   });
-
-  // game page
-  app.get("/game", function(req, res){
-    res.render("gamepage");
-  });
  
   // character creation
   app.get("/characters", function(req, res){
@@ -49,7 +44,7 @@ module.exports = function(app) {
 
 
   // game page
-  app.get("/game", function(req, res){
+  app.get("/game", isAuthenticated, function(req, res){
     res.render("gamepage");
   });
 
@@ -64,17 +59,6 @@ module.exports = function(app) {
     req.logout();
     res.redirect("/");
   });
-  
-  app.get("/characters", function(req, res){
-    res.render("characterCreation");
-  });
-
-  // app.get("/game", function(req, res){
-  //   res.sendFile(path.join(__dirname, "../views/game-page.html"));
-  // });
-  // app.get("/game", function(req, res){
-  //   res.render("gamepage");
-  // });
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
