@@ -27,6 +27,7 @@
 ## Technologies Utilized
   * HTML, CSS, Bootstrap.
   * Lottie, SVG Animations.
+  * Authentication using Passport and Bcrypt.
   * Node, Express, Express-Handlebars.
   * Javascript, jQuery, AJAX.
   * MySQL, Sequelize.

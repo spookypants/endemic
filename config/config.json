@@ -1,7 +1,11 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "h3lpc0mput3r",
+=======
+    "password": "",
+>>>>>>> master
     "database": "endemic_db",
     "host": "localhost",
     "dialect": "mysql"

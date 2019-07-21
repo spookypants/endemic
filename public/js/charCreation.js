@@ -123,8 +123,9 @@ $(document).ready(function(){
     avatarObj.specialistType = specialistSelected;
     avatarObj.avatarId = avatarId;
     console.log(avatarObj);
-    $.ajax({url: "/api/players/pick_character", data: avatarObj, type: "PUT"}).then(function(response){
-      console.log(response);
+    $.ajax({method: "PUT", url: "/api/players/pick_character", data: avatarObj}).then(function(response){
+      console.log("response: " + response);
+      debugger;
       window.location.href = "/game";
     });
   });
