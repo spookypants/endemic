@@ -53,10 +53,11 @@ hr {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #364958;
+  background-color: #D1603D;
   text-align: center;
-  padding-top: 5px;
+  /* padding-top: 1%; */
   height: 30px;
+  padding-bottom: 2%;
 }
 
 .modal-body {
@@ -80,7 +81,6 @@ hr {
   font-family: 'Share Tech Mono', monospace;
   letter-spacing: 0.05em;
   text-align: center;
-  padding-top: 5px;
   color: #eee;
 }
 
@@ -91,16 +91,16 @@ hr {
 
 #new-account-form1 {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 2em;
-  color:white;
-  padding-left: 5%;
+  color: whitesmoke;
+  text-shadow: 1px 1px black;
 }
 
 #new-account-form2 {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 2em;
-  color:white;
-  padding-left: 5%;
+  color: whitesmoke;
+  text-shadow: 1px 1px black;
 }
