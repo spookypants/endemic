@@ -80,7 +80,7 @@ $(document).ready(function() {
     getEffect();
     //check if the effect picked is positive or negative
     var effectType;
-    if(effect.positiveEffect)
+    if(Effect.positiveEffect)
     {
       effectType = 1;
     }else{
@@ -95,22 +95,22 @@ $(document).ready(function() {
     case "doctor":
       patientLifePoints += treatments[buttonId - 1].doctorEffect * effectType;
       $("#effectLog").prepend("<button type=\"button\" class=\"btn btn-info btn-block disabled=\"disabled\">"+ 
-          treatments[buttonId - 1].doctorEffect * effectType + " | " + effect.effectName + " " +
-          effect.effectDescription +"</button>");
+          treatments[buttonId - 1].doctorEffect * effectType + " | " + Effect.effectName + " " +
+          Effect.effectDescription +"</button>");
       $("#patientHealth").text(patientLifePoints);
       break;
     case "biochemist":
       patientLifePoints += treatments[buttonId - 1].biochemistEffect * effectType;
       $("#effectLog").prepend("<button type=\"button\" class=\"btn btn-info btn-block disabled=\"disabled\">"+ 
-          treatments[buttonId - 1].biochemistEffect * effectType + " | " + effect.effectName + " " +
-          effect.effectDescription +"</button>");
+          treatments[buttonId - 1].biochemistEffect * effectType + " | " + Effect.effectName + " " +
+          Effect.effectDescription +"</button>");
       $("#patientHealth").text(patientLifePoints);
       break;
     case "shaman":
       patientLifePoints += treatments[buttonId - 1].shamanEffect * effectType;
       $("#effectLog").prepend("<button type=\"button\" class=\"btn btn-info btn-block disabled=\"disabled\">"+ 
-          treatments[buttonId - 1].shamanEffect * effectType + " | " + effect.effectName + " " +
-          effect.effectDescription +"</button>");
+          treatments[buttonId - 1].shamanEffect * effectType + " | " + Effect.effectName + " " +
+          Effect.effectDescription +"</button>");
       $("#patientHealth").text(patientLifePoints);
       break;
     default:
