@@ -19,7 +19,7 @@
     "express-handlebars": "^3.1.0",
     "express-session": "^1.16.2",
     "http": "0.0.0",
-    "lint": "^0.7.0",
+    "lint": "^0.8.8",
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
     "passport-heroku": "^1.0.0",
